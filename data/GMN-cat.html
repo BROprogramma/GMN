@@ -1,1 +1,848 @@
-<h2>Catalogus placeholder</h2>
+<h2>Catalogus</h2>
+<p class="note" title="Over deze catalogus">
+   Deze catalogus is automatisch samengesteld op basis van het UML model 
+   "Grondwatermonitoringnet (GMN)" door Imvertor 1.48.0 op November 16, 2018 at 13:41:49.
+   <br>
+   Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i></i> en geef de code 
+   <i>"Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20181116-144151"</i> door. 
+   
+</p><a class="anchor" name="global_package_Brocommon"></a><section id="global_package_Brocommon">
+   <h3>Domein brocommon</h3>
+   <section id="">
+      <h4>Objecttypen </h4>
+      <a class="anchor" name="graph_EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0"></a><a class="anchor" name="global_class_Brocommon_Registratieobject"></a><section id="global_class_Brocommon_Registratieobject">
+         <h5>Objecttype Registratieobject</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Registratieobject</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td>BRO</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij
+                     een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland
+                     en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid
+                     van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de
+                     basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond
+                     is opgenomen.
+                  </td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td>BRO</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h6>Overzicht attributen</h6>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="50%"></colgroup>
+            <colgroup width="10%"></colgroup>
+            <colgroup width="10%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Brocommon_Registratieobject_bROID">BRO-ID</a>
+                     
+                  </td>
+                  <td>De identificatie van een object dat in de registratie ondergrond is opgenomen.</td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_Registratieobjectcode">Registratieobjectcode</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Brocommon_Registratieobject_bronhouder">bronhouder</a>
+                     
+                  </td>
+                  <td>TODO</td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_Organisatie">Organisatie</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Brocommon_Registratieobject_objectIDBronhouder">object-ID bronhouder</a>
+                     
+                  </td>
+                  <td>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen
+                     administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie
+                     ondergrond.
+                  </td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_Tekst200">Tekst200</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Brocommon_Registratieobject_dataleverancier">dataleverancier</a>
+                     
+                  </td>
+                  <td>De identificatie die de organisatie die het object aan de basisregistratie ondergrond
+                     heeft aangeleverd, als onderneming in het Handelsregister heeft.
+                  </td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_Organisatie">Organisatie</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Brocommon_Registratieobject_kwaliteitsregime">kwaliteitsregime</a>
+                     
+                  </td>
+                  <td>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_Kwaliteitsregime">Kwaliteitsregime</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+      </section>
+      
+   </section>
+   <section id="">
+      <h4>Unions </h4>
+      <a class="anchor" name="graph_EAID_E38550EF_707A_4e86_9BF1_963B68CC2CC4"></a><a class="anchor" name="global_class_Brocommon_Organisatie"></a><section id="global_class_Brocommon_Organisatie">
+         <h5>Union Organisatie</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Organisatie</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td>BRO</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>TODO</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="">
+            <h6>Overzicht keuze elementen </h6>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="50%"></colgroup>
+               <colgroup width="10%"></colgroup>
+               <colgroup width="10%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Union element</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Brocommon_Organisatie_kvKNummer">KvK-nummer</a>
+                        
+                     </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_Brocommon_KvKNummer">KvK-nummer</a>
+                        
+                     </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Brocommon_Organisatie_europeesHandelsnummer">Europees handelsnummer</a>
+                        
+                     </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_Brocommon_Tekst40">Tekst40</a>
+                        
+                     </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+      </section>
+      
+   </section>
+   <section id="">
+      <h4>Primitieve datatypen </h4>
+      <a class="anchor" name="graph_EAID_CC665945_1F41_46d9_9010_D42C45E7E042"></a><a class="anchor" name="global_class_Brocommon_KvKNummer"></a><section id="global_class_Brocommon_KvKNummer">
+         <h5>Primitief datatype KvK-nummer</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>KvK-nummer</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Het domein KvK-nummer geeft het identificerende gegeven van een onderneming in het
+                     Handelsregister. De opbouw is NNNNNNNN.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      <a class="anchor" name="graph_EAID_4EB8C8EF_F07A_49d3_AFCB_773194499FDA"></a><a class="anchor" name="global_class_Brocommon_Registratieobjectcode"></a><section id="global_class_Brocommon_Registratieobjectcode">
+         <h5>Primitief datatype Registratieobjectcode</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Registratieobjectcode</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>De identificatie van een object in de registratie ondergrond.</td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>Opbouw: BHRNNNNNNNNNNNN
+                     De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde aan
+                     het object toe.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      <a class="anchor" name="graph_EAID_BE533F94_BA41_43cb_A5FE_9C37933CF7FA"></a><a class="anchor" name="global_class_Brocommon_Tekst40"></a><section id="global_class_Brocommon_Tekst40">
+         <h5>Primitief datatype Tekst40</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Tekst40</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Een domein van het type tekst bestaat uit een stuk tekst van een bepaalde maximale
+                     lengte. De tekst mag alleen bestaan uit de tekens die voorkomen in de MES-1 set. De
+                     MES-1 set omvat 335 tekens en wordt gebruikt binnen de landen van de Europese Unie
+                     die een Latijns schrift kennen.
+                     Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding
+                     tekst ook de maximale lengte mee te geven. In het domeinmodel wordt het domein aangeduid
+                     als TekstN, waarbij N de maximale lengte aangeeft.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      <a class="anchor" name="graph_EAID_A3CCB773_81DF_4da3_8016_817F02297137"></a><a class="anchor" name="global_class_Brocommon_Tekst200"></a><section id="global_class_Brocommon_Tekst200">
+         <h5>Primitief datatype Tekst200</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Tekst200</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Een domein van het type tekst bestaat uit een stuk tekst van een bepaalde maximale
+                     lengte. De tekst mag alleen bestaan uit de tekens die voorkomen in de MES-1 set. De
+                     MES-1 set omvat 335 tekens en wordt gebruikt binnen de landen van de Europese Unie
+                     die een Latijns schrift kennen.
+                     Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding
+                     tekst ook de maximale lengte mee te geven. In het domeinmodel wordt het domein aangeduid
+                     als TekstN, waarbij N de maximale lengte aangeeft.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+   </section>
+   <section id="">
+      <h4>Enumeraties </h4>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th><a class="anchor" name="global_class_Brocommon_Kwaliteitsregime"></a><a class="link" href="#detail_class_Brocommon_Kwaliteitsregime">Kwaliteitsregime</a></th>
+               <td>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden
+                  voor het duiden van de kwaliteitseis waaraan de gegevens van het object voldoen. Uitbreiding
+                  van de keuzelijst is niet mogelijk.
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   <section id="">
+      <h4>Attribuut- en relatiesoort details</h4>
+      
+      <a class="anchor" name="detail_class_Brocommon_Registratieobject"></a><section id="detail_class_Brocommon_Registratieobject">
+         <h6>Objecttype Registratieobject</h6>
+         <a class="anchor" name="detail_attribute_Brocommon_Registratieobject_bROID"></a><section id="detail_attribute_Brocommon_Registratieobject_bROID"><strong>Attribuutsoort details <a href="#global_class_Brocommon_Registratieobject">Registratieobject</a> BRO-ID</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>BRO-ID</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De identificatie van een object dat in de registratie ondergrond is opgenomen.</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Registratieobjectcode</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Brocommon_Registratieobject_bronhouder"></a><section id="detail_attribute_Brocommon_Registratieobject_bronhouder"><strong>Attribuutsoort details <a href="#global_class_Brocommon_Registratieobject">Registratieobject</a> bronhouder</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>bronhouder</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>TODO</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Overig</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Organisatie</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Brocommon_Registratieobject_objectIDBronhouder"></a><section id="detail_attribute_Brocommon_Registratieobject_objectIDBronhouder"><strong>Attribuutsoort details <a href="#global_class_Brocommon_Registratieobject">Registratieobject</a> object-ID bronhouder</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>object-ID bronhouder</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen
+                        administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie
+                        ondergrond.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Tekst200</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Brocommon_Registratieobject_dataleverancier"></a><section id="detail_attribute_Brocommon_Registratieobject_dataleverancier"><strong>Attribuutsoort details <a href="#global_class_Brocommon_Registratieobject">Registratieobject</a> dataleverancier</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>dataleverancier</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De identificatie die de organisatie die het object aan de basisregistratie ondergrond
+                        heeft aangeleverd, als onderneming in het Handelsregister heeft.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Organisatie</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Brocommon_Registratieobject_kwaliteitsregime"></a><section id="detail_attribute_Brocommon_Registratieobject_kwaliteitsregime"><strong>Attribuutsoort details <a href="#global_class_Brocommon_Registratieobject">Registratieobject</a> kwaliteitsregime</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>kwaliteitsregime</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Kwaliteitsregime</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+      </section>
+      
+      
+      
+      
+      <a class="anchor" name="detail_class_Brocommon_Organisatie"></a><section id="detail_class_Brocommon_Organisatie">
+         <h6>Keuze Organisatie</h6>
+         <a class="anchor" name="detail_attribute_Brocommon_Organisatie_kvKNummer"></a><section id="detail_attribute_Brocommon_Organisatie_kvKNummer"><strong>Union element details <a href="#global_class_Brocommon_Organisatie">Organisatie</a> KvK-nummer</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>KvK-nummer</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>KvK-nummer</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Brocommon_Organisatie_europeesHandelsnummer"></a><section id="detail_attribute_Brocommon_Organisatie_europeesHandelsnummer"><strong>Union element details <a href="#global_class_Brocommon_Organisatie">Organisatie</a> Europees handelsnummer</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Europees handelsnummer</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Tekst40</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+      </section>
+      
+      
+      
+      
+      
+      <a class="anchor" name="graph_EAID_2E962A93_45D1_44a6_B6C5_F8614253BC8E"></a><a class="anchor" name="detail_class_Brocommon_Kwaliteitsregime"></a><section id="detail_class_Brocommon_Kwaliteitsregime">
+         <h6>Enumeratie details Kwaliteitsregime</h6>
+         
+         <table>
+            <colgroup width="40%"></colgroup>
+            <colgroup width="60%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden
+                     voor het duiden van de kwaliteitseis waaraan de gegevens van het object voldoen. Uitbreiding
+                     van de keuzelijst is niet mogelijk.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table>
+            <colgroup width="10%"></colgroup>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="60%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Code</th>
+                  <th>Naam</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>IMBRO</td>
+                  <td>De strikte kwaliteitseis die na beï¿½indiging van de transitieperiode geldt voor alle
+                     objecten die nadien geregistreerd zijn.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>IMBRO/A</td>
+                  <td>De minder strikte kwaliteitseis die tot beï¿½indiging van de transitieperiode gebruikt
+                     kan zijn.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      
+   </section>
+</section><a class="anchor" name="global_package_Model"></a><section id="global_package_Model">
+   <h3>Domein Model</h3>
+   <div class="imageinfo overview"><img src="data/Images/EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C.png" usemap="#imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C"><map name="imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C">
+         <area shape="rect" coords="25,163,185,35" alt="" href="#graph_EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
+         <area shape="rect" coords="29,317,181,237" alt="" href="#graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></map><p><b>Domeinmodel BRO GMN - overzicht</b></p>
+   </div>
+   <section id="">
+      <h4>Objecttypen </h4>
+      <a class="anchor" name="graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></a><a class="anchor" name="global_class_Model_Grondwatermonitoringnet"></a><section id="global_class_Model_Grondwatermonitoringnet">
+         <h5>Objecttype Grondwatermonitoringnet</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Grondwatermonitoringnet</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td>BRO</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td>BRO</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h6>Overzicht attributen</h6>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="50%"></colgroup>
+            <colgroup width="10%"></colgroup>
+            <colgroup width="10%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Model_Grondwatermonitoringnet_wettelijkKader">wettelijk kader</a>
+                     
+                  </td>
+                  <td></td>
+                  <td>
+                     CHARACTERSTRING
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h6>Overzicht relaties</h6>
+         
+         
+         <table>
+            <colgroup width="50%"></colgroup>
+            <colgroup width="50%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Grondwatermonitoringnet
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Brocommon_Registratieobject">Registratieobject</a>
+                     
+                     
+                  </td>
+                  <td>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij
+                     een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland
+                     en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid
+                     van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de
+                     basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond
+                     is opgenomen.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+      </section>
+      
+   </section>
+   <section id="">
+      <h4>Attribuut- en relatiesoort details</h4>
+      
+      <a class="anchor" name="detail_class_Model_Grondwatermonitoringnet"></a><section id="detail_class_Model_Grondwatermonitoringnet">
+         <h6>Objecttype Grondwatermonitoringnet</h6>
+         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_wettelijkKader"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_wettelijkKader"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> wettelijk kader</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>wettelijk kader</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>CHARACTERSTRING</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Meeteenheid</th>
+                     <td>BRO</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+      </section>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   </section>
+</section>
