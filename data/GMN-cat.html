@@ -1,12 +1,562 @@
 <h2>Catalogus</h2>
 <p class="note" title="Over deze catalogus">
    Deze catalogus is automatisch samengesteld op basis van het UML model 
-   "Grondwatermonitoringnet (GMN)" door Imvertor 1.48.0 op November 19, 2018 at 12:10:07.
+   "Grondwatermonitoringnet (GMN)" door Imvertor 1.50.0 op January 3, 2019 at 14:10:37.
    <br>
    Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i></i> en geef de code 
-   <i>"Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20181119-131009"</i> door. 
+   <i>"Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20190103-151039"</i> door. 
    
-</p><a class="anchor" name="global_package_Brocommon"></a><section id="global_package_Brocommon">
+</p><a class="anchor" name="global_package_Model"></a><section id="global_package_Model">
+   <h3>Domein Model</h3>
+   <div class="imageinfo overview"><img src="data/Images/EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C.png" usemap="#imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C"><map name="imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C">
+         <area shape="rect" coords="32,163,225,35" alt="" href="#graph_EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
+         <area shape="rect" coords="25,350,232,235" alt="" href="#graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></map><p><b>Domeinmodel BRO GMN - overzicht</b></p>
+   </div>
+   <section id="">
+      <h4>Objecttypen </h4>
+      <a class="anchor" name="graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></a><a class="anchor" name="global_class_Model_Grondwatermonitoringnet"></a><section id="global_class_Model_Grondwatermonitoringnet">
+         <h5>Objecttype Grondwatermonitoringnet</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Grondwatermonitoringnet</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td>BRO</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td>BRO</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h6>Overzicht attributen</h6>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="50%"></colgroup>
+            <colgroup width="10%"></colgroup>
+            <colgroup width="10%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Model_Grondwatermonitoringnet_naam">naam</a>
+                     
+                  </td>
+                  <td>De functionele naam waaronder het monotoringnet bekend is.</td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_Tekst200">Tekst200</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Model_Grondwatermonitoringnet_kaderAanlevering">kader aanlevering</a>
+                     
+                  </td>
+                  <td>De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding
+                     waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
+                  </td>
+                  <td>
+                     <a class="link" href="#global_class_Model_KaderAanlevering">KaderAanlevering</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect">grondwateraspect</a>
+                     
+                  </td>
+                  <td>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</td>
+                  <td>
+                     <a class="link" href="#global_class_Model_GrondwaterAspect">GrondwaterAspect</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Model_Grondwatermonitoringnet_meetpuntANDERENAAMNODIG">meetpunt [ANDERE NAAM NODIG?]</a>
+                     
+                  </td>
+                  <td>Punt waar onderzoeken aan de samenstelling of stand van het grondwater worden uitgevoerd
+                     ten behoeve van het grondwatermonitoringnet.
+                  </td>
+                  <td>
+                     Integer
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h6>Overzicht relaties</h6>
+         
+         
+         <table>
+            <colgroup width="50%"></colgroup>
+            <colgroup width="50%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Grondwatermonitoringnet
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Brocommon_Registratieobject">Registratieobject</a>
+                     
+                     
+                  </td>
+                  <td>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij
+                     een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland
+                     en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid
+                     van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de
+                     basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond
+                     is opgenomen.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+      </section>
+      
+   </section>
+   <section id="">
+      <h4>Codelijsten </h4>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th><a class="anchor" name="global_class_Model_KaderAanlevering"></a><a class="link" href="#detail_class_Model_KaderAanlevering">KaderAanlevering</a></th>
+               <td>De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding
+                  waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
+               </td>
+            </tr>
+            <tr>
+               <th><a class="anchor" name="global_class_Model_GrondwaterAspect"></a><a class="link" href="#detail_class_Model_GrondwaterAspect">GrondwaterAspect</a></th>
+               <td>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   <section id="">
+      <h4>Attribuut- en relatiesoort details</h4>
+      
+      <a class="anchor" name="detail_class_Model_Grondwatermonitoringnet"></a><section id="detail_class_Model_Grondwatermonitoringnet">
+         <h6>Objecttype Grondwatermonitoringnet</h6>
+         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_naam"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_naam"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> naam</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>naam</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De functionele naam waaronder het monotoringnet bekend is.</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Tekst200</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_kaderAanlevering"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_kaderAanlevering"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> kader aanlevering</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>kader aanlevering</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding
+                        waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in
+                        de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke
+                        betekenis van de informatie.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>KaderAanlevering</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Meeteenheid</th>
+                     <td>BRO</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> grondwateraspect</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>grondwateraspect</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>GrondwaterAspect</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_meetpuntANDERENAAMNODIG"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_meetpuntANDERENAAMNODIG"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> meetpunt [ANDERE NAAM NODIG?]</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>meetpunt [ANDERE NAAM NODIG?]</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>Punt waar onderzoeken aan de samenstelling of stand van het grondwater worden uitgevoerd
+                        ten behoeve van het grondwatermonitoringnet.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Dit attribuut verwijst naar een filter in een grondwatermonitoringput, door middel
+                        van de BRO-ID van de grondwatermonitoringput en het buisnummer van het betreffende
+                        filter.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Ja</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Integer</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+      </section>
+      
+      
+      
+      
+      
+      
+      
+      <a class="anchor" name="graph_EAID_29EFB509_91AF_4d83_931E_7448F922A8BD"></a><a class="anchor" name="detail_class_Model_KaderAanlevering"></a><section id="detail_class_Model_KaderAanlevering">
+         <h6>Codelijst details KaderAanlevering</h6>
+         
+         <table>
+            <colgroup width="40%"></colgroup>
+            <colgroup width="60%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Definitie</th>
+                  <td>De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding
+                     waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table>
+            <colgroup width="10%"></colgroup>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="60%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Code</th>
+                  <th>Naam</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>drinkwaterwet</td>
+                  <td>De gegevens zijn aangeleverd in het kader van de drinkwaterwet.</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>kaderrichtlijnWater</td>
+                  <td>De gegevens zijn aangeleverd in het kader van de kaderrichtlijn water.</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>ontgrondingenwet</td>
+                  <td>De gegevens zijn aangeleverd in het kader van de ontgrondingenwet.</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>waterschapswet</td>
+                  <td>De gegevens zijn aangeleverd in het kader van de waterschapswet.</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>waterwetGrondwaterzorgplicht</td>
+                  <td>De gegevens zijn aangeleverd in het kader van de grondwaterzorgplicht volgens de waterwet.</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>waterwetOnttrekkingInfiltratie</td>
+                  <td>De gegevens zijn aangeleverd in het kader van meldingen en/of vergunningen met betrekking
+                     tot grondwateronttrekking en/of waterinfiltratie volgens de waterwet.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>waterwetPeilbeheer</td>
+                  <td>De gegevens zijn aangeleverd in het kader van peilbeheer volgens de waterwet.</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>waterwetStrategischGrondwaterbeheer</td>
+                  <td>De gegevens zijn aangeleverd in het kader van strategisch grondwaterbeheer volgens
+                     de waterwet.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>waterwetWaterstaatswerkAanlegWijziging</td>
+                  <td>De gegevens zijn aangeleverd in het kader van door de bronhouder uitgevoerde aanleg
+                     of wijziging van waterstaatswerken volgens de waterwet.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>waterwetWaterstaatswerkBeheer</td>
+                  <td>De gegevens zijn aangeleverd in het kader van het beheer van waterstaatswerken door
+                     de bronhouder volgens de waterwet.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>waterwetWaterstaatswerkIngreep</td>
+                  <td>De gegevens zijn aangeleverd in het kader van een vergunning voor een ingreep aan
+                     waterstaatswerken volgens de waterwet.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>wetNatuurbescherming</td>
+                  <td>De gegevens zijn aangeleverd in het kader van wet natuurbescherming.</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      <a class="anchor" name="graph_EAID_46C32AAB_3DBB_4622_947B_B99903A2D1ED"></a><a class="anchor" name="detail_class_Model_GrondwaterAspect"></a><section id="detail_class_Model_GrondwaterAspect">
+         <h6>Codelijst details GrondwaterAspect</h6>
+         
+         <table>
+            <colgroup width="40%"></colgroup>
+            <colgroup width="60%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table>
+            <colgroup width="10%"></colgroup>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="60%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Code</th>
+                  <th>Naam</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>kwaliteit</td>
+                  <td>De samenstelling van het grondwater.</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>kwantiteit</td>
+                  <td>De stand of hoeveelheid van het grondwater.</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      
+      
+   </section>
+</section><a class="anchor" name="global_package_Brocommon"></a><section id="global_package_Brocommon">
    <h3>Domein brocommon</h3>
    <section id="">
       <h4>Objecttypen </h4>
@@ -239,8 +789,7 @@
                </tr>
                <tr>
                   <th>Toelichting</th>
-                  <td>Opbouw: BHRNNNNNNNNNNNN
-                     De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde aan
+                  <td>Opbouw: BHRNNNNNNNNNNNN<br>De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde aan
                      het object toe.
                   </td>
                </tr>
@@ -264,8 +813,7 @@
                   <td>Een domein van het type tekst bestaat uit een stuk tekst van een bepaalde maximale
                      lengte. De tekst mag alleen bestaan uit de tekens die voorkomen in de MES-1 set. De
                      MES-1 set omvat 335 tekens en wordt gebruikt binnen de landen van de Europese Unie
-                     die een Latijns schrift kennen.
-                     Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding
+                     die een Latijns schrift kennen.<br>Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding
                      tekst ook de maximale lengte mee te geven. In het domeinmodel wordt het domein aangeduid
                      als TekstN, waarbij N de maximale lengte aangeeft.
                   </td>
@@ -290,8 +838,7 @@
                   <td>Een domein van het type tekst bestaat uit een stuk tekst van een bepaalde maximale
                      lengte. De tekst mag alleen bestaan uit de tekens die voorkomen in de MES-1 set. De
                      MES-1 set omvat 335 tekens en wordt gebruikt binnen de landen van de Europese Unie
-                     die een Latijns schrift kennen.
-                     Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding
+                     die een Latijns schrift kennen.<br>Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding
                      tekst ook de maximale lengte mee te geven. In het domeinmodel wordt het domein aangeduid
                      als TekstN, waarbij N de maximale lengte aangeeft.
                   </td>
@@ -676,172 +1223,6 @@
          </table>
          
       </section>
-      
-      
-   </section>
-</section><a class="anchor" name="global_package_Model"></a><section id="global_package_Model">
-   <h3>Domein Model</h3>
-   <div class="imageinfo overview"><img src="data/Images/EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C.png" usemap="#imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C"><map name="imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C">
-         <area shape="rect" coords="25,163,185,35" alt="" href="#graph_EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
-         <area shape="rect" coords="29,317,181,237" alt="" href="#graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></map><p><b>Domeinmodel BRO GMN - overzicht</b></p>
-   </div>
-   <section id="">
-      <h4>Objecttypen </h4>
-      <a class="anchor" name="graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></a><a class="anchor" name="global_class_Model_Grondwatermonitoringnet"></a><section id="global_class_Model_Grondwatermonitoringnet">
-         <h5>Objecttype Grondwatermonitoringnet</h5>
-         
-         <table>
-            <colgroup width="30%"></colgroup>
-            <colgroup width="70%"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Grondwatermonitoringnet</td>
-               </tr>
-               <tr>
-                  <th>Herkomst</th>
-                  <td>BRO</td>
-               </tr>
-               <tr>
-                  <th>Herkomst definitie</th>
-                  <td>BRO</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <h6>Overzicht attributen</h6>
-         
-         <table>
-            <colgroup width="30%"></colgroup>
-            <colgroup width="50%"></colgroup>
-            <colgroup width="10%"></colgroup>
-            <colgroup width="10%"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Attribuutnaam</th>
-                  <th>Definitie</th>
-                  <th>Formaat</th>
-                  <th>Card</th>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_Model_Grondwatermonitoringnet_wettelijkKader">wettelijk kader</a>
-                     
-                  </td>
-                  <td></td>
-                  <td>
-                     CHARACTERSTRING
-                     
-                  </td>
-                  <td>1</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         
-         <h6>Overzicht relaties</h6>
-         
-         
-         <table>
-            <colgroup width="50%"></colgroup>
-            <colgroup width="50%"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Grondwatermonitoringnet
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_Brocommon_Registratieobject">Registratieobject</a>
-                     
-                     
-                  </td>
-                  <td>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij
-                     een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland
-                     en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid
-                     van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de
-                     basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond
-                     is opgenomen.
-                  </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         
-      </section>
-      
-   </section>
-   <section id="">
-      <h4>Attribuut- en relatiesoort details</h4>
-      
-      <a class="anchor" name="detail_class_Model_Grondwatermonitoringnet"></a><section id="detail_class_Model_Grondwatermonitoringnet">
-         <h6>Objecttype Grondwatermonitoringnet</h6>
-         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_wettelijkKader"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_wettelijkKader"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> wettelijk kader</strong>
-            
-            <table>
-               <colgroup width="30%"></colgroup>
-               <colgroup width="70%"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>wettelijk kader</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Mogelijk geen waarde</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie materiële historie</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie formele historie</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie authentiek</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Formaat</th>
-                     <td>CHARACTERSTRING</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie afleidbaar</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Meeteenheid</th>
-                     <td>BRO</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-         </section>
-         
-      </section>
-      
-      
-      
-      
-      
-      
-      
       
       
    </section>
