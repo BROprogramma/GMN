@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
       generator-version="1.50.1"
-      generator-date="2019-01-11T12:52:34Z">
+      generator-date="2019-01-11T14:56:58Z">
    <section type="DOMAIN" name="Model" id="global_package_Model">
       <section type="IMAGEMAPS" name="Model-imagemap" id="imagemap_package_Model">
          <section type="IMAGEMAP"
@@ -340,7 +340,7 @@
                <item id="global_class_Model_Monitoringdoel"
                      uuid="EAID_A59AEBF6_6958_4593_87CC_096613ECA441"
                      idref="detail_class_Model_Monitoringdoel">Monitoringdoel</item>
-               <item/>
+               <item>Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.</item>
             </part>
          </content>
       </section>
@@ -533,6 +533,10 @@
                         <item>Herkomst definitie</item>
                         <item>BRO</item>
                      </part>
+                     <part type="CFG-DOC-TOELICHTING">
+                        <item>Toelichting</item>
+                        <item>In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel de kwaliteit als de kwantiteit worden gedaan, wordt in dit attribuut het primaire, meest belangrijke aspect vastgelegd.</item>
+                     </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
                         <item>Nee</item>
@@ -611,7 +615,8 @@
                         </part>
                         <part type="CFG-DOC-TOELICHTING">
                            <item>Toelichting</item>
-                           <item>Dit nummer verwijst naar het buisnummer dat is geregistreerd bij de monitoringbuis van de grondwatermonitoringput in de basisregistratie ondergrond.</item>
+                           <item>Dit nummer verwijst naar het buisnummer dat is geregistreerd bij de monitoringbuis van de grondwatermonitoringput in de basisregistratie ondergrond.
+In brondocumenten voor het aanleveren van meetpunten is het mogelijk om de putcode op te geven in plaats van het BRO-ID van de grondwatermonitoringput. Bij inname van de gegevens wordt dan het bijbehorende BRO-ID opgezocht en vastgelegd.</item>
                         </part>
                         <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                            <item>Mogelijk geen waarde</item>
@@ -1481,7 +1486,7 @@
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item/>
+                     <item>Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.</item>
                   </part>
                </content>
                <content>

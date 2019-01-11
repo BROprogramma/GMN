@@ -1,16 +1,16 @@
 <h2>Catalogus</h2>
 <p class="note" title="Over deze catalogus">
    Deze catalogus is automatisch samengesteld op basis van het UML model 
-   "Grondwatermonitoringnet (GMN)" door Imvertor 1.50.1 op January 11, 2019 at 12:52:34.
+   "Grondwatermonitoringnet (GMN)" door Imvertor 1.50.1 op January 11, 2019 at 14:56:58.
    <br>
    Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i></i> en geef de code 
-   <i>"Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20190111-135236"</i> door. 
+   <i>"Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20190111-155700"</i> door. 
    
 </p><a class="anchor" name="global_package_Model"></a><section id="global_package_Model">
    <h3>Domein Model</h3>
    <div class="imageinfo overview"><img src="data/Images/EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C.png" usemap="#imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C"><map name="imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C">
-         <area shape="rect" coords="341,139,577,10" alt="" href="#graph_EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
-         <area shape="rect" coords="341,365,577,207" alt="" href="#graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></map><p><b>Domeinmodel BRO GMN - overzicht</b></p>
+         <area shape="rect" coords="347,139,583,10" alt="" href="#graph_EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
+         <area shape="rect" coords="347,365,583,207" alt="" href="#graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></map><p><b>Domeinmodel BRO GMN - overzicht</b></p>
    </div>
    <section id="">
       <h4>Objecttypen </h4>
@@ -401,7 +401,7 @@
             </tr>
             <tr>
                <th><a class="anchor" name="global_class_Model_Monitoringdoel"></a><a class="link" href="#detail_class_Model_Monitoringdoel">Monitoringdoel</a></th>
-               <td></td>
+               <td>Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.</td>
             </tr>
          </tbody>
       </table>
@@ -610,6 +610,13 @@
                      <td>BRO</td>
                   </tr>
                   <tr>
+                     <th>Toelichting</th>
+                     <td>In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel
+                        de kwaliteit als de kwantiteit worden gedaan, wordt in dit attribuut het primaire,
+                        meest belangrijke aspect vastgelegd.
+                     </td>
+                  </tr>
+                  <tr>
                      <th>Mogelijk geen waarde</th>
                      <td>Nee</td>
                   </tr>
@@ -689,7 +696,9 @@
                      <tr>
                         <th>Toelichting</th>
                         <td>Dit nummer verwijst naar het buisnummer dat is geregistreerd bij de monitoringbuis
-                           van de grondwatermonitoringput in de basisregistratie ondergrond.
+                           van de grondwatermonitoringput in de basisregistratie ondergrond.<br>In brondocumenten voor het aanleveren van meetpunten is het mogelijk om de putcode
+                           op te geven in plaats van het BRO-ID van de grondwatermonitoringput. Bij inname van
+                           de gegevens wordt dan het bijbehorende BRO-ID opgezocht en vastgelegd.
                         </td>
                      </tr>
                      <tr>
@@ -1641,7 +1650,7 @@
             <tbody>
                <tr>
                   <th>Definitie</th>
-                  <td></td>
+                  <td>Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.</td>
                </tr>
             </tbody>
          </table>
