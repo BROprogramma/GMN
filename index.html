@@ -46,10 +46,59 @@
   <!-- hoofdstuk 3 -->
   <section id='grondwatermonitoringnet'>
     <h2>Grondwatermonitoringnet</h2>
+	
+    <section id="grondwatermonitoring">
+      <h3>Grondwatermonitoring</h3>
+      <p>In het domein grondwatermonitoring staan de monitoringnetten centraal die zijn ingesteld om het grondwater in Nederland te kunnen beheren. Grondwater is een belangrijke bestaansbron, en het beheer van het grondwater richt zich op de hoeveelheid bruikbaar grondwater en de kwaliteit ervan. Het doel waarvoor een monitoringnet is ingesteld, het monitoringsdoel, beperkt zich in veel gevallen tot kwantiteit of kwaliteit, maar het komt ook voor dat beide aspecten door hetzelfde net worden gedekt.</p>
+      <p>Monitoring houdt in dat de toestand van het grondwater in een bepaald gebied, of eigenlijk in een bepaald deel van de ondergrond, over langere tijd gevolgd wordt. De uitgestrektheid van het gebied en de diepte van monitoring verschillen per monitoringnet. Ook de duur van monitoring wisselt sterk.</p>
+      <p>In het besluit basisregistratie ondergrond is omschreven welke vormen van monitoring onder deze basisregistratie vallen. Het belangrijkste criterium is het type organisatie dat verantwoordelijk is voor het beheer van het grondwater. De grondwatermonitoring moet door of in opdracht van een bestuursorgaan, de bronhouder, worden uitgevoerd. Verder is er een beperking aan de tijdschaal gesteld. Wanneer een monitoringnet is ingesteld om de toestand van het grondwater over een periode van ten minste één jaar te volgen, valt het altijd onder de basisregistratie ondergrond. Voor monitoringsnetten met een kortere duur maakt het bestuursorgaan zelf de afweging of het in de basisregistratie moet worden opgenomen. De periode van een jaar is lang genoeg voor het uitfilteren van de effecten van kleinschalige en kortdurende invloeden, zodat de informatie die in de basisregistratie wordt vastgelegd blijvende gebruikswaarde heeft. Aan de ruimtelijke schaal van monitoring zijn voor de basisregistratie ondergrond geen grenzen gesteld.</p>
+      <p>Ieder grondwatermonitoringnet omvat een aantal meetpunten. Deze meetpunten zijn gekoppeld aan putten, de grondwatermonitoringputten. Wat er in de punten gemeten wordt hangt af van het monitoringdoel. Wanneer het om kwantiteit gaat, worden grondwaterstanden gemeten, bij kwaliteit gaat het om de samenstelling van het grondwater.</p>
+    </section>
+
+    <section id="grondwaterdomein">
+      <h3>Domein grondwatermonitoring in de BRO</h3>
     <img src="./media/grondwaterdomein.png" alt="grondwaterdomein"/>
-    <p>TODO hier komt tekst</p>
+    <p>Het domein grondwatermonitoring in de BRO omvat de volgende vier registratieobjecten:</p>
+    <ul>
+      <li>Grondwatermonitoringnet (GMN)</li>
+      <li>Grondwatermonitoringput (GMW)</li>
+      <li>Grondwatersamenstellingsonderzoek (GAR)</li>
+      <li>Grondwaterstandonderzoek (GLD)</li>
+    </ul>
+    <p>Deze samenhang zoals weergegeven in bovenstaand figuur bestaat uit onderstaande:</p>
+    <ul>
+      <li>Bij een onderzoek (GAR, GLD) ligt de verwijzing vast naar het grondwatermonitoringputfilter waarin het onderzoek is uitgevoerd.</li>
+      <li>Bij een onderzoek (GLD, GAR) ligt de verwijzing vast naar één of meerdere grondwatermonitoringnetten ten behoeve waarvan het onderzoek is uitgevoerd.</li>
+      <li>Bij een Grondwatermonitoringnet wordt een lijst met punten geregistreerd waarin gemeten wordt. Deze lijst bevat verwijzingen naar filters in grondwatermonitoringputten. Hiervan wordt in de BRO materiële historie bijgehouden: zowel de huidige als de historische verzamelingen punten liggen vast. Het is mogelijk om als bronhouder in eerste instantie een minimale versie van een GMN te registreren in de BRO, die voldoende is om een GAR/GLD hieraan te kunnen koppelen. Het lijstje met punten waarin gemeten wordt kan eventueel later toegevoegd worden aan het geregistreerde GMN-object; deze gegevens zijn namelijk niet noodzakelijk om de koppeling vanuit GAR/GLD te kunnen leggen, en het BRO-systeem zal het aanleveren hiervan niet afdwingen.</li>
+      <li>Alleen de grondwatermonitoringput heeft een eigen locatie. De drie andere objecten zijn aan dit objecten gekoppeld en daarmee indirect aan een locatie.</li>
+    </ul>
+    <p>In de praktijk komt het voor dat een grondwatersamenstellingsonderzoek ten behoeve meer dan één doel wordt uitgevoerd. Voor de BRO  betekent dit automatisch dat 1 GAR kan ‘toebehoren’ aan 1 of meerdere GMN’s. Hierbij ontstaat ook de mogelijkheid dat een GAR van Bronhouder X wordt gekoppeld aan een GMN van bronhouder Y. Deze relatie moet tijdens de registratie van ieder GAR worden vastgelegd in de BRO door de bronhouder (X) van het betreffende GAR. Bronhouder X wordt daarmee verantwoordelijk voor informatie die van Bronhouder Y is (namelijk de koppeling van zijn GAR aan een GMN van Y). De bronhouder van het GMN  (Y) wordt niet verantwoordelijk voor de GAR zelf, daarvoor blijft Bronhouder X verantwoordelijk.</p>
+    </section>
+	
+    <section id="materielegeschiedenis">
+      <h3>Materiële geschiedenis</h3>
+      <p>Het grondwatermonitoringnet is een registratieobject met materiële geschiedenis. De periode waarin gemonitord wordt kent een begin en een eind. Gedurende het bestaan van het grondwatermonitoringnet kunnen er bijvoorbeeld meetpunten bijkomen of afvallen.</p>
+      <aside class="issue">
+        <p>Is het wenselijk om de begin- en einddatum van monitoren vast te leggen in de BRO? In de registratiegeschiedenis van elk registratieobject liggen het tijdstip van registratie en het tijdstip van voltooiing van registratie vast. Voor reeds bestaande grondwatermonitoringnetten zal de begindatum van monitoren echter (veel) eerder zijn dan de registratiedatum van het object in de BRO.</p>
+      </aside>  
+     </section>
+
+    <section id="kader">
+      <h3>Wettelijk kader en doel</h3>
+      <p>Met het registratieobject Grondwatermonitoringnet wordt de groepering van samenhangende onderzoeksgegevens, die vanuit een bepaald doel zijn uitgevoerd, tot een gegevensset gefaciliteerd. De (her)gebruikswaarde van deze gegevenssets die daarmee ontstaan, overtreft die van de afzonderlijke onderzoeksgegevens: Bestuursorganen en andere gebruikers worden ermee in staat gesteld om (toekomstige) geohydrologische vraagstukken beter en efficiënter te beantwoorden.</p>
+	  <p>Hierbij geldt dat een grondwateronderzoek ten behoeve meer dan één monitoringdoel uitgevoerd kan worden: een onderzoek kan in het kader van meerdere grondwatermonitoringnetten tegelijk zijn uitgevoerd, en dus deel uitmaken van meerdere gegevenssets. In het registratieobject Grondwatermonitoringnet worden daartoe het doel van de monitoring vastgelegd en het wettelijk kader waar dit doel uit volgt. Bij de registratieobjecten Grondwatersamenstellingsonderzoek en Grondwaterstandonderzoek wordt vastgelegd ten behoeve van welk(e) monitoringnet(ten) het onderzoek is uitgevoerd. Het <em>kader aanlevering</em> van een grondwatermonitoringnet geldt daarmee ook voor de aan het monitoringnet gekoppelde onderzoeken.</p>
+     </section>
+	 
+    <section id="meetpunten">
+      <h3>Meetpunten</h3>
+      <p>Bij een grondwatermonitoringnet ligt vast welke meetpunten onderdeel zijn van het net. De lijst van meetpunten geeft de samenstelling van het grondwatermonitoringnet, en geeft inzicht in het gebied waarin wordt gemonitord. Uit welke meetpunten het monitoringnet bestaat, kan veranderen in de tijd.</p>
+	  <p>Om de geohydrologische context te kunnen begrijpen, moet de gebruiker van de BRO de volledige, door de bronhouder gedefinieerde, gegevensset van een grondwatermonitoringnet kunnen raadplegen. Voor optimale herbruikbaarheid is het daarom noodzakelijk dat deze lijst volledig en juist in de BRO wordt vastgelegd. Om het aanleveren van gegevens van de verschillende registratieobjecten in het grondwaterdomein gemakkelijker te maken is het is niet verplicht om deze gegevens meteen bij registratie aan te leveren. Deze kunnen ook later aangevuld worden.</p>
+	  <p></p>
+     </section>
+	 
     <section data-include="https://docs.geostandaarden.nl/bro/gen/domeinmodel-gen.html" class="generic">
     </section>
+	
   </section>
   <!-- hoofdstuk 4 -->
   <section id="intro-catalogus">
@@ -67,8 +116,8 @@
       <section id="datumtijd" data-include="https://docs.geostandaarden.nl/bro/gen/datumtijd.html" class="generic"></section>
     </section>
     <section id="verplichte-gegevens-waarden" data-include="https://docs.geostandaarden.nl/bro/gen/verplichte-gegevens-waarden.html" class="generic"></section>
-    <aside class="issue" data-number="19">
-    <p>Van een aantal codelijsten in het volgende hoofdstuk worden de definities niet weergegeven. De oorzaak is een technisch probleem. </p>
+    <aside class="issue">
+    <p>Op 1 januari 2021 wordt de Omgevingswet van kracht. Verschillende wetten die in de codelijst KaderAanlevering staan, gaan op de Omgevingswet, waaronder de Waterwet, Wet natuurbescherming en Ontgrondingenwet. De Omgevingswet is (nog) niet opgenomen in KaderAanlevering, omdat deze wet er nog niet is.</p>
   </aside>  
   </section>
   <!-- hoofdstuk 5 -->
