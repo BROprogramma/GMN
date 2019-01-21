@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
       generator-version="1.50.1"
-      generator-date="2019-01-11T14:56:58Z">
+      generator-date="2019-01-21T15:31:16Z">
    <section type="DOMAIN" name="Model" id="global_package_Model">
       <section type="IMAGEMAPS" name="Model-imagemap" id="imagemap_package_Model">
          <section type="IMAGEMAP"
@@ -615,8 +615,7 @@
                         </part>
                         <part type="CFG-DOC-TOELICHTING">
                            <item>Toelichting</item>
-                           <item>Dit nummer verwijst naar het buisnummer dat is geregistreerd bij de monitoringbuis van de grondwatermonitoringput in de basisregistratie ondergrond.
-In brondocumenten voor het aanleveren van meetpunten is het mogelijk om de putcode op te geven in plaats van het BRO-ID van de grondwatermonitoringput. Bij inname van de gegevens wordt dan het bijbehorende BRO-ID opgezocht en vastgelegd.</item>
+                           <item>In brondocumenten voor het aanleveren van meetpunten is het mogelijk om de putcode op te geven in plaats van het BRO-ID van de grondwatermonitoringput. Bij inname van de gegevens wordt dan het bijbehorende BRO-ID opgezocht en vastgelegd.</item>
                         </part>
                         <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                            <item>Mogelijk geen waarde</item>
