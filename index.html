@@ -57,23 +57,26 @@
     </section>
 
     <section id="grondwaterdomein">
-      <h3>Domein grondwatermonitoring in de BRO</h3>
-    <img src="./media/grondwaterdomein.png" alt="grondwaterdomein"/>
-    <p>Het domein grondwatermonitoring in de BRO omvat de volgende vier registratieobjecten:</p>
-    <ul>
-      <li>Grondwatermonitoringnet (GMN)</li>
-      <li>Grondwatermonitoringput (GMW)</li>
-      <li>Grondwatersamenstellingsonderzoek (GAR)</li>
-      <li>Grondwaterstandonderzoek (GLD)</li>
-    </ul>
-    <p>Deze samenhang zoals weergegeven in bovenstaand figuur bestaat uit onderstaande:</p>
-    <ul>
-      <li>Bij een onderzoek (GAR, GLD) ligt de verwijzing vast naar het grondwatermonitoringputfilter waarin het onderzoek is uitgevoerd.</li>
-      <li>Bij een onderzoek (GLD, GAR) ligt de verwijzing vast naar één of meerdere grondwatermonitoringnetten ten behoeve waarvan het onderzoek is uitgevoerd.</li>
-      <li>Bij een Grondwatermonitoringnet wordt een lijst met punten geregistreerd waarin gemeten wordt. Deze lijst bevat verwijzingen naar filters in grondwatermonitoringputten. Hiervan wordt in de BRO materiële historie bijgehouden: zowel de huidige als de historische verzamelingen punten liggen vast. Het is mogelijk om als bronhouder in eerste instantie een minimale versie van een GMN te registreren in de BRO, die voldoende is om een GAR/GLD hieraan te kunnen koppelen. Het lijstje met punten waarin gemeten wordt kan eventueel later toegevoegd worden aan het geregistreerde GMN-object; deze gegevens zijn namelijk niet noodzakelijk om de koppeling vanuit GAR/GLD te kunnen leggen, en het BRO-systeem zal het aanleveren hiervan niet afdwingen.</li>
-      <li>Alleen de grondwatermonitoringput heeft een eigen locatie. De drie andere objecten zijn aan dit objecten gekoppeld en daarmee indirect aan een locatie.</li>
-    </ul>
-    <p>In de praktijk komt het voor dat een grondwatersamenstellingsonderzoek ten behoeve meer dan één doel wordt uitgevoerd. Voor de BRO  betekent dit automatisch dat 1 GAR kan ‘toebehoren’ aan 1 of meerdere GMN’s. Hierbij ontstaat ook de mogelijkheid dat een GAR van Bronhouder X wordt gekoppeld aan een GMN van bronhouder Y. Deze relatie moet tijdens de registratie van ieder GAR worden vastgelegd in de BRO door de bronhouder (X) van het betreffende GAR. Bronhouder X wordt daarmee verantwoordelijk voor informatie die van Bronhouder Y is (namelijk de koppeling van zijn GAR aan een GMN van Y). De bronhouder van het GMN  (Y) wordt niet verantwoordelijk voor de GAR zelf, daarvoor blijft Bronhouder X verantwoordelijk.</p>
+       <h3>Domein grondwatermonitoring in de BRO</h3>      
+      <P>Het domein grondwatermonitoring in de Basisregistratie Ondergrond (BRO) omvat de volgende vier registratieobjecten:</P>
+      <ul>
+        <li>Grondwatermonitoringnet, dit wordt afgekort tot GMN (Groundwater Monitoring Network);</li>
+        <li>Grondwatermonitoringput, dit wordt afgekort tot GMW (Groundwater Monitoring Well);</li>
+        <li>Grondwatersamenstellingsonderzoek, dit wordt afgekort tot GAR (Groundwater Analysis Report), (grondwaterkwaliteit);</li>
+        <li>Grondwaterstandonderzoek, dit wordt afgekort tot GLD (Groundwater Lever Dossier), (grondwaterkwantiteit).</li>
+      </ul>
+      <P>Binnen de Basisregistratie Ondergrond worden in het conceptuele model en de catalogus de Nederlandse termen gebruikt. De technische Landelijke Voorziening van de Basisregistratie Ondergrond hanteert een Engelstalige benaming. Alle registratieobjecten hebben dus ook een Engelstalige benaming waarop de afkorting van het registratieobject is gebaseerd. Voor de Basisregistratie geldt dat het conceptuele model Nederlandstalige benaming hanteert, vanaf het logische model is alles Engelstalig.</P>
+      <figure id='plaatje-grondwaterdomein'>
+        <img src="./media/grondwaterdomein.png" alt="grondwaterdomein"/>
+        <figcaption>De samenhang tussen de vier registratieobjecten binnen het domein grondwatermonitoring.</figcaption>
+      </figure>
+      <P>Een grondwatermonitoringput betreft de putconstructie die gebruikt wordt om grondwaterstanden (kwantiteit) en/of de samenstelling (kwaliteit) van het grondwater te meten. Gewoonlijk bestaat een put uit een samenstel van buizen dat aan het oppervlak wordt beschermd tegen invloeden van buitenaf. Via de buizen wordt het grondwater dat zich op een bepaalde diepte bevindt ontsloten. Het deel van de buis waardoor het grondwater binnen kan komen is het filter. Elke buis heeft één filter. Een filter fungeert als het meetpunt in de Basisregistratie Ondergrond.</P>
+      <P>Informatie over grondwatermonitoringput is beschreven in de <a href="https://www.basisregistratieondergrond.nl/documenten/publicaties/2017/06/27/catalogus-grondwatermonitoringput" TARGET="_blank">Catalogus Grondwatermonitoringput</a>. Naast putten kunnen ook bronnen gebruikt worden in grondwaterkwaliteitsmonitoring. Een bron is een locatie waar het grondwater spontaan uittreedt aan het maaiveld. In de huidige, reeds vastgestelde standaard van het registratieobject grondwatermonitoringput zijn de bronnen niet opgenomen. Voorzien is om dit registratieobject aan te passen, zodat ook bronnen hierbinnen geregistreerd kunnen worden.</P>
+      <P>Alleen de grondwatermonitoringput heeft een fysieke locatie. De drie andere registratieobjecten zijn aan het registratieobject grondwatermonitoringsput gekoppeld en hebben daarmee indirect een locatie. Bij een grondwaterstandonderzoek en een  grondwatersamenstellingsonderzoek ligt de verwijzing vast naar het filter in de grondwatermonitoringput waarin het onderzoek is uitgevoerd.</P>
+      <P>Bij een grondwatermonitoringsonderzoek (grondwatersamenstellingsonderzoek en grondwaterstandonderzoek) ligt daarnaast de verwijzing vast naar één of meerdere grondwatermonitoringnetten ten behoeve waarvan het onderzoek is uitgevoerd.</P>
+      <P>Een grondwatermonitoringnet is een verzameling locaties waar periodiek onderzoek aan het grondwater op een bepaalde diepte wordt gedaan om de toestand van het grondwater vanuit een perspectief te kunnen bepalen en de eventuele veranderingen erin te kunnen volgen. Het grondwatermonitoringnet faciliteert daardoor de groepering van onderzoeksgegevens (i.e. metingen) door bronhouder op basis van het doel van monitoring. Het vergroot de hergebruikwaarde voor afnemers van de Landelijke Voorziening Basisregistratie Ondergrond.</P>
+      <P>Bij een grondwatermonitoringnet wordt een lijst met punten geregistreerd waarin gemeten wordt. Deze lijst bevat verwijzingen naar filters in grondwatermonitoringputten. Een grondwatermonitoringnet valt onder de verantwoordelijkheid van één bronhouder, heeft een vastgesteld monitoringsdoel en kent een bepaald programma.</P>
+      <p>In de praktijk komt het voor dat een grondwatersamenstellingsonderzoek ten behoeve meer dan één doel wordt uitgevoerd. Voor de Basisregistratie Ondergrond betekent dit automatisch dat één grondwatersamenstellingsonderzoek kan ‘toebehoren’ aan één of meerdere grondwatermonitoringnetten. Hierbij ontstaat ook de mogelijkheid dat een grondwatersamenstellingsonderzoek van Bronhouder X wordt gekoppeld aan een grondwatermonitoringnet van bronhouder Y. Deze relatie moet tijdens de registratie van ieder grondwatersamenstellingsonderzoek worden vastgelegd in de Basisregistratie Ondergrond door de bronhouder (X) van het betreffende onderzoek. Bronhouder X wordt daarmee verantwoordelijk voor informatie die van Bronhouder Y is (namelijk de koppeling van zijn onderzoek aan een grondwatermonitoringnet van Y). De bronhouder van het grondwatermonitoringnet (Y) wordt niet verantwoordelijk voor het grondwatersamenstellingsonderzoek zelf, daarvoor blijft Bronhouder X verantwoordelijk.</p>
     </section>
 	
     <section id="materielegeschiedenis">
@@ -132,14 +135,12 @@
 				<th>Doel</th>
 			</tr>
 			<tr>
-				<td>waterwetStrategischGrondwaterbeheer</td>
-				<td>Waterwet art 4.1 & 4.3</td> 
+				<td rowspan="2">waterwetStrategischGrondwaterbeheer</td>
+				<td rowspan="2">Waterwet art 4.1 & 4.3</td> 
 				<td>Kwantiteit</td>
 				<td>strategischBeheerKwantiteitLandelijk</td>
 			</tr>
 			<tr>
-				<td>waterwetStrategischGrondwaterbeheer</td>
-				<td>Waterwet art 4.1 & 4.3</td> 
 				<td>Kwaliteit</td>
 				<td>strategischBeheerKwaliteitLandelijk</td>
 			</tr>
