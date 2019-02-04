@@ -1,16 +1,16 @@
 <h2>Catalogus</h2>
 <p class="note" title="Over deze catalogus">
    Deze catalogus is automatisch samengesteld op basis van het UML model 
-   "Grondwatermonitoringnet (GMN)" door Imvertor 1.50.1 op January 21, 2019 at 15:31:16.
+   "Grondwatermonitoringnet (GMN)" door Imvertor 1.50.1 op February 4, 2019 at 14:04:43.
    <br>
    Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i></i> en geef de code 
-   <i>"Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20190121-163117"</i> door. 
+   <i>"Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20190204-150444"</i> door. 
    
 </p><a class="anchor" name="global_package_Model"></a><section id="global_package_Model">
    <h3>Domein Model</h3>
    <div class="imageinfo overview"><img src="data/Images/EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C.png" usemap="#imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C"><map name="imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C">
-         <area shape="rect" coords="347,139,583,10" alt="" href="#graph_EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
-         <area shape="rect" coords="347,365,605,207" alt="" href="#graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></map><p><b>Domeinmodel BRO GMN - overzicht</b></p>
+         <area shape="rect" coords="372,175,630,46" alt="" href="#graph_EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
+         <area shape="rect" coords="372,402,630,244" alt="" href="#graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></map><p><b>Domeinmodel BRO GMN - overzicht</b></p>
    </div>
    <section id="">
       <h4>Objecttypen </h4>
@@ -59,12 +59,12 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_Model_Grondwatermonitoringnet_naam">naam</a>
+                     <a class="link" href="#detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect">grondwateraspect</a>
                      
                   </td>
-                  <td>De functionele naam waaronder het monotoringnet bekend is.</td>
+                  <td>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</td>
                   <td>
-                     <a class="link" href="#global_class_Brocommon_Tekst200">Tekst200</a>
+                     <a class="link" href="#global_class_Model_GrondwaterAspect">GrondwaterAspect</a>
                      
                   </td>
                   <td>1</td>
@@ -97,12 +97,12 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect">grondwateraspect</a>
+                     <a class="link" href="#detail_attribute_Model_Grondwatermonitoringnet_naam">naam</a>
                      
                   </td>
-                  <td>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</td>
+                  <td>De functionele naam waaronder het monotoringnet bekend is.</td>
                   <td>
-                     <a class="link" href="#global_class_Model_GrondwaterAspect">GrondwaterAspect</a>
+                     <a class="link" href="#global_class_Brocommon_Tekst200">Tekst200</a>
                      
                   </td>
                   <td>1</td>
@@ -115,18 +115,6 @@
                   <td>De gegevens die nodig zijn voor een verwijzing naar een specifieke buis in een grondwatermonitoringput.</td>
                   <td></td>
                   <td>0 .. *</td>
-               </tr>
-               <tr>
-                  <td>- 
-                     <a class="link" href="#detail_attribute_Model_GMWBuisverwijzing_gMWBROID">GMW-BRO-ID</a>
-                     
-                  </td>
-                  <td>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</td>
-                  <td>
-                     <a class="link" href="#global_class_Brocommon_Registratieobjectcode">Registratieobjectcode</a>
-                     
-                  </td>
-                  <td>1</td>
                </tr>
                <tr>
                   <td>- 
@@ -143,6 +131,18 @@
                   <td>1</td>
                </tr>
                <tr>
+                  <td>- 
+                     <a class="link" href="#detail_attribute_Model_GMWBuisverwijzing_gMWBROID">GMW-BRO-ID</a>
+                     
+                  </td>
+                  <td>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_Registratieobjectcode">Registratieobjectcode</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
                   <td>
                      <a class="link" href="#detail_class_Brocommon_Registratiegeschiedenis">registratiegeschiedenis</a>
                      :
@@ -150,60 +150,6 @@
                   <td>De gegevens die de geschiedenis van het object in de registratie ondergrond markeren.</td>
                   <td></td>
                   <td>1</td>
-               </tr>
-               <tr>
-                  <td>- 
-                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipRegistratieObject">tijdstip registratie object</a>
-                     
-                  </td>
-                  <td>De datum en het tijdstip waarop er voor het eerst gegevens van het object in de registratie
-                     ondergrond zijn opgenomen.
-                  </td>
-                  <td>
-                     <a class="link" href="#global_class_Brocommon_DatumTijd">DatumTijd</a>
-                     
-                  </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>- 
-                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_registratiestatus">registratiestatus</a>
-                     
-                  </td>
-                  <td>De actuele fase van registratie waarin het registratieobject zich bevindt.</td>
-                  <td>
-                     <a class="link" href="#global_class_Brocommon_Registratiestatus">Registratiestatus</a>
-                     
-                  </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>- 
-                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling">tijdstip laatste aanvulling</a>
-                     
-                  </td>
-                  <td>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie
-                     ondergrond is doorgevoerd.
-                  </td>
-                  <td>
-                     <a class="link" href="#global_class_Brocommon_DatumTijd">DatumTijd</a>
-                     
-                  </td>
-                  <td>0 .. 1</td>
-               </tr>
-               <tr>
-                  <td>- 
-                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">tijdstip voltooiing registratie</a>
-                     
-                  </td>
-                  <td>De datum en het tijdstip waarop alle gegevens van het object in de registratie ondergrond
-                     zijn opgenomen.
-                  </td>
-                  <td>
-                     <a class="link" href="#global_class_Brocommon_DatumTijd">DatumTijd</a>
-                     
-                  </td>
-                  <td>0 .. 1</td>
                </tr>
                <tr>
                   <td>- 
@@ -218,20 +164,6 @@
                      
                   </td>
                   <td>1</td>
-               </tr>
-               <tr>
-                  <td>- 
-                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie">tijdstip laatste correctie</a>
-                     
-                  </td>
-                  <td>De datum en het tijdstip waarop de laatste correctie in de gegevens van het registratieobject
-                     is doorgevoerd.
-                  </td>
-                  <td>
-                     <a class="link" href="#global_class_Brocommon_DatumTijd">DatumTijd</a>
-                     
-                  </td>
-                  <td>0 .. 1</td>
                </tr>
                <tr>
                   <td>- 
@@ -263,14 +195,54 @@
                </tr>
                <tr>
                   <td>- 
-                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_uitRegistratieGenomen">uit registratie genomen</a>
+                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_registratiestatus">registratiestatus</a>
                      
                   </td>
-                  <td>De aanduiding die aangeeft of de gegevens van het registratieobject door de registerbeheerder
-                     uit registratie zijn genomen.
+                  <td>De actuele fase van registratie waarin het registratieobject zich bevindt.</td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_Registratiestatus">Registratiestatus</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>- 
+                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling">tijdstip laatste aanvulling</a>
+                     
+                  </td>
+                  <td>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie
+                     ondergrond is doorgevoerd.
                   </td>
                   <td>
-                     <a class="link" href="#global_class_Brocommon_IndicatieJaNee">IndicatieJaNee</a>
+                     <a class="link" href="#global_class_Brocommon_DatumTijd">DatumTijd</a>
+                     
+                  </td>
+                  <td>0 .. 1</td>
+               </tr>
+               <tr>
+                  <td>- 
+                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie">tijdstip laatste correctie</a>
+                     
+                  </td>
+                  <td>De datum en het tijdstip waarop de laatste correctie in de gegevens van het registratieobject
+                     is doorgevoerd.
+                  </td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_DatumTijd">DatumTijd</a>
+                     
+                  </td>
+                  <td>0 .. 1</td>
+               </tr>
+               <tr>
+                  <td>- 
+                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipRegistratieObject">tijdstip registratie object</a>
+                     
+                  </td>
+                  <td>De datum en het tijdstip waarop er voor het eerst gegevens van het object in de registratie
+                     ondergrond zijn opgenomen.
+                  </td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_DatumTijd">DatumTijd</a>
                      
                   </td>
                   <td>1</td>
@@ -289,17 +261,17 @@
                </tr>
                <tr>
                   <td>- 
-                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_weerInRegistratieGenomen">weer in registratie genomen</a>
+                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">tijdstip voltooiing registratie</a>
                      
                   </td>
-                  <td>De aanduiding die aangeeft of het object in de registratie ondergrond is opgenomen,
-                     nadat het eerder uit registratie was genomen.
+                  <td>De datum en het tijdstip waarop alle gegevens van het object in de registratie ondergrond
+                     zijn opgenomen.
                   </td>
                   <td>
-                     <a class="link" href="#global_class_Brocommon_IndicatieJaNee">IndicatieJaNee</a>
+                     <a class="link" href="#global_class_Brocommon_DatumTijd">DatumTijd</a>
                      
                   </td>
-                  <td>1</td>
+                  <td>0 .. 1</td>
                </tr>
                <tr>
                   <td>- 
@@ -314,6 +286,34 @@
                      
                   </td>
                   <td>0 .. 1</td>
+               </tr>
+               <tr>
+                  <td>- 
+                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_uitRegistratieGenomen">uit registratie genomen</a>
+                     
+                  </td>
+                  <td>De aanduiding die aangeeft of de gegevens van het registratieobject door de registerbeheerder
+                     uit registratie zijn genomen.
+                  </td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_IndicatieJaNee">IndicatieJaNee</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>- 
+                     <a class="link" href="#detail_attribute_Brocommon_Registratiegeschiedenis_weerInRegistratieGenomen">weer in registratie genomen</a>
+                     
+                  </td>
+                  <td>De aanduiding die aangeeft of het object in de registratie ondergrond is opgenomen,
+                     nadat het eerder uit registratie was genomen.
+                  </td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_IndicatieJaNee">IndicatieJaNee</a>
+                     
+                  </td>
+                  <td>1</td>
                </tr>
             </tbody>
          </table>
@@ -412,7 +412,7 @@
       
       <a class="anchor" name="detail_class_Model_Grondwatermonitoringnet"></a><section id="detail_class_Model_Grondwatermonitoringnet">
          <h6>Objecttype Grondwatermonitoringnet</h6>
-         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_naam"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_naam"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> naam</strong>
+         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> grondwateraspect</strong>
             
             <table>
                <colgroup width="30%"></colgroup>
@@ -420,7 +420,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>naam</td>
+                     <td>grondwateraspect</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -428,11 +428,18 @@
                   </tr>
                   <tr>
                      <th>Definitie</th>
-                     <td>De functionele naam waaronder het monotoringnet bekend is.</td>
+                     <td>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</td>
                   </tr>
                   <tr>
                      <th>Herkomst definitie</th>
                      <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel
+                        de kwaliteit als de kwantiteit worden gedaan, wordt in dit attribuut het primaire,
+                        meest belangrijke aspect vastgelegd.
+                     </td>
                   </tr>
                   <tr>
                      <th>Mogelijk geen waarde</th>
@@ -456,7 +463,7 @@
                   </tr>
                   <tr>
                      <th>Formaat</th>
-                     <td>Tekst200</td>
+                     <td>GrondwaterAspect</td>
                   </tr>
                   <tr>
                      <th>Indicatie afleidbaar</th>
@@ -533,121 +540,6 @@
             </table>
             
          </section>
-         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_monitoringdoel"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_monitoringdoel"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> monitoringdoel</strong>
-            
-            <table>
-               <colgroup width="30%"></colgroup>
-               <colgroup width="70%"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>monitoringdoel</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Mogelijk geen waarde</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie materiële historie</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie formele historie</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie authentiek</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Formaat</th>
-                     <td>Monitoringdoel</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie afleidbaar</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-         </section>
-         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> grondwateraspect</strong>
-            
-            <table>
-               <colgroup width="30%"></colgroup>
-               <colgroup width="70%"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>grondwateraspect</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel
-                        de kwaliteit als de kwantiteit worden gedaan, wordt in dit attribuut het primaire,
-                        meest belangrijke aspect vastgelegd.
-                     </td>
-                  </tr>
-                  <tr>
-                     <th>Mogelijk geen waarde</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie materiële historie</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie formele historie</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie authentiek</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Formaat</th>
-                     <td>GrondwaterAspect</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie afleidbaar</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-         </section>
          <a class="anchor" name="detail_class_Model_GMWBuisverwijzing"></a><section id="detail_class_Model_GMWBuisverwijzing"><strong>Gegevensgroeptype details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> GMW-buisverwijzing</strong>
             
             <table>
@@ -672,62 +564,6 @@
                   </tr>
                </tbody>
             </table>
-            <a class="anchor" name="detail_attribute_Model_GMWBuisverwijzing_gMWBROID"></a><section id="detail_attribute_Model_GMWBuisverwijzing_gMWBROID" class="notoc"><strong>Attribuutsoort GMW-BRO-ID  GMW-buisverwijzing</strong>
-               
-               <table>
-                  <tbody>
-                     <tr></tr>
-                     <tr>
-                        <th>Naam</th>
-                        <td>GMW-BRO-ID</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst definitie</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>In brondocumenten voor het aanleveren van meetpunten is het mogelijk om de putcode
-                           op te geven in plaats van het BRO-ID van de grondwatermonitoringput. Bij inname van
-                           de gegevens wordt dan het bijbehorende BRO-ID opgezocht en vastgelegd.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie materiële historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie formele historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie authentiek</th>
-                        <td>Authentiek</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>Registratieobjectcode</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-            </section>
             <a class="anchor" name="detail_attribute_Model_GMWBuisverwijzing_buisnummer"></a><section id="detail_attribute_Model_GMWBuisverwijzing_buisnummer" class="notoc"><strong>Attribuutsoort buisnummer  GMW-buisverwijzing</strong>
                
                <table>
@@ -785,6 +621,170 @@
                </table>
                
             </section>
+            <a class="anchor" name="detail_attribute_Model_GMWBuisverwijzing_gMWBROID"></a><section id="detail_attribute_Model_GMWBuisverwijzing_gMWBROID" class="notoc"><strong>Attribuutsoort GMW-BRO-ID  GMW-buisverwijzing</strong>
+               
+               <table>
+                  <tbody>
+                     <tr></tr>
+                     <tr>
+                        <th>Naam</th>
+                        <td>GMW-BRO-ID</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>In brondocumenten voor het aanleveren van meetpunten is het mogelijk om de putcode
+                           op te geven in plaats van het BRO-ID van de grondwatermonitoringput. Bij inname van
+                           de gegevens wordt dan het bijbehorende BRO-ID opgezocht en vastgelegd.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie materiële historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Authentiek</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>Registratieobjectcode</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+            </section>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_monitoringdoel"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_monitoringdoel"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> monitoringdoel</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>monitoringdoel</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Monitoringdoel</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Model_Grondwatermonitoringnet_naam"></a><section id="detail_attribute_Model_Grondwatermonitoringnet_naam"><strong>Attribuutsoort details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> naam</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>naam</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De functionele naam waaronder het monotoringnet bekend is.</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Tekst200</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
             
          </section>
          <a class="anchor" name="detail_class_Brocommon_Registratiegeschiedenis"></a><section id="detail_class_Brocommon_Registratiegeschiedenis"><strong>Gegevensgroeptype details <a href="#global_class_Model_Grondwatermonitoringnet">Grondwatermonitoringnet</a> Registratiegeschiedenis</strong>
@@ -817,225 +817,6 @@
                   </tr>
                </tbody>
             </table>
-            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipRegistratieObject"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipRegistratieObject" class="notoc"><strong>Attribuutsoort tijdstip registratie object  Registratiegeschiedenis</strong>
-               
-               <table>
-                  <tbody>
-                     <tr></tr>
-                     <tr>
-                        <th>Naam</th>
-                        <td>tijdstip registratie object</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>De datum en het tijdstip waarop er voor het eerst gegevens van het object in de registratie
-                           ondergrond zijn opgenomen.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst definitie</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie materiële historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie formele historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie authentiek</th>
-                        <td>Overig</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>DatumTijd</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-            </section>
-            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_registratiestatus"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_registratiestatus" class="notoc"><strong>Attribuutsoort registratiestatus  Registratiegeschiedenis</strong>
-               
-               <table>
-                  <tbody>
-                     <tr></tr>
-                     <tr>
-                        <th>Naam</th>
-                        <td>registratiestatus</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>De actuele fase van registratie waarin het registratieobject zich bevindt.</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst definitie</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie materiële historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie formele historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie authentiek</th>
-                        <td>Overig</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>Registratiestatus</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-            </section>
-            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling" class="notoc"><strong>Attribuutsoort tijdstip laatste aanvulling  Registratiegeschiedenis</strong>
-               
-               <table>
-                  <tbody>
-                     <tr></tr>
-                     <tr>
-                        <th>Naam</th>
-                        <td>tijdstip laatste aanvulling</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie
-                           ondergrond is doorgevoerd.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst definitie</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>Het gegeven is alleen aanwezig wanneer na de registratie van een deelonderzoek ander
-                           deelonderzoek is vastgelegd.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie materiële historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie formele historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>0 .. 1</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie authentiek</th>
-                        <td>Overig</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>DatumTijd</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-            </section>
-            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie" class="notoc"><strong>Attribuutsoort tijdstip voltooiing registratie  Registratiegeschiedenis</strong>
-               
-               <table>
-                  <tbody>
-                     <tr></tr>
-                     <tr>
-                        <th>Naam</th>
-                        <td>tijdstip voltooiing registratie</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>De datum en het tijdstip waarop alle gegevens van het object in de registratie ondergrond
-                           zijn opgenomen.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst definitie</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>Het gegeven is alleen aanwezig als alle aan te leveren gegevens zijn geregistreerd.
-                           Na dit tijdstip kunnen geen nieuwe gegevens meer ter registratie worden aangeboden.
-                           Wel kunnen fouten in de registratie worden verbeterd.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie materiële historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie formele historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>0 .. 1</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie authentiek</th>
-                        <td>Overig</td>
-                     </tr>
-                     <tr>
-                        <th>Regels</th>
-                        <td>Het gegeven is alleen aanwezig wanneer de registratiestatus de waarde voltooid heeft.</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>DatumTijd</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-            </section>
             <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_gecorrigeerd"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_gecorrigeerd" class="notoc"><strong>Attribuutsoort gecorrigeerd  Registratiegeschiedenis</strong>
                
                <table>
@@ -1082,63 +863,6 @@
                      <tr>
                         <th>Formaat</th>
                         <td>IndicatieJaNee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-            </section>
-            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie" class="notoc"><strong>Attribuutsoort tijdstip laatste correctie  Registratiegeschiedenis</strong>
-               
-               <table>
-                  <tbody>
-                     <tr></tr>
-                     <tr>
-                        <th>Naam</th>
-                        <td>tijdstip laatste correctie</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>De datum en het tijdstip waarop de laatste correctie in de gegevens van het registratieobject
-                           is doorgevoerd.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst definitie</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie materiële historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie formele historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>0 .. 1</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie authentiek</th>
-                        <td>Overig</td>
-                     </tr>
-                     <tr>
-                        <th>Regels</th>
-                        <td>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het
-                           attribuut gecorrigeerd.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>DatumTijd</td>
                      </tr>
                   </tbody>
                </table>
@@ -1260,6 +984,394 @@
                </table>
                
             </section>
+            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_registratiestatus"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_registratiestatus" class="notoc"><strong>Attribuutsoort registratiestatus  Registratiegeschiedenis</strong>
+               
+               <table>
+                  <tbody>
+                     <tr></tr>
+                     <tr>
+                        <th>Naam</th>
+                        <td>registratiestatus</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>De actuele fase van registratie waarin het registratieobject zich bevindt.</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie materiële historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Overig</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>Registratiestatus</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+            </section>
+            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling" class="notoc"><strong>Attribuutsoort tijdstip laatste aanvulling  Registratiegeschiedenis</strong>
+               
+               <table>
+                  <tbody>
+                     <tr></tr>
+                     <tr>
+                        <th>Naam</th>
+                        <td>tijdstip laatste aanvulling</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie
+                           ondergrond is doorgevoerd.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>Het gegeven is alleen aanwezig wanneer na de registratie van een deelonderzoek ander
+                           deelonderzoek is vastgelegd.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie materiële historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Overig</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>DatumTijd</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+            </section>
+            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie" class="notoc"><strong>Attribuutsoort tijdstip laatste correctie  Registratiegeschiedenis</strong>
+               
+               <table>
+                  <tbody>
+                     <tr></tr>
+                     <tr>
+                        <th>Naam</th>
+                        <td>tijdstip laatste correctie</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>De datum en het tijdstip waarop de laatste correctie in de gegevens van het registratieobject
+                           is doorgevoerd.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie materiële historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Overig</td>
+                     </tr>
+                     <tr>
+                        <th>Regels</th>
+                        <td>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het
+                           attribuut gecorrigeerd.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>DatumTijd</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+            </section>
+            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipRegistratieObject"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipRegistratieObject" class="notoc"><strong>Attribuutsoort tijdstip registratie object  Registratiegeschiedenis</strong>
+               
+               <table>
+                  <tbody>
+                     <tr></tr>
+                     <tr>
+                        <th>Naam</th>
+                        <td>tijdstip registratie object</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>De datum en het tijdstip waarop er voor het eerst gegevens van het object in de registratie
+                           ondergrond zijn opgenomen.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie materiële historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Overig</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>DatumTijd</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+            </section>
+            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen" class="notoc"><strong>Attribuutsoort tijdstip uit registratie genomen  Registratiegeschiedenis</strong>
+               
+               <table>
+                  <tbody>
+                     <tr></tr>
+                     <tr>
+                        <th>Naam</th>
+                        <td>tijdstip uit registratie genomen</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>De datum en het tijdstip waarop het registratieobject uit registratie is genomen.</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie materiële historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Overig</td>
+                     </tr>
+                     <tr>
+                        <th>Regels</th>
+                        <td>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het
+                           attribuut uit registratie genomen.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>DatumTijd</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+            </section>
+            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie" class="notoc"><strong>Attribuutsoort tijdstip voltooiing registratie  Registratiegeschiedenis</strong>
+               
+               <table>
+                  <tbody>
+                     <tr></tr>
+                     <tr>
+                        <th>Naam</th>
+                        <td>tijdstip voltooiing registratie</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>De datum en het tijdstip waarop alle gegevens van het object in de registratie ondergrond
+                           zijn opgenomen.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>Het gegeven is alleen aanwezig als alle aan te leveren gegevens zijn geregistreerd.
+                           Na dit tijdstip kunnen geen nieuwe gegevens meer ter registratie worden aangeboden.
+                           Wel kunnen fouten in de registratie worden verbeterd.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie materiële historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Overig</td>
+                     </tr>
+                     <tr>
+                        <th>Regels</th>
+                        <td>Het gegeven is alleen aanwezig wanneer de registratiestatus de waarde voltooid heeft.</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>DatumTijd</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+            </section>
+            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen" class="notoc"><strong>Attribuutsoort tijdstip weer in registratie genomen  Registratiegeschiedenis</strong>
+               
+               <table>
+                  <tbody>
+                     <tr></tr>
+                     <tr>
+                        <th>Naam</th>
+                        <td>tijdstip weer in registratie genomen</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>De datum en het tijdstip waarop het object in de registratie ondergrond is opgenomen,
+                           nadat het uit registratie was genomen.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>BRO</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie materiële historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Overig</td>
+                     </tr>
+                     <tr>
+                        <th>Regels</th>
+                        <td>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het
+                           attribuut weer in registratie genomen.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>DatumTijd</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+            </section>
             <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_uitRegistratieGenomen"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_uitRegistratieGenomen" class="notoc"><strong>Attribuutsoort uit registratie genomen  Registratiegeschiedenis</strong>
                
                <table>
@@ -1321,61 +1433,6 @@
                </table>
                
             </section>
-            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen" class="notoc"><strong>Attribuutsoort tijdstip uit registratie genomen  Registratiegeschiedenis</strong>
-               
-               <table>
-                  <tbody>
-                     <tr></tr>
-                     <tr>
-                        <th>Naam</th>
-                        <td>tijdstip uit registratie genomen</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>De datum en het tijdstip waarop het registratieobject uit registratie is genomen.</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst definitie</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie materiële historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie formele historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>0 .. 1</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie authentiek</th>
-                        <td>Overig</td>
-                     </tr>
-                     <tr>
-                        <th>Regels</th>
-                        <td>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het
-                           attribuut uit registratie genomen.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>DatumTijd</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-            </section>
             <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_weerInRegistratieGenomen"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_weerInRegistratieGenomen" class="notoc"><strong>Attribuutsoort weer in registratie genomen  Registratiegeschiedenis</strong>
                
                <table>
@@ -1429,63 +1486,6 @@
                      <tr>
                         <th>Formaat</th>
                         <td>IndicatieJaNee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-            </section>
-            <a class="anchor" name="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen"></a><section id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen" class="notoc"><strong>Attribuutsoort tijdstip weer in registratie genomen  Registratiegeschiedenis</strong>
-               
-               <table>
-                  <tbody>
-                     <tr></tr>
-                     <tr>
-                        <th>Naam</th>
-                        <td>tijdstip weer in registratie genomen</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>De datum en het tijdstip waarop het object in de registratie ondergrond is opgenomen,
-                           nadat het uit registratie was genomen.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst definitie</th>
-                        <td>BRO</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie materiële historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie formele historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>0 .. 1</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie authentiek</th>
-                        <td>Overig</td>
-                     </tr>
-                     <tr>
-                        <th>Regels</th>
-                        <td>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het
-                           attribuut weer in registratie genomen.
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>DatumTijd</td>
                      </tr>
                   </tbody>
                </table>
@@ -1666,34 +1666,6 @@
                </tr>
                <tr>
                   <td></td>
-                  <td>strategischBeheerKwantiteitLandelijk</td>
-                  <td>Kennis over de omvang van de voorraad grondwater op landelijke schaal, ten behoeve
-                     van planvorming en beheerskaders.
-                  </td>
-               </tr>
-               <tr>
-                  <td></td>
-                  <td>strategischBeheerKwaliteitLandelijk</td>
-                  <td>Kennis over de bruikbaarheid van de voorraad grondwater op landelijke schaal, ten
-                     behoeve van planvorming en beheerskaders.
-                  </td>
-               </tr>
-               <tr>
-                  <td></td>
-                  <td>strategischBeheerKwantiteitRegionaal</td>
-                  <td>Kennis over de omvang van de voorraad grondwater op regionale schaal, ten behoeve
-                     van planvorming en beheerskaders.
-                  </td>
-               </tr>
-               <tr>
-                  <td></td>
-                  <td>strategischBeheerKwaliteitRegionaal</td>
-                  <td>Kennis over de bruikbaarheid van de voorraad grondwater op regionale schaal, ten behoeve
-                     van planvorming en beheerskaders.
-                  </td>
-               </tr>
-               <tr>
-                  <td></td>
                   <td>beheersingStedelijkGebied</td>
                   <td>Kennis over de stand van het ondiepe grondwater om die in stedelijke omgeving te kunnen
                      beheersen.
@@ -1701,16 +1673,21 @@
                </tr>
                <tr>
                   <td></td>
-                  <td>gevolgenOnttrekkingKwantiteit</td>
-                  <td>Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van
-                     water voor de omvang van de voorraad grondwater die de mens ter beschikking staat.
-                  </td>
+                  <td>gevolgenOntgronding</td>
+                  <td>Kennis over de gevolgen van ontgronding voor de grondwaterhuishouding.</td>
                </tr>
                <tr>
                   <td></td>
                   <td>gevolgenOnttrekkingKwaliteit</td>
                   <td>Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van
                      water voor de chemische samenstelling (verontreiniging) van het grondwater.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>gevolgenOnttrekkingKwantiteit</td>
+                  <td>Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van
+                     water voor de omvang van de voorraad grondwater die de mens ter beschikking staat.
                   </td>
                </tr>
                <tr>
@@ -1736,14 +1713,56 @@
                </tr>
                <tr>
                   <td></td>
-                  <td>waterstaatswerkBeheer</td>
-                  <td>Kennis over de stand van het grondwater ten behoeve van het beheer van waterstaatswerken.</td>
+                  <td>natuurbeheer</td>
+                  <td>Kennis over de stand van het grondwater om die te beheersen ten behoeve van natuurbeheer.</td>
                </tr>
                <tr>
                   <td></td>
-                  <td>veiligstellingGrondwaterKwantiteit</td>
-                  <td>Kennis over de omvang van de voorraad grondwater die beschikbaar is voor de mens op
-                     schaal van grondwaterlichaam, met als doel de veiligstelling hiervan.
+                  <td>natuurbescherming</td>
+                  <td>Kennis over de bruikbaarheid van het grondwater ten behoeve van de instandhouding/bescherming
+                     van de natuur.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>strategischBeheerKwaliteitLandelijk</td>
+                  <td>Kennis over de bruikbaarheid van de voorraad grondwater op landelijke schaal, ten
+                     behoeve van planvorming en beheerskaders.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>strategischBeheerKwaliteitRegionaal</td>
+                  <td>Kennis over de bruikbaarheid van de voorraad grondwater op regionale schaal, ten behoeve
+                     van planvorming en beheerskaders.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>strategischBeheerKwantiteitLandelijk</td>
+                  <td>Kennis over de omvang van de voorraad grondwater op landelijke schaal, ten behoeve
+                     van planvorming en beheerskaders.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>strategischBeheerKwantiteitRegionaal</td>
+                  <td>Kennis over de omvang van de voorraad grondwater op regionale schaal, ten behoeve
+                     van planvorming en beheerskaders.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>veiligstellingDrinkwatervoorzieningKwaliteit</td>
+                  <td>Kennis over de bruikbaarheid van het grondwater ten behoeve van (het veiligstellen
+                     van) de huidige en toekomstige drinkwatervoorziening.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>veiligstellingDrinkwatervoorzieningKwantiteit</td>
+                  <td>Kennis over de voorraad van het grondwater ten behoeve van (het veiligstellen van)
+                     de huidige en toekomstige drinkwatervoorziening.
                   </td>
                </tr>
                <tr>
@@ -1756,9 +1775,9 @@
                </tr>
                <tr>
                   <td></td>
-                  <td>waterstaatkundigeVerzorgingKwantiteit</td>
-                  <td>Kennis over de omvang en/of peil van het grondwater ten behoeve van het operationeel
-                     beheer / de waterstaatkundige verzorging van het gebied.
+                  <td>veiligstellingGrondwaterKwantiteit</td>
+                  <td>Kennis over de omvang van de voorraad grondwater die beschikbaar is voor de mens op
+                     schaal van grondwaterlichaam, met als doel de veiligstelling hiervan.
                   </td>
                </tr>
                <tr>
@@ -1770,34 +1789,15 @@
                </tr>
                <tr>
                   <td></td>
-                  <td>veiligstellingDrinkwatervoorzieningKwantiteit</td>
-                  <td>Kennis over de voorraad van het grondwater ten behoeve van (het veiligstellen van)
-                     de huidige en toekomstige drinkwatervoorziening.
+                  <td>waterstaatkundigeVerzorgingKwantiteit</td>
+                  <td>Kennis over de omvang en/of peil van het grondwater ten behoeve van het operationeel
+                     beheer / de waterstaatkundige verzorging van het gebied.
                   </td>
                </tr>
                <tr>
                   <td></td>
-                  <td>veiligstellingDrinkwatervoorzieningKwaliteit</td>
-                  <td>Kennis over de bruikbaarheid van het grondwater ten behoeve van (het veiligstellen
-                     van) de huidige en toekomstige drinkwatervoorziening.
-                  </td>
-               </tr>
-               <tr>
-                  <td></td>
-                  <td>gevolgenOntgronding</td>
-                  <td>Kennis over de gevolgen van ontgronding voor de grondwaterhuishouding.</td>
-               </tr>
-               <tr>
-                  <td></td>
-                  <td>natuurbeheer</td>
-                  <td>Kennis over de stand van het grondwater om die te beheersen ten behoeve van natuurbeheer.</td>
-               </tr>
-               <tr>
-                  <td></td>
-                  <td>natuurbescherming</td>
-                  <td>Kennis over de bruikbaarheid van het grondwater ten behoeve van de instandhouding/bescherming
-                     van de natuur.
-                  </td>
+                  <td>waterstaatswerkBeheer</td>
+                  <td>Kennis over de stand van het grondwater ten behoeve van het beheer van waterstaatswerken.</td>
                </tr>
             </tbody>
          </table>
@@ -1883,21 +1883,6 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_Brocommon_Registratieobject_objectIDBronhouder">object-ID bronhouder</a>
-                     
-                  </td>
-                  <td>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen
-                     administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie
-                     ondergrond.
-                  </td>
-                  <td>
-                     <a class="link" href="#global_class_Brocommon_Tekst200">Tekst200</a>
-                     
-                  </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>
                      <a class="link" href="#detail_attribute_Brocommon_Registratieobject_dataleverancier">dataleverancier</a>
                      
                   </td>
@@ -1918,6 +1903,21 @@
                   <td>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</td>
                   <td>
                      <a class="link" href="#global_class_Brocommon_Kwaliteitsregime">Kwaliteitsregime</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Brocommon_Registratieobject_objectIDBronhouder">object-ID bronhouder</a>
+                     
+                  </td>
+                  <td>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen
+                     administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie
+                     ondergrond.
+                  </td>
+                  <td>
+                     <a class="link" href="#global_class_Brocommon_Tekst200">Tekst200</a>
                      
                   </td>
                   <td>1</td>
@@ -1970,24 +1970,24 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Brocommon_Organisatie_kvKNummer">KvK-nummer</a>
-                        
-                     </td>
-                     <td></td>
-                     <td>
-                        <a class="link" href="#global_class_Brocommon_KvKNummer">KvK-nummer</a>
-                        
-                     </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
                         <a class="link" href="#detail_attribute_Brocommon_Organisatie_europeesHandelsnummer">Europees handelsnummer</a>
                         
                      </td>
                      <td></td>
                      <td>
                         <a class="link" href="#global_class_Brocommon_Tekst40">Tekst40</a>
+                        
+                     </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Brocommon_Organisatie_kvKNummer">KvK-nummer</a>
+                        
+                     </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_Brocommon_KvKNummer">KvK-nummer</a>
                         
                      </td>
                      <td>1</td>
@@ -2274,55 +2274,6 @@
             </table>
             
          </section>
-         <a class="anchor" name="detail_attribute_Brocommon_Registratieobject_objectIDBronhouder"></a><section id="detail_attribute_Brocommon_Registratieobject_objectIDBronhouder"><strong>Attribuutsoort details <a href="#global_class_Brocommon_Registratieobject">Registratieobject</a> object-ID bronhouder</strong>
-            
-            <table>
-               <colgroup width="30%"></colgroup>
-               <colgroup width="70%"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>object-ID bronhouder</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen
-                        administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie
-                        ondergrond.
-                     </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Mogelijk geen waarde</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie formele historie</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Formaat</th>
-                     <td>Tekst200</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie afleidbaar</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-         </section>
          <a class="anchor" name="detail_attribute_Brocommon_Registratieobject_dataleverancier"></a><section id="detail_attribute_Brocommon_Registratieobject_dataleverancier"><strong>Attribuutsoort details <a href="#global_class_Brocommon_Registratieobject">Registratieobject</a> dataleverancier</strong>
             
             <table>
@@ -2417,6 +2368,55 @@
             </table>
             
          </section>
+         <a class="anchor" name="detail_attribute_Brocommon_Registratieobject_objectIDBronhouder"></a><section id="detail_attribute_Brocommon_Registratieobject_objectIDBronhouder"><strong>Attribuutsoort details <a href="#global_class_Brocommon_Registratieobject">Registratieobject</a> object-ID bronhouder</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>object-ID bronhouder</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen
+                        administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie
+                        ondergrond.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Tekst200</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
          
       </section>
       
@@ -2425,28 +2425,6 @@
       
       <a class="anchor" name="detail_class_Brocommon_Organisatie"></a><section id="detail_class_Brocommon_Organisatie">
          <h6>Keuze Organisatie</h6>
-         <a class="anchor" name="detail_attribute_Brocommon_Organisatie_kvKNummer"></a><section id="detail_attribute_Brocommon_Organisatie_kvKNummer"><strong>Union element details <a href="#global_class_Brocommon_Organisatie">Organisatie</a> KvK-nummer</strong>
-            
-            <table>
-               <colgroup width="30%"></colgroup>
-               <colgroup width="70%"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>KvK-nummer</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Formaat</th>
-                     <td>KvK-nummer</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-         </section>
          <a class="anchor" name="detail_attribute_Brocommon_Organisatie_europeesHandelsnummer"></a><section id="detail_attribute_Brocommon_Organisatie_europeesHandelsnummer"><strong>Union element details <a href="#global_class_Brocommon_Organisatie">Organisatie</a> Europees handelsnummer</strong>
             
             <table>
@@ -2464,6 +2442,28 @@
                   <tr>
                      <th>Formaat</th>
                      <td>Tekst40</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_Brocommon_Organisatie_kvKNummer"></a><section id="detail_attribute_Brocommon_Organisatie_kvKNummer"><strong>Union element details <a href="#global_class_Brocommon_Organisatie">Organisatie</a> KvK-nummer</strong>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>KvK-nummer</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>KvK-nummer</td>
                   </tr>
                </tbody>
             </table>
@@ -2501,18 +2501,18 @@
                </tr>
                <tr>
                   <td></td>
-                  <td>geregistreerd</td>
-                  <td>Het registeren van de gegevens van het object is gestart. De gegevens uit het eerste
-                     brondocument zijn in de registratie ondergrond vastgelegd. Er zijn daarna geen nieuwe
-                     gegevens geregistreerd.
-                  </td>
-               </tr>
-               <tr>
-                  <td></td>
                   <td>aangevuld</td>
                   <td>Het registeren van de gegevens van het object heeft na de start van de registratie
                      een vervolg gekregen. De gegevens in de registratie ondergrond zijn minimaal een keer
                      aangevuld met nieuwe gegevens.
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>geregistreerd</td>
+                  <td>Het registeren van de gegevens van het object is gestart. De gegevens uit het eerste
+                     brondocument zijn in de registratie ondergrond vastgelegd. Er zijn daarna geen nieuwe
+                     gegevens geregistreerd.
                   </td>
                </tr>
                <tr>
