@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
       generator-version="1.50.1"
-      generator-date="2019-02-06T15:14:19Z">
+      generator-date="2019-02-06T16:00:28Z">
    <section type="DOMAIN"
             name="Domeinmodel BRO GMN"
             id="global_package_DomeinmodelBROGMN">
@@ -291,7 +291,7 @@
                      </item>
                      <item>Het nummer dat door of voor de bronhouder wordt gebruikt om de monitoringbuis in de grondwatermonitoringput te identificeren.</item>
                      <item>
-                        <item type="global" idref="global_class_DomeinmodelBROGMN_Nummer3">Nummer3</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_Nummer3">Nummer3</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -337,23 +337,7 @@
       <!--removed empty content-->
       <!--removed empty content-->
       <!--removed empty content-->
-      <section type="OVERVIEW-PRIMITIVEDATATYPE">
-         <section name="Nummer3"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_DomeinmodelBROGMN_Nummer3"
-                  uuid="EAID_E141D757_BEA8_48aa_AC10_AF19A17712AE">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Nummer3</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Een domein van het type nummer is een opeenvolging van cijfers met een bepaalde maximale lengte. Een nummer heeft geen rekenkundige betekenis, maar heeft een betekenisvolle volgorde. Een domein van het type nummer wordt volledig gespecificeerd door met de aanduiding nummer ook de maximale lengte mee te geven. In het domeinmodel is de algemene aanduiding NummerN, waarbij N de maximale lengte aangeeft.</item>
-               </part>
-            </content>
-         </section>
-      </section>
+      <!--removed empty content-->
       <section type="OVERVIEW-CODELIST">
          <content>
             <part>
@@ -1675,18 +1659,13 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   <itemtype type="DEFINITION"/>
                   <part>
                      <item/>
-                     <item>strategischBeheerKwantiteitLandelijk</item>
-                     <item>Kennis over de omvang van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</item>
-                  </part>
-                  <part>
-                     <item/>
                      <item>strategischBeheerKwaliteitLandelijk</item>
                      <item>Kennis over de bruikbaarheid van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</item>
                   </part>
                   <part>
                      <item/>
-                     <item>strategischBeheerKwantiteitRegionaal</item>
-                     <item>Kennis over de omvang van de voorraad grondwater op regionale schaal, ten behoeve van planvorming en beheerskaders.</item>
+                     <item>strategischBeheerKwantiteitLandelijk</item>
+                     <item>Kennis over de omvang van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</item>
                   </part>
                   <part>
                      <item/>
@@ -1695,18 +1674,23 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   </part>
                   <part>
                      <item/>
+                     <item>strategischBeheerKwantiteitRegionaal</item>
+                     <item>Kennis over de omvang van de voorraad grondwater op regionale schaal, ten behoeve van planvorming en beheerskaders.</item>
+                  </part>
+                  <part>
+                     <item/>
                      <item>beheersingStedelijkGebied</item>
                      <item>Kennis over de stand van het ondiepe grondwater om die in stedelijke omgeving te kunnen beheersen.</item>
                   </part>
                   <part>
                      <item/>
-                     <item>gevolgenOnttrekkingKwantiteit</item>
-                     <item>Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van water voor de omvang van de voorraad grondwater die de mens ter beschikking staat.</item>
+                     <item>gevolgenOnttrekkingKwaliteit</item>
+                     <item>Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van water voor de chemische samenstelling (verontreiniging) van het grondwater.</item>
                   </part>
                   <part>
                      <item/>
-                     <item>gevolgenOnttrekkingKwaliteit</item>
-                     <item>Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van water voor de chemische samenstelling (verontreiniging) van het grondwater.</item>
+                     <item>gevolgenOnttrekkingKwantiteit</item>
+                     <item>Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van water voor de omvang van de voorraad grondwater die de mens ter beschikking staat.</item>
                   </part>
                   <part>
                      <item/>
@@ -1735,18 +1719,13 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   </part>
                   <part>
                      <item/>
-                     <item>veiligstellingGrondwaterKwantiteit</item>
-                     <item>Kennis over de omvang van de voorraad grondwater die beschikbaar is voor de mens op de schaal van een grondwaterlichaam, met als doel de veiligstelling hiervan.</item>
-                  </part>
-                  <part>
-                     <item/>
                      <item>veiligstellingGrondwaterKwaliteit</item>
                      <item>Kennis over grondwaterverontreinigingen op de schaal van een grondwaterlichaam die de bruikbaarheid ten behoeve van mens en natuur bedreigen, met als doel het borgen van een goede chemische toestand en het signaleren van stijgende trends.</item>
                   </part>
                   <part>
                      <item/>
-                     <item>waterstaatkundigeVerzorgingKwantiteit</item>
-                     <item>Kennis over de omvang en/of peil van het grondwater ten behoeve van het operationeel beheer / de waterstaatkundige verzorging van het gebied.</item>
+                     <item>veiligstellingGrondwaterKwantiteit</item>
+                     <item>Kennis over de omvang van de voorraad grondwater die beschikbaar is voor de mens op de schaal van een grondwaterlichaam, met als doel de veiligstelling hiervan.</item>
                   </part>
                   <part>
                      <item/>
@@ -1755,8 +1734,8 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   </part>
                   <part>
                      <item/>
-                     <item>veiligstellingDrinkwatervoorzieningKwantiteit</item>
-                     <item>Kennis over de voorraad van het grondwater ten behoeve van (het veiligstellen van) de huidige en toekomstige drinkwatervoorziening.</item>
+                     <item>waterstaatkundigeVerzorgingKwantiteit</item>
+                     <item>Kennis over de omvang en/of peil van het grondwater ten behoeve van het operationeel beheer / de waterstaatkundige verzorging van het gebied.</item>
                   </part>
                   <part>
                      <item/>
@@ -1765,18 +1744,23 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   </part>
                   <part>
                      <item/>
+                     <item>veiligstellingDrinkwatervoorzieningKwantiteit</item>
+                     <item>Kennis over de voorraad van het grondwater ten behoeve van (het veiligstellen van) de huidige en toekomstige drinkwatervoorziening.</item>
+                  </part>
+                  <part>
+                     <item/>
                      <item>gevolgenOntgronding</item>
                      <item>Kennis over de gevolgen van ontgronding voor de grondwaterhuishouding.</item>
                   </part>
                   <part>
                      <item/>
-                     <item>natuurbeheer</item>
-                     <item>Kennis over de stand van het grondwater om die te beheersen ten behoeve van natuurbeheer.</item>
+                     <item>natuurbescherming</item>
+                     <item>Kennis over de bruikbaarheid van het grondwater ten behoeve van de instandhouding/bescherming van de natuur.</item>
                   </part>
                   <part>
                      <item/>
-                     <item>natuurbescherming</item>
-                     <item>Kennis over de bruikbaarheid van het grondwater ten behoeve van de instandhouding/bescherming van de natuur.</item>
+                     <item>natuurbeheer</item>
+                     <item>Kennis over de stand van het grondwater om die te beheersen ten behoeve van natuurbeheer.</item>
                   </part>
                   <part>
                      <item/>
@@ -1980,6 +1964,21 @@ Wanneer een attribuut een domein van het type DatumTijd heeft is het voldoende d
                <part type="CFG-DOC-PATROON">
                   <item>Patroon</item>
                   <item>JJJJ-MM-DDTUU:MM:SS+UU:MM</item>
+               </part>
+            </content>
+         </section>
+         <section name="Nummer3"
+                  type="PRIMITIVEDATATYPE"
+                  id="global_class_DomeinmodelBROCommon_Nummer3"
+                  uuid="EAID_E141D757_BEA8_48aa_AC10_AF19A17712AE">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>Nummer3</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Een domein van het type nummer is een opeenvolging van cijfers met een bepaalde maximale lengte. Een nummer heeft geen rekenkundige betekenis, maar heeft een betekenisvolle volgorde. Een domein van het type nummer wordt volledig gespecificeerd door met de aanduiding nummer ook de maximale lengte mee te geven. In het domeinmodel is de algemene aanduiding NummerN, waarbij N de maximale lengte aangeeft.</item>
                </part>
             </content>
          </section>
