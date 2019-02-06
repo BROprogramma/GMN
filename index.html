@@ -63,7 +63,7 @@
         <li>Grondwatermonitoringnet, dit wordt afgekort tot GMN (Groundwater Monitoring Network);</li>
         <li>Grondwatermonitoringput, dit wordt afgekort tot GMW (Groundwater Monitoring Well);</li>
         <li>Grondwatersamenstellingsonderzoek, dit wordt afgekort tot GAR (Groundwater Analysis Report), (grondwaterkwaliteit);</li>
-        <li>Grondwaterstandonderzoek, dit wordt afgekort tot GLD (Groundwater Lever Dossier), (grondwaterkwantiteit).</li>
+        <li>Grondwaterstandonderzoek, dit wordt afgekort tot GLD (Groundwater Level Dossier), (grondwaterkwantiteit).</li>
       </ul>
       <P>Binnen de Basisregistratie Ondergrond worden in het conceptuele model en de catalogus de Nederlandse termen gebruikt. De technische Landelijke Voorziening van de Basisregistratie Ondergrond hanteert een Engelstalige benaming. Alle registratieobjecten hebben dus ook een Engelstalige benaming waarop de afkorting van het registratieobject is gebaseerd. Voor de Basisregistratie geldt dat het conceptuele model Nederlandstalige benaming hanteert, vanaf het logische model is alles Engelstalig.</P>
       <figure id='plaatje-grondwaterdomein'>
@@ -91,6 +91,7 @@
       <p>Met het registratieobject Grondwatermonitoringnet wordt de groepering van samenhangende onderzoeksgegevens, die vanuit een bepaald doel zijn uitgevoerd, tot een gegevensset gefaciliteerd. De (her)gebruikswaarde van deze gegevenssets die daarmee ontstaan, overtreft die van de afzonderlijke onderzoeksgegevens: Bestuursorganen en andere gebruikers worden ermee in staat gesteld om (toekomstige) geohydrologische vraagstukken beter en efficiënter te beantwoorden.</p>
 	  <p>Hierbij geldt dat een grondwateronderzoek ten behoeve meer dan één monitoringdoel uitgevoerd kan worden: een onderzoek kan in het kader van meerdere grondwatermonitoringnetten tegelijk zijn uitgevoerd, en dus deel uitmaken van meerdere gegevenssets. In het registratieobject Grondwatermonitoringnet worden daartoe het doel van de monitoring vastgelegd en het wettelijk kader waar dit doel uit volgt. Bij de registratieobjecten Grondwatersamenstellingsonderzoek en Grondwaterstandonderzoek wordt vastgelegd ten behoeve van welk(e) monitoringnet(ten) het onderzoek is uitgevoerd. Het <em>kader aanlevering</em> van een grondwatermonitoringnet geldt daarmee ook voor de aan het monitoringnet gekoppelde onderzoeken.</p>
       <p>De wettelijke kaders waarbinnen grondwatermonitoring plaatsvindt, staan in de codelijst KaderAanlevering. In deze codelijst zijn alleen wetten opgenomen die op dit moment in werking zijn. Er wordt op dit moment gewerkt aan de Omgevingswet. Het is de ambitie om verschillende wetten die in de codelijst KaderAanlevering staan, waaronder de Waterwet, de Wet natuurbescherming en de Ontgrondingenwet, op te laten gaan in de Omgevingswet. De Omgevingswet is nog niet in werking getreden, en is daarom niet opgenomen in de codelijst KaderAanlevering.</p>
+	  <p>In de basisregistratie ondergrond ligt alleen de huidige rechtsgrond vast op basis waarvan de monitoring plaatsvindt. Aangezien de wetgeving kan veranderen gedurende de periode van monitoren, terwijl het monitoringdoel gelijk kan blijven, geldt dat de rechtsgrond gedurende de levensduur van het grondwatermonitoringnet kan veranderen. In dat geval geeft de bronhouder de nieuwe waarde voor <em>kader aanlevering</em> door, en vervangt dit de waarde die op dat moment vastligt.</p>
      </section>
 	 
     <section id="meetpunten">
@@ -135,24 +136,142 @@
   <!-- Appendix -->
   <section id="wettelijk-kader-en-doel" class="appendix">
      <h2>Bijlage: Wettelijk kader en monitoringdoel</h2> 
+		<p>In onderstaande overzicht is aangegeven: 
+		     <ul>
+				<li>op welk(e) wetsartikel(en) een <em>kader aanlevering</em> betrekking heeft;</li>
+				<li>welke <em>monitoringdoelen</em> kunnen voorkomen per <em>kader aanlevering</em>;</li>
+				<li>welk(e) <em>grondwatermonitoringaspect(en)</em> kunnen voorkomen per <em>monitoringdoel</em>.</li>
+			</ul>
+		</p>		
 		<table style="width:100%">
 			<tr>
 				<th>Kader aanlevering</th>
 				<th>Wetsartikelen</th> 
 				<th>Aspect</th>
-				<th>Doel</th>
+				<th>Monitoringdoel</th>
 			</tr>
 			<tr>
-				<td rowspan="2">waterwetStrategischGrondwaterbeheer</td>
-				<td rowspan="2">Waterwet art 4.1 & 4.3</td> 
-				<td>Kwantiteit</td>
-				<td>strategischBeheerKwantiteitLandelijk</td>
+				<td rowspan="4">waterwetStrategischGrondwaterbeheer</td>
+				<td rowspan="2">Waterwet: art 4.1, art 4.3</td> 
+				<td>kwaliteit</td>
+				<td>strategischBeheerKwaliteitLandelijk - Kennis over de bruikbaarheid van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</td>
 			</tr>
 			<tr>
-				<td>Kwaliteit</td>
-				<td>strategischBeheerKwaliteitLandelijk</td>
+				<td>kwantiteit</td>
+				<td>strategischBeheerKwantiteitLandelijk - Kennis over de omvang van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</td>
+			</tr>
+			<tr>
+				<td rowspan="2">Waterwet: art 4.4, art 4.5</td> 
+				<td>kwaliteit</td>
+				<td>strategischBeheerKwaliteitRegionaal - Kennis over de bruikbaarheid van de voorraad grondwater op regionale schaal, ten behoeve van planvorming en beheerskaders.</td>
+			</tr>
+			<tr>
+				<td>kwantiteit</td>
+				<td>strategischBeheerKwantiteitRegionaal - Kennis over de omvang van de voorraad grondwater op regionale schaal, ten behoeve van planvorming en beheerskaders.</td>
+			</tr>
+			<tr>
+				<td>waterwetGrondwaterzorgplicht</td>
+				<td>Waterwet: art 3.6 (lid 1)</td> 
+				<td>kwantiteit</td>
+				<td>beheersingStedelijkGebied - Kennis over de stand van het ondiepe grondwater om die in stedelijke omgeving te kunnen beheersen.</td>
+			</tr>
+			<tr>
+				<td rowspan="2">waterwetOnttrekkingInfiltratie</td>
+				<td rowspan="2">Waterwet: art 6.4 (lid 1), art 6.5b, art 6.10a, art 6.26 (lid 3 en 4)</td> 
+				<td>kwaliteit</td>
+				<td>gevolgenOnttrekkingKwaliteit - Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van water voor de chemische samenstelling (verontreiniging) van het grondwater.</td>
+			</tr>
+			<tr>
+				<td>kwantiteit</td>
+				<td>gevolgenOnttrekkingKwantiteit - Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van water voor de omvang van de voorraad grondwater die de mens ter beschikking staat.</td>
+			</tr>
+			<tr>
+				<td>waterwetPeilbeheer</td>
+				<td>Waterwet: art 5.2 (lid 1 en 2)</td> 
+				<td>kwantiteit</td>
+				<td>gevolgenPeilbeheer - Kennis over de gevolgen van maatregelen/ingrepen in het kader van peilbeheer voor de stand van het grondwater.</td>
+			</tr>
+			<tr>
+				<td rowspan="2">waterwetWaterstaatswerkAanlegWijziging</td>
+				<td rowspan="2">Waterwet: art 5.4 (lid 1)</td> 
+				<td>kwantiteit</td>
+				<td>gevolgenWaterstaatswerkKwaliteit - Kennis over de gevolgen van de aanleg of wijziging van een waterstaatswerk voor de kwaliteit van het grondwater.</td>
+			</tr>
+			<tr>
+				<td>kwantiteit</td>
+				<td>gevolgenWaterstaatswerkKwantiteit - Kennis over de gevolgen van de aanleg of wijziging van een waterstaatswerk voor de stand van het grondwater.*</td>
+			</tr>
+			<tr>
+				<td>waterwetWaterstaatswerkIngreep</td>
+				<td>Waterwet: art 6.5c</td> 
+				<td>kwantiteit</td>
+				<td>gevolgenWaterstaatswerkKwantiteit - Kennis over de gevolgen van de aanleg of wijziging van een waterstaatswerk voor de stand van het grondwater.*</td>
+			</tr>
+			<tr>
+				<td rowspan="2">waterwetWaterstaatswerkBeheer</td>
+				<td rowspan="2">Waterwet: art 5.3</td> 
+				<td>kwaliteit</td>
+				<td>waterstaatswerkBeheerKwaliteit - Kennis over de kwaliteit van het grondwater ten behoeve van het beheer van waterstaatswerken.</td>
+			</tr>
+			<tr>
+				<td>kwantiteit</td>
+				<td>waterstaatswerkBeheerKwantiteit - Kennis over de stand van het grondwater ten behoeve van het beheer van waterstaatswerken.</td>
+			</tr>
+			<tr>
+				<td rowspan="2">kaderrichtlijnWater</td>
+				<td rowspan="2">Richtlijn 2000/60/EG: art 1 (vastgelegd in Wet milieubeheer: art 1.2 (lid 1 en 2a)</td> 
+				<td>kwaliteit</td>
+				<td>veiligstellingGrondwaterKwaliteit - Kennis over grondwaterverontreinigingen op de schaal van een grondwaterlichaam die de bruikbaarheid ten behoeve van mens en natuur bedreigen, met als doel het borgen van een goede chemische toestand en het signaleren van stijgende trends.</td>
+			</tr>
+			<tr>
+				<td>kwantiteit</td>
+				<td>veiligstellingGrondwaterKwantiteit - Kennis over de omvang van de voorraad grondwater die beschikbaar is voor de mens op de schaal van een grondwaterlichaam, met als doel de veiligstelling hiervan.</td>
+			</tr>
+			<tr>
+				<td rowspan="2">waterschapswet</td>
+				<td rowspan="2">Waterschapswet: art 1</td> 
+				<td>kwaliteit</td>
+				<td>waterstaatkundigeVerzorgingKwaliteit - Kennis over de bruikbaarheid van het grondwater ten behoeve van het operationeel beheer / de waterstaatkundige verzorging van het gebied.</td>
+			</tr>
+			<tr>
+				<td>kwantiteit</td>
+				<td>waterstaatkundigeVerzorgingKwantiteit - Kennis over de omvang en/of peil van het grondwater ten behoeve van het operationeel beheer / de waterstaatkundige verzorging van het gebied.</td>
+			</tr>
+			<tr>
+				<td rowspan="2">drinkwaterwet</td>
+				<td rowspan="2">Drinkwaterwet: art 2 (lid 1)</td> 
+				<td>kwaliteit</td>
+				<td>veiligstellingDrinkwatervoorzieningKwaliteit - Kennis over de bruikbaarheid van het grondwater ten behoeve van (het veiligstellen van) de huidige en toekomstige drinkwatervoorziening.</td>
+			</tr>
+			<tr>
+				<td>kwantiteit</td>
+				<td>veiligstellingDrinkwatervoorzieningKwantiteit - Kennis over de voorraad van het grondwater ten behoeve van (het veiligstellen van) de huidige en toekomstige drinkwatervoorziening.</td>
+			</tr>
+			<tr>
+				<td>ontgrondingenwet</td>
+				<td>Ontgrondingenwet: art 3 (lid 4), art 8</td> 
+				<td>kwantiteit</td>
+				<td>gevolgenOntgronding - Kennis over de gevolgen van ontgronding voor de grondwaterhuishouding.</td>
+			</tr>
+			<tr>
+				<td rowspan="2">wetNatuurbescherming</td>
+				<td rowspan="2">Wet natuurbescherming: art 2.6 (lid 1)</td> 
+				<td>kwaliteit</td>
+				<td>natuurbescherming - Kennis over de bruikbaarheid van het grondwater ten behoeve van de instandhouding/bescherming van de natuur.</td>
+			</tr>
+			<tr>
+				<td>kwantiteit</td>
+				<td>natuurbeheer - Kennis over de stand van het grondwater om die te beheersen ten behoeve van natuurbeheer.</td>
+			</tr>
+			<tr>
+				<th>archiefoverdracht (alleen onder kwaliteitsregime IMBRO/A)</th>
+				<th>-</th> 
+				<th>kwaliteit, kwantiteit, onbekend</th>
+				<th>onbekend - Het is onbekend ten behoeve van welk doel de monitoring plaatsvindt.</th>
 			</tr>
 		</table>
+		<p>* Dit <em>monitoringdoel</em> komt voor binnen meerdere <em>kaders aanlevering</em>.
+		</p>		
 	</section>
 </body>
 
