@@ -4,9 +4,13 @@
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
       generator-version="1.50.1"
-      generator-date="2019-02-04T15:25:22Z">
-   <section type="DOMAIN" name="Model" id="global_package_Model">
-      <section type="IMAGEMAPS" name="Model-imagemap" id="imagemap_package_Model">
+      generator-date="2019-02-06T15:14:19Z">
+   <section type="DOMAIN"
+            name="Domeinmodel BRO GMN"
+            id="global_package_DomeinmodelBROGMN">
+      <section type="IMAGEMAPS"
+               name="Domeinmodel BRO GMN-imagemap"
+               id="imagemap_package_DomeinmodelBROGMN">
          <section type="IMAGEMAP"
                   name="Domeinmodel BRO GMN - overzicht"
                   id="EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C">
@@ -25,7 +29,7 @@
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Grondwatermonitoringnet"
                   type="OBJECTTYPE"
-                  id="global_class_Model_Grondwatermonitoringnet"
+                  id="global_class_DomeinmodelBROGMN_Grondwatermonitoringnet"
                   uuid="EAID_A35817A4_9167_4620_BB25_5933C44F44E1">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -55,72 +59,73 @@
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_Grondwatermonitoringnet_naam">naam</item>
+                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_naam">naam</item>
                      </item>
                      <item>De functionele naam waaronder het monotoringnet bekend is.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Tekst200">Tekst200</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_Tekst200">Tekst200</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_Grondwatermonitoringnet_kaderAanlevering">kader aanlevering</item>
+                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_kaderAanlevering">kader aanlevering</item>
                      </item>
                      <item>De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.</item>
                      <item>
-                        <item type="global" idref="global_class_Model_KaderAanlevering">KaderAanlevering</item>
+                        <item type="global" idref="global_class_DomeinmodelBROGMN_KaderAanlevering">KaderAanlevering</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_Grondwatermonitoringnet_monitoringdoel">monitoringdoel</item>
+                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_monitoringdoel">monitoringdoel</item>
                      </item>
                      <item>Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.</item>
                      <item>
-                        <item type="global" idref="global_class_Model_Monitoringdoel">Monitoringdoel</item>
+                        <item type="global" idref="global_class_DomeinmodelBROGMN_Monitoringdoel">Monitoringdoel</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect">grondwateraspect</item>
+                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_grondwateraspect">grondwateraspect</item>
                      </item>
                      <item>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</item>
                      <item>
-                        <item type="global" idref="global_class_Model_GrondwaterAspect">GrondwaterAspect</item>
+                        <item type="global" idref="global_class_DomeinmodelBROGMN_GrondwaterAspect">GrondwaterAspect</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_Grondwatermonitoringnet_begindatum">begindatum</item>
+                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_begindatum">begindatum</item>
                      </item>
                      <item>De datum die het begin aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Datum">Datum</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_Datum">Datum</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_Grondwatermonitoringnet_einddatum">einddatum</item>
+                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_einddatum">einddatum</item>
                      </item>
                      <item>De datum die het einde aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Datum">Datum</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_Datum">Datum</item>
                      </item>
                      <item>0 .. 1</item>
                   </part>
                   <part type="COMPOSER">
                      <item>
-                        <item type="detail" idref="detail_class_Brocommon_Registratiegeschiedenis">registratiegeschiedenis</item>
+                        <item type="detail"
+                              idref="detail_class_DomeinmodelBROCommon_Registratiegeschiedenis">registratiegeschiedenis</item>
                      </item>
                      <item>De gegevens die de geschiedenis van het object in de registratie ondergrond markeren.</item>
                      <item/>
@@ -129,138 +134,139 @@
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipRegistratieObject">tijdstip registratie object</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipRegistratieObject">tijdstip registratie object</item>
                      </item>
                      <item>De datum en het tijdstip waarop er voor het eerst gegevens van het object in de registratie ondergrond zijn opgenomen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_DatumTijd">DatumTijd</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_registratiestatus">registratiestatus</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_registratiestatus">registratiestatus</item>
                      </item>
                      <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Registratiestatus">Registratiestatus</item>
+                        <item type="global"
+                              idref="global_class_DomeinmodelBROCommon_Registratiestatus">Registratiestatus</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling">tijdstip laatste aanvulling</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling">tijdstip laatste aanvulling</item>
                      </item>
                      <item>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie ondergrond is doorgevoerd.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_DatumTijd">DatumTijd</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
                      </item>
                      <item>0 .. 1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">tijdstip voltooiing registratie</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">tijdstip voltooiing registratie</item>
                      </item>
                      <item>De datum en het tijdstip waarop alle gegevens van het object in de registratie ondergrond zijn opgenomen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_DatumTijd">DatumTijd</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
                      </item>
                      <item>0 .. 1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_gecorrigeerd">gecorrigeerd</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_gecorrigeerd">gecorrigeerd</item>
                      </item>
                      <item>De aanduiding die aangeeft of er een verbetering in de gegevens van het object in de registratie ondergrond heeft plaatsgevonden.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_IndicatieJaNee">IndicatieJaNee</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_IndicatieJaNee">IndicatieJaNee</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie">tijdstip laatste correctie</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie">tijdstip laatste correctie</item>
                      </item>
                      <item>De datum en het tijdstip waarop de laatste correctie in de gegevens van het registratieobject is doorgevoerd.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_DatumTijd">DatumTijd</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
                      </item>
                      <item>0 .. 1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_inOnderzoek">in onderzoek</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoek">in onderzoek</item>
                      </item>
                      <item>De aanduiding die aangeeft of het registratieobject door de registerbeheerder in onderzoek is genomen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_IndicatieJaNee">IndicatieJaNee</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_IndicatieJaNee">IndicatieJaNee</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_inOnderzoekSinds">in onderzoek sinds</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoekSinds">in onderzoek sinds</item>
                      </item>
                      <item>De datum en het tijdstip waarop de registerbeheerder het registratieobject in onderzoek heeft genomen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_DatumTijd">DatumTijd</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
                      </item>
                      <item>0 .. 1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_uitRegistratieGenomen">uit registratie genomen</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_uitRegistratieGenomen">uit registratie genomen</item>
                      </item>
                      <item>De aanduiding die aangeeft of de gegevens van het registratieobject door de registerbeheerder uit registratie zijn genomen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_IndicatieJaNee">IndicatieJaNee</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_IndicatieJaNee">IndicatieJaNee</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen">tijdstip uit registratie genomen</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen">tijdstip uit registratie genomen</item>
                      </item>
                      <item>De datum en het tijdstip waarop het registratieobject uit registratie is genomen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_DatumTijd">DatumTijd</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
                      </item>
                      <item>0 .. 1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_weerInRegistratieGenomen">weer in registratie genomen</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_weerInRegistratieGenomen">weer in registratie genomen</item>
                      </item>
                      <item>De aanduiding die aangeeft of het object in de registratie ondergrond is opgenomen, nadat het eerder uit registratie was genomen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_IndicatieJaNee">IndicatieJaNee</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_IndicatieJaNee">IndicatieJaNee</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen">tijdstip weer in registratie genomen</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen">tijdstip weer in registratie genomen</item>
                      </item>
                      <item>De datum en het tijdstip waarop het object in de registratie ondergrond is opgenomen, nadat het uit registratie was genomen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_DatumTijd">DatumTijd</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
                      </item>
                      <item>0 .. 1</item>
                   </part>
                   <part type="COMPOSER">
                      <item>
-                        <item type="detail" idref="detail_class_Model_GMWBuisverwijzing">meetpunt</item>
+                        <item type="detail" idref="detail_class_DomeinmodelBROGMN_GMWBuisverwijzing">meetpunt</item>
                      </item>
                      <item>De gegevens die nodig zijn voor een verwijzing naar een specifieke buis in een grondwatermonitoringput.</item>
                      <item/>
@@ -268,22 +274,24 @@
                   </part>
                   <part type="COMPOSED">
                      <item>
-                        <item type="detail" idref="detail_attribute_Model_GMWBuisverwijzing_gMWBROID">GMW-BRO-ID</item>
+                        <item type="detail"
+                              idref="detail_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_bROID">BRO-ID</item>
                      </item>
                      <item>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Registratieobjectcode">Registratieobjectcode</item>
+                        <item type="global"
+                              idref="global_class_DomeinmodelBROCommon_Registratieobjectcode">Registratieobjectcode</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_GMWBuisverwijzing_buisnummer">buisnummer</item>
+                              idref="detail_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_buisnummer">buisnummer</item>
                      </item>
                      <item>Het nummer dat door of voor de bronhouder wordt gebruikt om de monitoringbuis in de grondwatermonitoringput te identificeren.</item>
                      <item>
-                        <item type="global" idref="global_class_Model_Nummer3">Nummer3</item>
+                        <item type="global" idref="global_class_DomeinmodelBROGMN_Nummer3">Nummer3</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -299,10 +307,11 @@
                         <item>Grondwatermonitoringnet</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Brocommon_Registratieobject">Registratieobject</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratieobject">Registratieobject</item>
                         </item>
                      </item>
-                     <item>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond is opgenomen.</item>
+                     <item>n.v.t.</item>
                   </part>
                </content>
                <content approach="target">
@@ -314,10 +323,11 @@
                         <item>Grondwatermonitoringnet</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Brocommon_Registratieobject">Registratieobject</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratieobject">Registratieobject</item>
                         </item>
                      </item>
-                     <item>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond is opgenomen.</item>
+                     <item>n.v.t.</item>
                   </part>
                </content>
             </section>
@@ -330,7 +340,7 @@
       <section type="OVERVIEW-PRIMITIVEDATATYPE">
          <section name="Nummer3"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Model_Nummer3"
+                  id="global_class_DomeinmodelBROGMN_Nummer3"
                   uuid="EAID_E141D757_BEA8_48aa_AC10_AF19A17712AE">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -347,21 +357,21 @@
       <section type="OVERVIEW-CODELIST">
          <content>
             <part>
-               <item id="global_class_Model_KaderAanlevering"
+               <item id="global_class_DomeinmodelBROGMN_KaderAanlevering"
                      uuid="EAID_29EFB509_91AF_4d83_931E_7448F922A8BD"
-                     idref="detail_class_Model_KaderAanlevering">KaderAanlevering</item>
+                     idref="detail_class_DomeinmodelBROGMN_KaderAanlevering">KaderAanlevering</item>
                <item>De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.</item>
             </part>
             <part>
-               <item id="global_class_Model_GrondwaterAspect"
+               <item id="global_class_DomeinmodelBROGMN_GrondwaterAspect"
                      uuid="EAID_46C32AAB_3DBB_4622_947B_B99903A2D1ED"
-                     idref="detail_class_Model_GrondwaterAspect">GrondwaterAspect</item>
+                     idref="detail_class_DomeinmodelBROGMN_GrondwaterAspect">GrondwaterAspect</item>
                <item>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</item>
             </part>
             <part>
-               <item id="global_class_Model_Monitoringdoel"
+               <item id="global_class_DomeinmodelBROGMN_Monitoringdoel"
                      uuid="EAID_A59AEBF6_6958_4593_87CC_096613ECA441"
-                     idref="detail_class_Model_Monitoringdoel">Monitoringdoel</item>
+                     idref="detail_class_DomeinmodelBROGMN_Monitoringdoel">Monitoringdoel</item>
                <item>Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.</item>
             </part>
          </content>
@@ -371,12 +381,12 @@
          <section type="DETAILS-OBJECTTYPE">
             <section name="Grondwatermonitoringnet"
                      type="OBJECTTYPE"
-                     id="detail_class_Model_Grondwatermonitoringnet"
-                     id-global="global_class_Model_Grondwatermonitoringnet">
+                     id="detail_class_DomeinmodelBROGMN_Grondwatermonitoringnet"
+                     id-global="global_class_DomeinmodelBROGMN_Grondwatermonitoringnet">
                <section name="naam"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Grondwatermonitoringnet_naam"
-                        id-global="global_attribute_Model_Grondwatermonitoringnet_naam">
+                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_naam"
+                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_naam">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -426,8 +436,8 @@
                </section>
                <section name="kader aanlevering"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Grondwatermonitoringnet_kaderAanlevering"
-                        id-global="global_attribute_Model_Grondwatermonitoringnet_kaderAanlevering">
+                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_kaderAanlevering"
+                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_kaderAanlevering">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -447,7 +457,8 @@
                      </part>
                      <part type="CFG-DOC-TOELICHTING">
                         <item>Toelichting</item>
-                        <item>De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie.</item>
+                        <item>De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie.
+Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvindt. Aangezien de wetgeving kan veranderen gedurende de periode van monitoren, terwijl het monitoringdoel gelijk kan blijven, geldt dat de rechtsgrond gedurende de levensduur van het grondwatermonitoringnet kan veranderen.</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -485,8 +496,8 @@
                </section>
                <section name="monitoringdoel"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Grondwatermonitoringnet_monitoringdoel"
-                        id-global="global_attribute_Model_Grondwatermonitoringnet_monitoringdoel">
+                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_monitoringdoel"
+                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_monitoringdoel">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -540,8 +551,8 @@
                </section>
                <section name="grondwateraspect"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Grondwatermonitoringnet_grondwateraspect"
-                        id-global="global_attribute_Model_Grondwatermonitoringnet_grondwateraspect">
+                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_grondwateraspect"
+                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_grondwateraspect">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -595,8 +606,8 @@
                </section>
                <section name="Registratiegeschiedenis"
                         type="DETAIL-COMPOSITE"
-                        id="detail_class_Brocommon_Registratiegeschiedenis"
-                        id-global="global_class_Brocommon_Registratiegeschiedenis">
+                        id="detail_class_DomeinmodelBROCommon_Registratiegeschiedenis"
+                        id-global="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -621,11 +632,12 @@
                   </content>
                   <section name="tijdstip registratie object"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipRegistratieObject"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_tijdstipRegistratieObject">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipRegistratieObject"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipRegistratieObject">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -671,11 +683,12 @@
                   </section>
                   <section name="registratiestatus"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_registratiestatus"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_registratiestatus">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_registratiestatus"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_registratiestatus">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -721,11 +734,12 @@
                   </section>
                   <section name="tijdstip laatste aanvulling"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -775,11 +789,12 @@
                   </section>
                   <section name="tijdstip voltooiing registratie"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -833,11 +848,12 @@
                   </section>
                   <section name="gecorrigeerd"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_gecorrigeerd"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_gecorrigeerd">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_gecorrigeerd"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_gecorrigeerd">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -883,11 +899,12 @@
                   </section>
                   <section name="tijdstip laatste correctie"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -937,11 +954,12 @@
                   </section>
                   <section name="in onderzoek"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_inOnderzoek"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_inOnderzoek">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoek"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoek">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -991,11 +1009,12 @@
                   </section>
                   <section name="in onderzoek sinds"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_inOnderzoekSinds"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_inOnderzoekSinds">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoekSinds"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoekSinds">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1045,11 +1064,12 @@
                   </section>
                   <section name="uit registratie genomen"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_uitRegistratieGenomen"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_uitRegistratieGenomen">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_uitRegistratieGenomen"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_uitRegistratieGenomen">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1099,11 +1119,12 @@
                   </section>
                   <section name="tijdstip uit registratie genomen"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1153,11 +1174,12 @@
                   </section>
                   <section name="weer in registratie genomen"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_weerInRegistratieGenomen"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_weerInRegistratieGenomen">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_weerInRegistratieGenomen"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_weerInRegistratieGenomen">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1207,11 +1229,12 @@
                   </section>
                   <section name="tijdstip weer in registratie genomen"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Brocommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen"
-                           id-global="global_attribute_Brocommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen">
+                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen"
+                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Brocommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global"
+                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1262,8 +1285,8 @@
                </section>
                <section name="GMW-buisverwijzing"
                         type="DETAIL-COMPOSITE"
-                        id="detail_class_Model_GMWBuisverwijzing"
-                        id-global="global_class_Model_GMWBuisverwijzing">
+                        id="detail_class_DomeinmodelBROGMN_GMWBuisverwijzing"
+                        id-global="global_class_DomeinmodelBROGMN_GMWBuisverwijzing">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -1282,17 +1305,17 @@
                         <item>BRO</item>
                      </part>
                   </content>
-                  <section name="GMW-BRO-ID"
+                  <section name="BRO-ID"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_GMWBuisverwijzing_gMWBROID"
-                           id-global="global_attribute_Model_GMWBuisverwijzing_gMWBROID">
+                           id="detail_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_bROID"
+                           id-global="global_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_bROID">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_GMWBuisverwijzing">GMW-buisverwijzing</item>
+                           <item type="global" idref="global_class_DomeinmodelBROGMN_GMWBuisverwijzing">GMW-buisverwijzing</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
-                           <item>GMW-BRO-ID</item>
+                           <item>BRO-ID</item>
                         </part>
                         <part type="CFG-DOC-HERKOMST">
                            <item>Herkomst</item>
@@ -1338,11 +1361,11 @@
                   </section>
                   <section name="buisnummer"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_GMWBuisverwijzing_buisnummer"
-                           id-global="global_attribute_Model_GMWBuisverwijzing_buisnummer">
+                           id="detail_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_buisnummer"
+                           id-global="global_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_buisnummer">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_GMWBuisverwijzing">GMW-buisverwijzing</item>
+                           <item type="global" idref="global_class_DomeinmodelBROGMN_GMWBuisverwijzing">GMW-buisverwijzing</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1393,8 +1416,8 @@
                </section>
                <section name="begindatum"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Grondwatermonitoringnet_begindatum"
-                        id-global="global_attribute_Model_Grondwatermonitoringnet_begindatum">
+                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_begindatum"
+                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_begindatum">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -1436,6 +1459,10 @@
                         <item>Indicatie authentiek</item>
                         <item>Authentiek</item>
                      </part>
+                     <part type="CFG-DOC-REGELS-IMBROA">
+                        <item>Regels IMBRO/A</item>
+                        <item>OnvolledigeDatum</item>
+                     </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
                         <item>Datum</item>
@@ -1444,12 +1471,16 @@
                         <item>Indicatie afleidbaar</item>
                         <item>Nee</item>
                      </part>
+                     <part type="CFG-DOC-MINIMUMVALUE">
+                        <item>Minimumwaarde</item>
+                        <item>1-1-1800</item>
+                     </part>
                   </content>
                </section>
                <section name="einddatum"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Grondwatermonitoringnet_einddatum"
-                        id-global="global_attribute_Model_Grondwatermonitoringnet_einddatum">
+                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_einddatum"
+                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_einddatum">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -1499,6 +1530,10 @@
                         <item>Indicatie afleidbaar</item>
                         <item>Nee</item>
                      </part>
+                     <part type="CFG-DOC-MAXIMUMVALUE">
+                        <item>Maximumwaarde</item>
+                        <item>heden</item>
+                     </part>
                   </content>
                </section>
             </section>
@@ -1511,8 +1546,8 @@
          <section type="DETAILS-CODELIST">
             <section name="KaderAanlevering"
                      type="DETAIL-CODELIST"
-                     id="detail_class_Model_KaderAanlevering"
-                     id-global="global_class_Model_KaderAanlevering"
+                     id="detail_class_DomeinmodelBROGMN_KaderAanlevering"
+                     id-global="global_class_DomeinmodelBROGMN_KaderAanlevering"
                      uuid="EAID_29EFB509_91AF_4d83_931E_7448F922A8BD">
                <content>
                   <part>
@@ -1584,12 +1619,17 @@
                      <item>wetNatuurbescherming</item>
                      <item>De gegevens zijn aangeleverd in het kader van wet natuurbescherming.</item>
                   </part>
+                  <part>
+                     <item/>
+                     <item>archiefoverdracht</item>
+                     <item>De gegevens zijn aangeleverd in het kader van archiefoverdracht.</item>
+                  </part>
                </content>
             </section>
             <section name="GrondwaterAspect"
                      type="DETAIL-CODELIST"
-                     id="detail_class_Model_GrondwaterAspect"
-                     id-global="global_class_Model_GrondwaterAspect"
+                     id="detail_class_DomeinmodelBROGMN_GrondwaterAspect"
+                     id-global="global_class_DomeinmodelBROGMN_GrondwaterAspect"
                      uuid="EAID_46C32AAB_3DBB_4622_947B_B99903A2D1ED">
                <content>
                   <part>
@@ -1611,12 +1651,17 @@
                      <item>kwantiteit</item>
                      <item>De stand of hoeveelheid van het grondwater.</item>
                   </part>
+                  <part>
+                     <item/>
+                     <item>onbekend</item>
+                     <item>Het is onbekend welk aspect van grondwater wordt gemonitord.</item>
+                  </part>
                </content>
             </section>
             <section name="Monitoringdoel"
                      type="DETAIL-CODELIST"
-                     id="detail_class_Model_Monitoringdoel"
-                     id-global="global_class_Model_Monitoringdoel"
+                     id="detail_class_DomeinmodelBROGMN_Monitoringdoel"
+                     id-global="global_class_DomeinmodelBROGMN_Monitoringdoel"
                      uuid="EAID_A59AEBF6_6958_4593_87CC_096613ECA441">
                <content>
                   <part>
@@ -1691,12 +1736,12 @@
                   <part>
                      <item/>
                      <item>veiligstellingGrondwaterKwantiteit</item>
-                     <item>Kennis over de omvang van de voorraad grondwater die beschikbaar is voor de mens op schaal van grondwaterlichaam, met als doel de veiligstelling hiervan.</item>
+                     <item>Kennis over de omvang van de voorraad grondwater die beschikbaar is voor de mens op de schaal van een grondwaterlichaam, met als doel de veiligstelling hiervan.</item>
                   </part>
                   <part>
                      <item/>
                      <item>veiligstellingGrondwaterKwaliteit</item>
-                     <item>Kennis over grondwaterverontreinigingen op schaal van grondwaterlichaam die de bruikbaarheid ten behoeve van mens en natuur bedreigen. Doel: borgen van een goede chemische toestand en het signaleren van stijgende trends.</item>
+                     <item>Kennis over grondwaterverontreinigingen op de schaal van een grondwaterlichaam die de bruikbaarheid ten behoeve van mens en natuur bedreigen, met als doel het borgen van een goede chemische toestand en het signaleren van stijgende trends.</item>
                   </part>
                   <part>
                      <item/>
@@ -1733,17 +1778,24 @@
                      <item>natuurbescherming</item>
                      <item>Kennis over de bruikbaarheid van het grondwater ten behoeve van de instandhouding/bescherming van de natuur.</item>
                   </part>
+                  <part>
+                     <item/>
+                     <item>onbekend</item>
+                     <item>Het is onbekend ten behoeve van welk doel de monitoring plaatsvindt.</item>
+                  </part>
                </content>
             </section>
          </section>
          <!--removed empty content-->
       </section>
    </section>
-   <section type="DOMAIN" name="brocommon" id="global_package_Brocommon">
+   <section type="DOMAIN"
+            name="Domeinmodel BRO Common"
+            id="global_package_DomeinmodelBROCommon">
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Registratieobject"
                   type="OBJECTTYPE"
-                  id="global_class_Brocommon_Registratieobject"
+                  id="global_class_DomeinmodelBROCommon_Registratieobject"
                   uuid="EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -1756,11 +1808,15 @@
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond is opgenomen.</item>
+                  <item>n.v.t.</item>
                </part>
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
                   <item>BRO</item>
+               </part>
+               <part type="CFG-DOC-TOELICHTING">
+                  <item>Toelichting</item>
+                  <item>Deze entiteit bevat de generieke attributen van het registratieobject: de gegevens van een registratieobject die voorkomen bij alle verschillende soorten registratieobjecten in de basisregistratie ondergrond.</item>
                </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
@@ -1773,55 +1829,57 @@
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratieobject_bROID">BRO-ID</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratieobject_bROID">BRO-ID</item>
                      </item>
                      <item>De identificatie van een object dat in de registratie ondergrond is opgenomen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Registratieobjectcode">Registratieobjectcode</item>
+                        <item type="global"
+                              idref="global_class_DomeinmodelBROCommon_Registratieobjectcode">Registratieobjectcode</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratieobject_bronhouder">bronhouder</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratieobject_bronhouder">bronhouder</item>
                      </item>
                      <item>TODO</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Organisatie">Organisatie</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_Organisatie">Organisatie</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratieobject_objectIDBronhouder">object-ID bronhouder</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratieobject_objectIDBronhouder">object-ID bronhouder</item>
                      </item>
                      <item>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie ondergrond.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Tekst200">Tekst200</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_Tekst200">Tekst200</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratieobject_dataleverancier">dataleverancier</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratieobject_dataleverancier">dataleverancier</item>
                      </item>
                      <item>De identificatie die de organisatie die het object aan de basisregistratie ondergrond heeft aangeleverd, als onderneming in het Handelsregister heeft.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Organisatie">Organisatie</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_Organisatie">Organisatie</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratieobject_kwaliteitsregime">kwaliteitsregime</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Registratieobject_kwaliteitsregime">kwaliteitsregime</item>
                      </item>
                      <item>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Kwaliteitsregime">Kwaliteitsregime</item>
+                        <item type="global"
+                              idref="global_class_DomeinmodelBROCommon_Kwaliteitsregime">Kwaliteitsregime</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -1834,7 +1892,7 @@
       <section type="OVERVIEW-UNION">
          <section name="Organisatie"
                   type="UNION"
-                  id="global_class_Brocommon_Organisatie"
+                  id="global_class_DomeinmodelBROCommon_Organisatie"
                   uuid="EAID_E38550EF_707A_4e86_9BF1_963B68CC2CC4">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -1859,22 +1917,23 @@
                   <itemtype type="UNIONELEMENT-CARD"/>
                   <part>
                      <item>
-                        <item type="detail" idref="detail_attribute_Brocommon_Organisatie_kvKNummer">KvK-nummer</item>
+                        <item type="detail"
+                              idref="detail_attribute_DomeinmodelBROCommon_Organisatie_kvKNummer">KvK-nummer</item>
                      </item>
                      <item/>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_KvKNummer">KvK-nummer</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_KvKNummer">KvK-nummer</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Organisatie_europeesHandelsnummer">Europees handelsnummer</item>
+                              idref="detail_attribute_DomeinmodelBROCommon_Organisatie_europeesHandelsnummer">Europees handelsnummer</item>
                      </item>
                      <item/>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Tekst40">Tekst40</item>
+                        <item type="global" idref="global_class_DomeinmodelBROCommon_Tekst40">Tekst40</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -1886,7 +1945,7 @@
       <section type="OVERVIEW-PRIMITIVEDATATYPE">
          <section name="Datum"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Datum"
+                  id="global_class_DomeinmodelBROCommon_Datum"
                   uuid="EAID_CA1AE7E1_B12C_40c8_9CF7_52573A8239B4">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -1906,7 +1965,7 @@ Wanneer een attribuut een domein van het type Datum heeft is het voldoende de na
          </section>
          <section name="DatumTijd"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_DatumTijd"
+                  id="global_class_DomeinmodelBROCommon_DatumTijd"
                   uuid="EAID_67600D6A_3950_462c_A9F8_9C4898D13DF0">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -1926,7 +1985,7 @@ Wanneer een attribuut een domein van het type DatumTijd heeft is het voldoende d
          </section>
          <section name="KvK-nummer"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_KvKNummer"
+                  id="global_class_DomeinmodelBROCommon_KvKNummer"
                   uuid="EAID_CC665945_1F41_46d9_9010_D42C45E7E042">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -1941,7 +2000,7 @@ Wanneer een attribuut een domein van het type DatumTijd heeft is het voldoende d
          </section>
          <section name="Tekst40"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Tekst40"
+                  id="global_class_DomeinmodelBROCommon_Tekst40"
                   uuid="EAID_BE533F94_BA41_43cb_A5FE_9C37933CF7FA">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -1957,7 +2016,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
          </section>
          <section name="Tekst200"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Tekst200"
+                  id="global_class_DomeinmodelBROCommon_Tekst200"
                   uuid="EAID_A3CCB773_81DF_4da3_8016_817F02297137">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -1973,7 +2032,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
          </section>
          <section name="Registratieobjectcode"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Registratieobjectcode"
+                  id="global_class_DomeinmodelBROCommon_Registratieobjectcode"
                   uuid="EAID_4EB8C8EF_F07A_49d3_AFCB_773194499FDA">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -1995,9 +2054,9 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
       <section type="OVERVIEW-CODELIST">
          <content>
             <part>
-               <item id="global_class_Brocommon_Registratiestatus"
+               <item id="global_class_DomeinmodelBROCommon_Registratiestatus"
                      uuid="EAID_F5229DCB_D57A_47f7_B144_05DD13DAAB0C"
-                     idref="detail_class_Brocommon_Registratiestatus">Registratiestatus</item>
+                     idref="detail_class_DomeinmodelBROCommon_Registratiestatus">Registratiestatus</item>
                <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
             </part>
          </content>
@@ -2005,15 +2064,15 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
       <section type="OVERVIEW-ENUMERATION">
          <content>
             <part>
-               <item id="global_class_Brocommon_IndicatieJaNee"
+               <item id="global_class_DomeinmodelBROCommon_IndicatieJaNee"
                      uuid="EAID_1EE1AAF4_A1C0_4dfa_BA12_43D20B8A36CB"
-                     idref="detail_class_Brocommon_IndicatieJaNee">IndicatieJaNee</item>
+                     idref="detail_class_DomeinmodelBROCommon_IndicatieJaNee">IndicatieJaNee</item>
                <item>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden. Uitbreiding van de keuzelijst is niet mogelijk.</item>
             </part>
             <part>
-               <item id="global_class_Brocommon_Kwaliteitsregime"
+               <item id="global_class_DomeinmodelBROCommon_Kwaliteitsregime"
                      uuid="EAID_2E962A93_45D1_44a6_B6C5_F8614253BC8E"
-                     idref="detail_class_Brocommon_Kwaliteitsregime">Kwaliteitsregime</item>
+                     idref="detail_class_DomeinmodelBROCommon_Kwaliteitsregime">Kwaliteitsregime</item>
                <item>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden voor het duiden van de kwaliteitseis waaraan de gegevens van het object voldoen. Uitbreiding van de keuzelijst is niet mogelijk.</item>
             </part>
          </content>
@@ -2022,12 +2081,12 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
          <section type="DETAILS-OBJECTTYPE">
             <section name="Registratieobject"
                      type="OBJECTTYPE"
-                     id="detail_class_Brocommon_Registratieobject"
-                     id-global="global_class_Brocommon_Registratieobject">
+                     id="detail_class_DomeinmodelBROCommon_Registratieobject"
+                     id-global="global_class_DomeinmodelBROCommon_Registratieobject">
                <section name="BRO-ID"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Brocommon_Registratieobject_bROID"
-                        id-global="global_attribute_Brocommon_Registratieobject_bROID">
+                        id="detail_attribute_DomeinmodelBROCommon_Registratieobject_bROID"
+                        id-global="global_attribute_DomeinmodelBROCommon_Registratieobject_bROID">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2073,8 +2132,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="bronhouder"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Brocommon_Registratieobject_bronhouder"
-                        id-global="global_attribute_Brocommon_Registratieobject_bronhouder">
+                        id="detail_attribute_DomeinmodelBROCommon_Registratieobject_bronhouder"
+                        id-global="global_attribute_DomeinmodelBROCommon_Registratieobject_bronhouder">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2124,8 +2183,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="object-ID bronhouder"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Brocommon_Registratieobject_objectIDBronhouder"
-                        id-global="global_attribute_Brocommon_Registratieobject_objectIDBronhouder">
+                        id="detail_attribute_DomeinmodelBROCommon_Registratieobject_objectIDBronhouder"
+                        id-global="global_attribute_DomeinmodelBROCommon_Registratieobject_objectIDBronhouder">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2167,8 +2226,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="dataleverancier"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Brocommon_Registratieobject_dataleverancier"
-                        id-global="global_attribute_Brocommon_Registratieobject_dataleverancier">
+                        id="detail_attribute_DomeinmodelBROCommon_Registratieobject_dataleverancier"
+                        id-global="global_attribute_DomeinmodelBROCommon_Registratieobject_dataleverancier">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2210,8 +2269,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="kwaliteitsregime"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Brocommon_Registratieobject_kwaliteitsregime"
-                        id-global="global_attribute_Brocommon_Registratieobject_kwaliteitsregime">
+                        id="detail_attribute_DomeinmodelBROCommon_Registratieobject_kwaliteitsregime"
+                        id-global="global_attribute_DomeinmodelBROCommon_Registratieobject_kwaliteitsregime">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2258,12 +2317,12 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
          <section type="DETAILS-UNION">
             <section name="Organisatie"
                      type="KEUZE"
-                     id="detail_class_Brocommon_Organisatie"
-                     id-global="global_class_Brocommon_Organisatie">
+                     id="detail_class_DomeinmodelBROCommon_Organisatie"
+                     id-global="global_class_DomeinmodelBROCommon_Organisatie">
                <section name="KvK-nummer"
                         type="DETAIL-UNIONELEMENT"
-                        id="detail_attribute_Brocommon_Organisatie_kvKNummer"
-                        id-global="global_attribute_Brocommon_Organisatie_kvKNummer">
+                        id="detail_attribute_DomeinmodelBROCommon_Organisatie_kvKNummer"
+                        id-global="global_attribute_DomeinmodelBROCommon_Organisatie_kvKNummer">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2281,8 +2340,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="Europees handelsnummer"
                         type="DETAIL-UNIONELEMENT"
-                        id="detail_attribute_Brocommon_Organisatie_europeesHandelsnummer"
-                        id-global="global_attribute_Brocommon_Organisatie_europeesHandelsnummer">
+                        id="detail_attribute_DomeinmodelBROCommon_Organisatie_europeesHandelsnummer"
+                        id-global="global_attribute_DomeinmodelBROCommon_Organisatie_europeesHandelsnummer">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2305,8 +2364,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
          <section type="DETAILS-CODELIST">
             <section name="Registratiestatus"
                      type="DETAIL-CODELIST"
-                     id="detail_class_Brocommon_Registratiestatus"
-                     id-global="global_class_Brocommon_Registratiestatus"
+                     id="detail_class_DomeinmodelBROCommon_Registratiestatus"
+                     id-global="global_class_DomeinmodelBROCommon_Registratiestatus"
                      uuid="EAID_F5229DCB_D57A_47f7_B144_05DD13DAAB0C">
                <content>
                   <part>
@@ -2339,8 +2398,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
          <section type="DETAILS-ENUMERATION">
             <section name="IndicatieJaNee"
                      type="DETAIL-ENUMERATION"
-                     id="detail_class_Brocommon_IndicatieJaNee"
-                     id-global="global_class_Brocommon_IndicatieJaNee"
+                     id="detail_class_DomeinmodelBROCommon_IndicatieJaNee"
+                     id-global="global_class_DomeinmodelBROCommon_IndicatieJaNee"
                      uuid="EAID_1EE1AAF4_A1C0_4dfa_BA12_43D20B8A36CB">
                <content>
                   <part>
@@ -2366,8 +2425,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
             </section>
             <section name="Kwaliteitsregime"
                      type="DETAIL-ENUMERATION"
-                     id="detail_class_Brocommon_Kwaliteitsregime"
-                     id-global="global_class_Brocommon_Kwaliteitsregime"
+                     id="detail_class_DomeinmodelBROCommon_Kwaliteitsregime"
+                     id-global="global_class_DomeinmodelBROCommon_Kwaliteitsregime"
                      uuid="EAID_2E962A93_45D1_44a6_B6C5_F8614253BC8E">
                <content>
                   <part>
