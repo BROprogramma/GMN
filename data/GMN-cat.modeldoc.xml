@@ -4,13 +4,11 @@
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
       generator-version="1.50.1"
-      generator-date="2019-02-11T14:49:19Z">
-   <section type="DOMAIN"
-            name="Domeinmodel BRO GMN"
-            id="global_package_DomeinmodelBROGMN">
+      generator-date="2019-02-15T15:19:49Z">
+   <section type="DOMAIN" name="BRO GMN" id="global_package_BROGMN">
       <section type="IMAGEMAPS"
-               name="Domeinmodel BRO GMN-imagemap"
-               id="imagemap_package_DomeinmodelBROGMN">
+               name="BRO GMN-imagemap"
+               id="imagemap_package_BROGMN">
          <section type="IMAGEMAP"
                   name="Domeinmodel BRO GMN - overzicht"
                   id="EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C">
@@ -27,9 +25,99 @@
          </section>
       </section>
       <section type="OVERVIEW-OBJECTTYPE">
+         <section name="Registratieobject"
+                  type="OBJECTTYPE"
+                  id="global_class_BROGMN_Registratieobject"
+                  uuid="EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>Registratieobject</item>
+               </part>
+               <part type="CFG-DOC-HERKOMST">
+                  <item>Herkomst</item>
+                  <item>BRO</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Het geheel van gegevens dat betrekking heeft op een grondwatermonitoringnet: een verzameling locaties waar periodiek onderzoek aan het grondwater op een of meerdere bepaalde dieptes wordt gedaan om de toestand van het grondwater in het gebied vanuit een perspectief te bepalen, om de eventuele veranderingen daarin te kunnen volgen.</item>
+               </part>
+               <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                  <item>Herkomst definitie</item>
+                  <item>BRO</item>
+               </part>
+               <part type="CFG-DOC-TOELICHTING">
+                  <item>Toelichting</item>
+                  <item>Deze entiteit bevat de generieke attributen van het registratieobject: de gegevens van een registratieobject die voorkomen bij alle verschillende soorten registratieobjecten in de basisregistratie ondergrond.</item>
+               </part>
+            </content>
+            <section type="SHORT-ATTRIBUTES">
+               <content>
+                  <itemtype/>
+                  <itemtype type="ATTRIBUTE-NAME"/>
+                  <itemtype type="ATTRIBUTE-DEFINITION"/>
+                  <itemtype type="ATTRIBUTE-FORMAT"/>
+                  <itemtype type="ATTRIBUTE-CARD"/>
+                  <part>
+                     <item>
+                        <item type="detail" idref="detail_attribute_BROGMN_Registratieobject_bROID">BRO-ID</item>
+                     </item>
+                     <item>De identificatie van een object dat in de registratie ondergrond is opgenomen.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_Registratieobjectcode">Registratieobjectcode</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratieobject_bronhouder">bronhouder</item>
+                     </item>
+                     <item>Het KvK-nummer van de maatschappelijke activiteit van de publiekrechtelijke rechtspersoon die bronhouder is van de gegevens in de basisregistratie ondergrond.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_Organisatie">Organisatie</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratieobject_objectIDBronhouder">object-ID bronhouder</item>
+                     </item>
+                     <item>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie ondergrond.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_Tekst200">Tekst200</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratieobject_dataleverancier">dataleverancier</item>
+                     </item>
+                     <item>De identificatie die de organisatie die het object aan de basisregistratie ondergrond heeft aangeleverd, als onderneming in het Handelsregister heeft.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_Organisatie">Organisatie</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratieobject_kwaliteitsregime">kwaliteitsregime</item>
+                     </item>
+                     <item>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_Kwaliteitsregime">Kwaliteitsregime</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+               </content>
+            </section>
+         </section>
          <section name="Grondwatermonitoringnet"
                   type="OBJECTTYPE"
-                  id="global_class_DomeinmodelBROGMN_Grondwatermonitoringnet"
+                  id="global_class_BROGMN_Grondwatermonitoringnet"
                   uuid="EAID_A35817A4_9167_4620_BB25_5933C44F44E1">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -42,7 +130,7 @@
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>Een verzameling locaties waar periodiek onderzoek aan het grondwater op een of meerdere bepaalde diepte(s) wordt gedaan om de toestand van het grondwater in het gebied vanuit een perspectief te bepalen, om de eventuele veranderingen daarin te kunnen volgen.</item>
+                  <item>De gegevens die het grondwatermonitoringnet identificeren.</item>
                </part>
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
@@ -59,104 +147,72 @@
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_begindatum">begindatum</item>
+                              idref="detail_attribute_BROGMN_Grondwatermonitoringnet_naam">naam</item>
                      </item>
-                     <item>De datum die het begin aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.</item>
+                     <item>De naam waaronder het monitoringnet bekend is.</item>
                      <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_Datum">Datum</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_einddatum">einddatum</item>
-                     </item>
-                     <item>De datum die het einde aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_Datum">Datum</item>
-                     </item>
-                     <item>0 .. 1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_grondwateraspect">grondwateraspect</item>
-                     </item>
-                     <item>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROGMN_GrondwaterAspect">GrondwaterAspect</item>
+                        <item type="global" idref="global_class_BROGMN_Tekst200">Tekst200</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_kaderAanlevering">kader aanlevering</item>
+                              idref="detail_attribute_BROGMN_Grondwatermonitoringnet_kaderAanlevering">kader aanlevering</item>
                      </item>
                      <item>De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.</item>
                      <item>
-                        <item type="global" idref="global_class_DomeinmodelBROGMN_KaderAanlevering">KaderAanlevering</item>
+                        <item type="global" idref="global_class_BROGMN_KaderAanlevering">KaderAanlevering</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_monitoringdoel">monitoringdoel</item>
+                              idref="detail_attribute_BROGMN_Grondwatermonitoringnet_monitoringdoel">monitoringdoel</item>
                      </item>
                      <item>Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.</item>
                      <item>
-                        <item type="global" idref="global_class_DomeinmodelBROGMN_Monitoringdoel">Monitoringdoel</item>
+                        <item type="global" idref="global_class_BROGMN_Monitoringdoel">Monitoringdoel</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_naam">naam</item>
+                              idref="detail_attribute_BROGMN_Grondwatermonitoringnet_grondwateraspect">grondwateraspect</item>
                      </item>
-                     <item>De functionele naam waaronder het monotoringnet bekend is.</item>
+                     <item>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</item>
                      <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_Tekst200">Tekst200</item>
+                        <item type="global" idref="global_class_BROGMN_GrondwaterAspect">GrondwaterAspect</item>
                      </item>
                      <item>1</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Grondwatermonitoringnet_begindatum">begindatum</item>
+                     </item>
+                     <item>De datum die het begin aangeeft van de periode waarin het monitoren van het grondwater plaatsvindt.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_Datum">Datum</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Grondwatermonitoringnet_einddatum">einddatum</item>
+                     </item>
+                     <item>De datum die het einde aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_Datum">Datum</item>
+                     </item>
+                     <item>0 .. 1</item>
                   </part>
                   <part type="COMPOSER">
                      <item>
-                        <item type="detail" idref="detail_class_DomeinmodelBROGMN_GMWBuisverwijzing">meetpunt</item>
-                     </item>
-                     <item>De gegevens die nodig zijn voor een verwijzing naar een specifieke buis in een grondwatermonitoringput.</item>
-                     <item/>
-                     <item>0 .. *</item>
-                  </part>
-                  <part type="COMPOSED">
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_bROID">BRO-ID</item>
-                     </item>
-                     <item>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</item>
-                     <item>
-                        <item type="global"
-                              idref="global_class_DomeinmodelBROCommon_Registratieobjectcode">Registratieobjectcode</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part type="COMPOSED">
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_buisnummer">buisnummer</item>
-                     </item>
-                     <item>Het nummer dat door of voor de bronhouder wordt gebruikt om de monitoringbuis in de grondwatermonitoringput te identificeren.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_Nummer3">Nummer3</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part type="COMPOSER">
-                     <item>
-                        <item type="detail"
-                              idref="detail_class_DomeinmodelBROCommon_Registratiegeschiedenis">registratiegeschiedenis</item>
+                        <item type="detail" idref="detail_class_BROGMN_Registratiegeschiedenis">registratiegeschiedenis</item>
                      </item>
                      <item>De gegevens die de geschiedenis van het object in de registratie ondergrond markeren.</item>
                      <item/>
@@ -165,133 +221,161 @@
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_gecorrigeerd">gecorrigeerd</item>
-                     </item>
-                     <item>De aanduiding die aangeeft of er een verbetering in de gegevens van het object in de registratie ondergrond heeft plaatsgevonden.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_IndicatieJaNee">IndicatieJaNee</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part type="COMPOSED">
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoek">in onderzoek</item>
-                     </item>
-                     <item>De aanduiding die aangeeft of het registratieobject door de registerbeheerder in onderzoek is genomen.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_IndicatieJaNee">IndicatieJaNee</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part type="COMPOSED">
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoekSinds">in onderzoek sinds</item>
-                     </item>
-                     <item>De datum en het tijdstip waarop de registerbeheerder het registratieobject in onderzoek heeft genomen.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
-                     </item>
-                     <item>0 .. 1</item>
-                  </part>
-                  <part type="COMPOSED">
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_registratiestatus">registratiestatus</item>
-                     </item>
-                     <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
-                     <item>
-                        <item type="global"
-                              idref="global_class_DomeinmodelBROCommon_Registratiestatus">Registratiestatus</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part type="COMPOSED">
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling">tijdstip laatste aanvulling</item>
-                     </item>
-                     <item>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie ondergrond is doorgevoerd.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
-                     </item>
-                     <item>0 .. 1</item>
-                  </part>
-                  <part type="COMPOSED">
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie">tijdstip laatste correctie</item>
-                     </item>
-                     <item>De datum en het tijdstip waarop de laatste correctie in de gegevens van het registratieobject is doorgevoerd.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
-                     </item>
-                     <item>0 .. 1</item>
-                  </part>
-                  <part type="COMPOSED">
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipRegistratieObject">tijdstip registratie object</item>
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipRegistratieObject">tijdstip registratie object</item>
                      </item>
                      <item>De datum en het tijdstip waarop er voor het eerst gegevens van het object in de registratie ondergrond zijn opgenomen.</item>
                      <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
+                        <item type="global" idref="global_class_BROGMN_DatumTijd">DatumTijd</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen">tijdstip uit registratie genomen</item>
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_registratiestatus">registratiestatus</item>
                      </item>
-                     <item>De datum en het tijdstip waarop het registratieobject uit registratie is genomen.</item>
+                     <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
                      <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
+                        <item type="global" idref="global_class_BROGMN_Registratiestatus">Registratiestatus</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part type="COMPOSED">
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipLaatsteAanvulling">tijdstip laatste aanvulling</item>
+                     </item>
+                     <item>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie ondergrond is doorgevoerd.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_DatumTijd">DatumTijd</item>
                      </item>
                      <item>0 .. 1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">tijdstip voltooiing registratie</item>
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">tijdstip voltooiing registratie</item>
                      </item>
                      <item>De datum en het tijdstip waarop alle gegevens van het object in de registratie ondergrond zijn opgenomen.</item>
                      <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
+                        <item type="global" idref="global_class_BROGMN_DatumTijd">DatumTijd</item>
                      </item>
                      <item>0 .. 1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen">tijdstip weer in registratie genomen</item>
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_gecorrigeerd">gecorrigeerd</item>
                      </item>
-                     <item>De datum en het tijdstip waarop het object in de registratie ondergrond is opgenomen, nadat het uit registratie was genomen.</item>
+                     <item>De aanduiding die aangeeft of er een verbetering in de gegevens van het object in de registratie ondergrond heeft plaatsgevonden.</item>
                      <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_DatumTijd">DatumTijd</item>
-                     </item>
-                     <item>0 .. 1</item>
-                  </part>
-                  <part type="COMPOSED">
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_uitRegistratieGenomen">uit registratie genomen</item>
-                     </item>
-                     <item>De aanduiding die aangeeft of de gegevens van het registratieobject door de registerbeheerder uit registratie zijn genomen.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_IndicatieJaNee">IndicatieJaNee</item>
+                        <item type="global" idref="global_class_BROGMN_IndicatieJaNee">IndicatieJaNee</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_weerInRegistratieGenomen">weer in registratie genomen</item>
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipLaatsteCorrectie">tijdstip laatste correctie</item>
+                     </item>
+                     <item>De datum en het tijdstip waarop de laatste correctie in de gegevens van het registratieobject is doorgevoerd.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_DatumTijd">DatumTijd</item>
+                     </item>
+                     <item>0 .. 1</item>
+                  </part>
+                  <part type="COMPOSED">
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_inOnderzoek">in onderzoek</item>
+                     </item>
+                     <item>De aanduiding die aangeeft of het registratieobject door de registerbeheerder in onderzoek is genomen.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_IndicatieJaNee">IndicatieJaNee</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part type="COMPOSED">
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_inOnderzoekSinds">in onderzoek sinds</item>
+                     </item>
+                     <item>De datum en het tijdstip waarop de registerbeheerder het registratieobject in onderzoek heeft genomen.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_DatumTijd">DatumTijd</item>
+                     </item>
+                     <item>0 .. 1</item>
+                  </part>
+                  <part type="COMPOSED">
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_uitRegistratieGenomen">uit registratie genomen</item>
+                     </item>
+                     <item>De aanduiding die aangeeft of de gegevens van het registratieobject door de registerbeheerder uit registratie zijn genomen.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_IndicatieJaNee">IndicatieJaNee</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part type="COMPOSED">
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipUitRegistratieGenomen">tijdstip uit registratie genomen</item>
+                     </item>
+                     <item>De datum en het tijdstip waarop het registratieobject uit registratie is genomen.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_DatumTijd">DatumTijd</item>
+                     </item>
+                     <item>0 .. 1</item>
+                  </part>
+                  <part type="COMPOSED">
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_weerInRegistratieGenomen">weer in registratie genomen</item>
                      </item>
                      <item>De aanduiding die aangeeft of het object in de registratie ondergrond is opgenomen, nadat het eerder uit registratie was genomen.</item>
                      <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_IndicatieJaNee">IndicatieJaNee</item>
+                        <item type="global" idref="global_class_BROGMN_IndicatieJaNee">IndicatieJaNee</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part type="COMPOSED">
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen">tijdstip weer in registratie genomen</item>
+                     </item>
+                     <item>De datum en het tijdstip waarop het object in de registratie ondergrond is opgenomen, nadat het uit registratie was genomen.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_DatumTijd">DatumTijd</item>
+                     </item>
+                     <item>0 .. 1</item>
+                  </part>
+                  <part type="COMPOSER">
+                     <item>
+                        <item type="detail" idref="detail_class_BROGMN_GMWBuisverwijzing">meetpunt</item>
+                     </item>
+                     <item>De verwijzing naar een specifieke buis in een grondwatermonitoringput, waar onderzoeken aan de samenstelling of stand van het grondwater worden uitgevoerd ten behoeve van het grondwatermonitoringnet.</item>
+                     <item/>
+                     <item>0 .. *</item>
+                  </part>
+                  <part type="COMPOSED">
+                     <item>
+                        <item type="detail" idref="detail_attribute_BROGMN_GMWBuisverwijzing_bROID">BRO-ID</item>
+                     </item>
+                     <item>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_Registratieobjectcode">Registratieobjectcode</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part type="COMPOSED">
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_GMWBuisverwijzing_buisnummer">buisnummer</item>
+                     </item>
+                     <item>Het nummer dat door of voor de bronhouder wordt gebruikt om de monitoringbuis in de grondwatermonitoringput te identificeren.</item>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_Nummer3">Nummer3</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -307,11 +391,10 @@
                         <item>Grondwatermonitoringnet</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratieobject">Registratieobject</item>
+                           <item type="global" idref="global_class_BROGMN_Registratieobject">Registratieobject</item>
                         </item>
                      </item>
-                     <item>n.v.t.</item>
+                     <item>Het geheel van gegevens dat betrekking heeft op een grondwatermonitoringnet: een verzameling locaties waar periodiek onderzoek aan het grondwater op een of meerdere bepaalde dieptes wordt gedaan om de toestand van het grondwater in het gebied vanuit een perspectief te bepalen, om de eventuele veranderingen daarin te kunnen volgen.</item>
                   </part>
                </content>
                <content approach="target">
@@ -323,11 +406,10 @@
                         <item>Grondwatermonitoringnet</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratieobject">Registratieobject</item>
+                           <item type="global" idref="global_class_BROGMN_Registratieobject">Registratieobject</item>
                         </item>
                      </item>
-                     <item>n.v.t.</item>
+                     <item>Het geheel van gegevens dat betrekking heeft op een grondwatermonitoringnet: een verzameling locaties waar periodiek onderzoek aan het grondwater op een of meerdere bepaalde dieptes wordt gedaan om de toestand van het grondwater in het gebied vanuit een perspectief te bepalen, om de eventuele veranderingen daarin te kunnen volgen.</item>
                   </part>
                </content>
             </section>
@@ -335,46 +417,504 @@
       </section>
       <!--removed empty content-->
       <!--removed empty content-->
+      <section type="OVERVIEW-UNION">
+         <section name="Organisatie"
+                  type="UNION"
+                  id="global_class_BROGMN_Organisatie"
+                  uuid="EAID_E38550EF_707A_4e86_9BF1_963B68CC2CC4">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>Organisatie</item>
+               </part>
+               <part type="CFG-DOC-HERKOMST">
+                  <item>Herkomst</item>
+                  <item>BRO</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>TODO</item>
+               </part>
+            </content>
+            <section type="SHORT-UNIONELEMENTS">
+               <content>
+                  <itemtype/>
+                  <itemtype type="UNIONELEMENT-NAME"/>
+                  <itemtype type="UNIONELEMENT-DEFINITION"/>
+                  <itemtype type="UNIONELEMENT-FORMAT"/>
+                  <itemtype type="UNIONELEMENT-CARD"/>
+                  <part>
+                     <item>
+                        <item type="detail" idref="detail_attribute_BROGMN_Organisatie_kvKNummer">KvK-nummer</item>
+                     </item>
+                     <item/>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_KvKNummer">KvK-nummer</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_BROGMN_Organisatie_europeesHandelsnummer">Europees handelsnummer</item>
+                     </item>
+                     <item/>
+                     <item>
+                        <item type="global" idref="global_class_BROGMN_Tekst40">Tekst40</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+               </content>
+            </section>
+         </section>
+      </section>
       <!--removed empty content-->
-      <!--removed empty content-->
-      <!--removed empty content-->
+      <section type="OVERVIEW-PRIMITIVEDATATYPE">
+         <section name="Datum"
+                  type="PRIMITIVEDATATYPE"
+                  id="global_class_BROGMN_Datum"
+                  uuid="EAID_CA1AE7E1_B12C_40c8_9CF7_52573A8239B4">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>Datum</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Het domein Datum geeft een datum volgens de Gregoriaanse kalender tot op de dag nauwkeurig. De opbouw is JJJJ-MM-DD.
+Wanneer een attribuut een domein van het type Datum heeft is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is.</item>
+               </part>
+               <part type="CFG-DOC-PATROON">
+                  <item>Patroon</item>
+                  <item>JJJJ-MM-DD</item>
+               </part>
+            </content>
+         </section>
+         <section name="DatumTijd"
+                  type="PRIMITIVEDATATYPE"
+                  id="global_class_BROGMN_DatumTijd"
+                  uuid="EAID_67600D6A_3950_462c_A9F8_9C4898D13DF0">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>DatumTijd</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Het domein DatumTijd geeft een tijdstip volgens de Gregoriaanse kalender tot op de seconde nauwkeurig. De opbouw is JJJJ-MM-DDTUU:MM:SS+UU:MM.
+Wanneer een attribuut een domein van het type DatumTijd heeft is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is.</item>
+               </part>
+               <part type="CFG-DOC-PATROON">
+                  <item>Patroon</item>
+                  <item>JJJJ-MM-DDTUU:MM:SS+UU:MM</item>
+               </part>
+            </content>
+         </section>
+         <section name="KvK-nummer"
+                  type="PRIMITIVEDATATYPE"
+                  id="global_class_BROGMN_KvKNummer"
+                  uuid="EAID_CC665945_1F41_46d9_9010_D42C45E7E042">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>KvK-nummer</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Het domein KvK-nummer geeft het identificerende gegeven van een onderneming in het Handelsregister. De opbouw is NNNNNNNN.</item>
+               </part>
+            </content>
+         </section>
+         <section name="Nummer3"
+                  type="PRIMITIVEDATATYPE"
+                  id="global_class_BROGMN_Nummer3"
+                  uuid="EAID_E141D757_BEA8_48aa_AC10_AF19A17712AE">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>Nummer3</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Een domein van het type nummer is een opeenvolging van cijfers met een bepaalde maximale lengte. Een nummer heeft geen rekenkundige betekenis, maar heeft een betekenisvolle volgorde. Een domein van het type nummer wordt volledig gespecificeerd door met de aanduiding nummer ook de maximale lengte mee te geven. In het domeinmodel is de algemene aanduiding NummerN, waarbij N de maximale lengte aangeeft.</item>
+               </part>
+            </content>
+         </section>
+         <section name="Registratieobjectcode"
+                  type="PRIMITIVEDATATYPE"
+                  id="global_class_BROGMN_Registratieobjectcode"
+                  uuid="EAID_4EB8C8EF_F07A_49d3_AFCB_773194499FDA">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>Registratieobjectcode</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>De identificatie van een object in de registratie ondergrond.</item>
+               </part>
+               <part type="CFG-DOC-TOELICHTING">
+                  <item>Toelichting</item>
+                  <item>Opbouw: NNNNNNNNNNNNNNN, waarbij de eerste drie tekens gelijk zijn aan de drieletterige afkorting van het type registratieobject. Voor grondwatermonitoringnet is dit GMN. Voor grondwatermonitoringput is dit GMW.
+De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde aan het object toe.</item>
+               </part>
+            </content>
+         </section>
+         <section name="Tekst40"
+                  type="PRIMITIVEDATATYPE"
+                  id="global_class_BROGMN_Tekst40"
+                  uuid="EAID_BE533F94_BA41_43cb_A5FE_9C37933CF7FA">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>Tekst40</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Een domein van het type tekst bestaat uit een stuk tekst van een bepaalde maximale lengte.</item>
+               </part>
+               <part type="CFG-DOC-TOELICHTING">
+                  <item>Toelichting</item>
+                  <item>De tekst mag alleen bestaan uit de tekens die voorkomen in de MES-1 set. De MES-1 set omvat 335 tekens en wordt gebruikt binnen de landen van de Europese Unie die een Latijns schrift kennen.
+Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding tekst ook de maximale lengte mee te geven. In het domeinmodel wordt het domein aangeduid als TekstN, waarbij N de maximale lengte aangeeft.</item>
+               </part>
+            </content>
+         </section>
+         <section name="Tekst200"
+                  type="PRIMITIVEDATATYPE"
+                  id="global_class_BROGMN_Tekst200"
+                  uuid="EAID_A3CCB773_81DF_4da3_8016_817F02297137">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>Tekst200</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Een domein van het type tekst bestaat uit een stuk tekst van een bepaalde maximale lengte.</item>
+               </part>
+               <part type="CFG-DOC-TOELICHTING">
+                  <item>Toelichting</item>
+                  <item>De tekst mag alleen bestaan uit de tekens die voorkomen in de MES-1 set. De MES-1 set omvat 335 tekens en wordt gebruikt binnen de landen van de Europese Unie die een Latijns schrift kennen.
+Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding tekst ook de maximale lengte mee te geven. In het domeinmodel wordt het domein aangeduid als TekstN, waarbij N de maximale lengte aangeeft.</item>
+               </part>
+            </content>
+         </section>
+      </section>
       <section type="OVERVIEW-CODELIST">
          <content>
             <part>
-               <item id="global_class_DomeinmodelBROGMN_KaderAanlevering"
-                     uuid="EAID_29EFB509_91AF_4d83_931E_7448F922A8BD"
-                     idref="detail_class_DomeinmodelBROGMN_KaderAanlevering">KaderAanlevering</item>
-               <item>De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.</item>
-            </part>
-            <part>
-               <item id="global_class_DomeinmodelBROGMN_GrondwaterAspect"
+               <item id="global_class_BROGMN_GrondwaterAspect"
                      uuid="EAID_46C32AAB_3DBB_4622_947B_B99903A2D1ED"
-                     idref="detail_class_DomeinmodelBROGMN_GrondwaterAspect">GrondwaterAspect</item>
+                     idref="detail_class_BROGMN_GrondwaterAspect">GrondwaterAspect</item>
                <item>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</item>
             </part>
             <part>
-               <item id="global_class_DomeinmodelBROGMN_Monitoringdoel"
+               <item id="global_class_BROGMN_KaderAanlevering"
+                     uuid="EAID_29EFB509_91AF_4d83_931E_7448F922A8BD"
+                     idref="detail_class_BROGMN_KaderAanlevering">KaderAanlevering</item>
+               <item>De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.</item>
+            </part>
+            <part>
+               <item id="global_class_BROGMN_Monitoringdoel"
                      uuid="EAID_A59AEBF6_6958_4593_87CC_096613ECA441"
-                     idref="detail_class_DomeinmodelBROGMN_Monitoringdoel">Monitoringdoel</item>
+                     idref="detail_class_BROGMN_Monitoringdoel">Monitoringdoel</item>
                <item>Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.</item>
+            </part>
+            <part>
+               <item id="global_class_BROGMN_Registratiestatus"
+                     uuid="EAID_F5229DCB_D57A_47f7_B144_05DD13DAAB0C"
+                     idref="detail_class_BROGMN_Registratiestatus">Registratiestatus</item>
+               <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
             </part>
          </content>
       </section>
-      <!--removed empty content-->
+      <section type="OVERVIEW-ENUMERATION">
+         <content>
+            <part>
+               <item id="global_class_BROGMN_IndicatieJaNee"
+                     uuid="EAID_1EE1AAF4_A1C0_4dfa_BA12_43D20B8A36CB"
+                     idref="detail_class_BROGMN_IndicatieJaNee">IndicatieJaNee</item>
+               <item>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden. Uitbreiding van de keuzelijst is niet mogelijk.</item>
+            </part>
+            <part>
+               <item id="global_class_BROGMN_Kwaliteitsregime"
+                     uuid="EAID_2E962A93_45D1_44a6_B6C5_F8614253BC8E"
+                     idref="detail_class_BROGMN_Kwaliteitsregime">Kwaliteitsregime</item>
+               <item>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden voor het duiden van de kwaliteitseis waaraan de gegevens van het object voldoen. Uitbreiding van de keuzelijst is niet mogelijk.</item>
+            </part>
+         </content>
+      </section>
       <section type="DETAILS">
          <section type="DETAILS-OBJECTTYPE">
+            <section name="Registratieobject"
+                     type="OBJECTTYPE"
+                     id="detail_class_BROGMN_Registratieobject"
+                     id-global="global_class_BROGMN_Registratieobject">
+               <section name="BRO-ID"
+                        type="DETAIL-ATTRIBUTE"
+                        id="detail_attribute_BROGMN_Registratieobject_bROID"
+                        id-global="global_attribute_BROGMN_Registratieobject_bROID">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>BRO-ID</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De identificatie van een object dat in de registratie ondergrond is opgenomen.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                        <item>Indicatie materiële historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Registratieobjectcode</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
+                        <item>Indicatie afleidbaar</item>
+                        <item>Nee</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="bronhouder"
+                        type="DETAIL-ATTRIBUTE"
+                        id="detail_attribute_BROGMN_Registratieobject_bronhouder"
+                        id-global="global_attribute_BROGMN_Registratieobject_bronhouder">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>bronhouder</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>Het KvK-nummer van de maatschappelijke activiteit van de publiekrechtelijke rechtspersoon die bronhouder is van de gegevens in de basisregistratie ondergrond.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-TOELICHTING">
+                        <item>Toelichting</item>
+                        <item>Het gegeven is door de dataleverancier bij de overdracht meegegeven in het geval de dataleverancier niet de bronhouder is.</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                        <item>Indicatie materiële historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
+                     </part>
+                     <part type="CFG-DOC-REGELS">
+                        <item>Regels</item>
+                        <item>De organisatie moet binnen de basisregistratie ondergrond als bronhouder van grondwatermonitoringnet bekend zijn.</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Organisatie</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
+                        <item>Indicatie afleidbaar</item>
+                        <item>Nee</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="object-ID bronhouder"
+                        type="DETAIL-ATTRIBUTE"
+                        id="detail_attribute_BROGMN_Registratieobject_objectIDBronhouder"
+                        id-global="global_attribute_BROGMN_Registratieobject_objectIDBronhouder">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>object-ID bronhouder</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie ondergrond.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Basisgegeven</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Tekst200</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
+                        <item>Indicatie afleidbaar</item>
+                        <item>Nee</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="dataleverancier"
+                        type="DETAIL-ATTRIBUTE"
+                        id="detail_attribute_BROGMN_Registratieobject_dataleverancier"
+                        id-global="global_attribute_BROGMN_Registratieobject_dataleverancier">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>dataleverancier</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De identificatie die de organisatie die het object aan de basisregistratie ondergrond heeft aangeleverd, als onderneming in het Handelsregister heeft.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Basisgegeven</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Organisatie</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
+                        <item>Indicatie afleidbaar</item>
+                        <item>Nee</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="kwaliteitsregime"
+                        type="DETAIL-ATTRIBUTE"
+                        id="detail_attribute_BROGMN_Registratieobject_kwaliteitsregime"
+                        id-global="global_attribute_BROGMN_Registratieobject_kwaliteitsregime">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>kwaliteitsregime</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Kwaliteitsregime</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
+                        <item>Indicatie afleidbaar</item>
+                        <item>Nee</item>
+                     </part>
+                  </content>
+               </section>
+            </section>
             <section name="Grondwatermonitoringnet"
                      type="OBJECTTYPE"
-                     id="detail_class_DomeinmodelBROGMN_Grondwatermonitoringnet"
-                     id-global="global_class_DomeinmodelBROGMN_Grondwatermonitoringnet">
-               <section name="begindatum"
+                     id="detail_class_BROGMN_Grondwatermonitoringnet"
+                     id-global="global_class_BROGMN_Grondwatermonitoringnet">
+               <section name="naam"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_begindatum"
-                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_begindatum">
+                        id="detail_attribute_BROGMN_Grondwatermonitoringnet_naam"
+                        id-global="global_attribute_BROGMN_Grondwatermonitoringnet_naam">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>begindatum</item>
+                        <item>naam</item>
                      </part>
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
@@ -382,7 +922,7 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>De datum die het begin aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.</item>
+                        <item>De naam waaronder het monitoringnet bekend is.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -390,129 +930,7 @@
                      </part>
                      <part type="CFG-DOC-TOELICHTING">
                         <item>Toelichting</item>
-                        <item>Vergeleken met het moment van aanleveren van het grondwatermonitoringnet aan de Basisregistratie Ondergrond (tijdstip registratie object) kan de begindatum zowel in het verleden, op dezelfde dag, als in de toekomst liggen.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                        <item>Indicatie materiële historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-REGELS-IMBROA">
-                        <item>Regels IMBRO/A</item>
-                        <item>OnvolledigeDatum</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Datum</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-MINIMUMVALUE">
-                        <item>Minimumwaarde</item>
-                        <item>1-1-1800</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="einddatum"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_einddatum"
-                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_einddatum">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>einddatum</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De datum die het einde aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>De bronhouder geeft de einddatum op wanneer het monitoren in het kader van het monitoringnet eindigt. Tot die tijd blijft de einddatum leeg.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                        <item>Indicatie materiële historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>0 .. 1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Datum</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-MAXIMUMVALUE">
-                        <item>Maximumwaarde</item>
-                        <item>heden</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="grondwateraspect"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_grondwateraspect"
-                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_grondwateraspect">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>grondwateraspect</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel de kwaliteit als de kwantiteit worden gedaan, wordt in dit attribuut het primaire, meest belangrijke aspect vastgelegd.</item>
+                        <item>Dit is een naam die binnen het werkveld herkenbaar is. De identificatie die de bronhouder in zijn eigen administratie gebruikt, voordat het grondwatermonitoringnet was geregistreerd in de basisregistratie ondergrond, ligt vast in object-ID bronhouder.</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -536,7 +954,7 @@
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
-                        <item>GrondwaterAspect</item>
+                        <item>Tekst200</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
                         <item>Indicatie afleidbaar</item>
@@ -546,8 +964,8 @@
                </section>
                <section name="kader aanlevering"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_kaderAanlevering"
-                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_kaderAanlevering">
+                        id="detail_attribute_BROGMN_Grondwatermonitoringnet_kaderAanlevering"
+                        id-global="global_attribute_BROGMN_Grondwatermonitoringnet_kaderAanlevering">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -598,147 +1016,12 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         <item>Indicatie afleidbaar</item>
                         <item>Nee</item>
                      </part>
-                     <part type="CFG-DOC-UNITOFMEASURE">
-                        <item>Meeteenheid</item>
-                        <item>BRO</item>
-                     </part>
                   </content>
-               </section>
-               <section name="GMW-buisverwijzing"
-                        type="DETAIL-COMPOSITE"
-                        id="detail_class_DomeinmodelBROGMN_GMWBuisverwijzing"
-                        id-global="global_class_DomeinmodelBROGMN_GMWBuisverwijzing">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>GMW-buisverwijzing</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De gegevens die nodig zijn voor een verwijzing naar een specifieke buis in een grondwatermonitoringput.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                  </content>
-                  <section name="BRO-ID"
-                           type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_bROID"
-                           id-global="global_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_bROID">
-                     <content>
-                        <part type="COMPOSER">
-                           <item type="global" idref="global_class_DomeinmodelBROGMN_GMWBuisverwijzing">GMW-buisverwijzing</item>
-                        </part>
-                        <part type="CFG-DOC-NAAM">
-                           <item>Naam</item>
-                           <item>BRO-ID</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMST">
-                           <item>Herkomst</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-DEFINITIE">
-                           <item>Definitie</item>
-                           <item>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                           <item>Herkomst definitie</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-TOELICHTING">
-                           <item>Toelichting</item>
-                           <item>In brondocumenten voor het aanleveren van meetpunten is het mogelijk om de putcode op te geven in plaats van het BRO-ID van de grondwatermonitoringput. Bij inname van de gegevens wordt dan het bijbehorende BRO-ID opgezocht en vastgelegd.</item>
-                        </part>
-                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                           <item>Mogelijk geen waarde</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                           <item>Indicatie materiële historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                           <item>Indicatie formele historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                           <item>Indicatie kardinaliteit</item>
-                           <item>1</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                           <item>Indicatie authentiek</item>
-                           <item>Authentiek</item>
-                        </part>
-                        <part type="CFG-DOC-FORMAAT">
-                           <item>Formaat</item>
-                           <item>Registratieobjectcode</item>
-                        </part>
-                     </content>
-                  </section>
-                  <section name="buisnummer"
-                           type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_buisnummer"
-                           id-global="global_attribute_DomeinmodelBROGMN_GMWBuisverwijzing_buisnummer">
-                     <content>
-                        <part type="COMPOSER">
-                           <item type="global" idref="global_class_DomeinmodelBROGMN_GMWBuisverwijzing">GMW-buisverwijzing</item>
-                        </part>
-                        <part type="CFG-DOC-NAAM">
-                           <item>Naam</item>
-                           <item>buisnummer</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMST">
-                           <item>Herkomst</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-DEFINITIE">
-                           <item>Definitie</item>
-                           <item>Het nummer dat door of voor de bronhouder wordt gebruikt om de monitoringbuis in de grondwatermonitoringput te identificeren.</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                           <item>Herkomst definitie</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-TOELICHTING">
-                           <item>Toelichting</item>
-                           <item>Dit nummer verwijst naar het buisnummer dat is geregistreerd bij de monitoringbuis van de grondwatermonitoringput in de basisregistratie ondergrond.</item>
-                        </part>
-                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                           <item>Mogelijk geen waarde</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                           <item>Indicatie materiële historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                           <item>Indicatie formele historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                           <item>Indicatie kardinaliteit</item>
-                           <item>1</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                           <item>Indicatie authentiek</item>
-                           <item>Authentiek</item>
-                        </part>
-                        <part type="CFG-DOC-FORMAAT">
-                           <item>Formaat</item>
-                           <item>Nummer3</item>
-                        </part>
-                     </content>
-                  </section>
                </section>
                <section name="monitoringdoel"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_monitoringdoel"
-                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_monitoringdoel">
+                        id="detail_attribute_BROGMN_Grondwatermonitoringnet_monitoringdoel"
+                        id-global="global_attribute_BROGMN_Grondwatermonitoringnet_monitoringdoel">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -790,14 +1073,14 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                      </part>
                   </content>
                </section>
-               <section name="naam"
+               <section name="grondwateraspect"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_naam"
-                        id-global="global_attribute_DomeinmodelBROGMN_Grondwatermonitoringnet_naam">
+                        id="detail_attribute_BROGMN_Grondwatermonitoringnet_grondwateraspect"
+                        id-global="global_attribute_BROGMN_Grondwatermonitoringnet_grondwateraspect">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>naam</item>
+                        <item>grondwateraspect</item>
                      </part>
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
@@ -805,11 +1088,15 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>De functionele naam waaronder het monotoringnet bekend is.</item>
+                        <item>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
                         <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-TOELICHTING">
+                        <item>Toelichting</item>
+                        <item>In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel de kwaliteit als de kwantiteit worden gedaan, wordt in dit attribuut het primaire, meest belangrijke aspect vastgelegd.</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -833,7 +1120,7 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
-                        <item>Tekst200</item>
+                        <item>GrondwaterAspect</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
                         <item>Indicatie afleidbaar</item>
@@ -843,8 +1130,8 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                </section>
                <section name="Registratiegeschiedenis"
                         type="DETAIL-COMPOSITE"
-                        id="detail_class_DomeinmodelBROCommon_Registratiegeschiedenis"
-                        id-global="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">
+                        id="detail_class_BROGMN_Registratiegeschiedenis"
+                        id-global="global_class_BROGMN_Registratiegeschiedenis">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -867,336 +1154,13 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         <item>De gegevens staan niet in een brondocument maar worden automatisch door de basisregistratie ondergrond gegenereerd.</item>
                      </part>
                   </content>
-                  <section name="gecorrigeerd"
-                           type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_gecorrigeerd"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_gecorrigeerd">
-                     <content>
-                        <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
-                        </part>
-                        <part type="CFG-DOC-NAAM">
-                           <item>Naam</item>
-                           <item>gecorrigeerd</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMST">
-                           <item>Herkomst</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-DEFINITIE">
-                           <item>Definitie</item>
-                           <item>De aanduiding die aangeeft of er een verbetering in de gegevens van het object in de registratie ondergrond heeft plaatsgevonden.</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                           <item>Herkomst definitie</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                           <item>Mogelijk geen waarde</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                           <item>Indicatie materiële historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                           <item>Indicatie formele historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                           <item>Indicatie kardinaliteit</item>
-                           <item>1</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                           <item>Indicatie authentiek</item>
-                           <item>Overig</item>
-                        </part>
-                        <part type="CFG-DOC-FORMAAT">
-                           <item>Formaat</item>
-                           <item>IndicatieJaNee</item>
-                        </part>
-                     </content>
-                  </section>
-                  <section name="in onderzoek"
-                           type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoek"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoek">
-                     <content>
-                        <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
-                        </part>
-                        <part type="CFG-DOC-NAAM">
-                           <item>Naam</item>
-                           <item>in onderzoek</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMST">
-                           <item>Herkomst</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-DEFINITIE">
-                           <item>Definitie</item>
-                           <item>De aanduiding die aangeeft of het registratieobject door de registerbeheerder in onderzoek is genomen.</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                           <item>Herkomst definitie</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-TOELICHTING">
-                           <item>Toelichting</item>
-                           <item>Wanneer een registratieobject in onderzoek is genomen betekent dit dat er bij de registerbeheerder gerede twijfel bestaat over de juistheid van de geregistreerde gegevens en dat er een onderzoek is gestart om vast te stellen wat de juiste gegevens zijn. Normaliter gaat hieraan een melding van derden vooraf.</item>
-                        </part>
-                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                           <item>Mogelijk geen waarde</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                           <item>Indicatie materiële historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                           <item>Indicatie formele historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                           <item>Indicatie kardinaliteit</item>
-                           <item>1</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                           <item>Indicatie authentiek</item>
-                           <item>Overig</item>
-                        </part>
-                        <part type="CFG-DOC-FORMAAT">
-                           <item>Formaat</item>
-                           <item>IndicatieJaNee</item>
-                        </part>
-                     </content>
-                  </section>
-                  <section name="in onderzoek sinds"
-                           type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoekSinds"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_inOnderzoekSinds">
-                     <content>
-                        <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
-                        </part>
-                        <part type="CFG-DOC-NAAM">
-                           <item>Naam</item>
-                           <item>in onderzoek sinds</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMST">
-                           <item>Herkomst</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-DEFINITIE">
-                           <item>Definitie</item>
-                           <item>De datum en het tijdstip waarop de registerbeheerder het registratieobject in onderzoek heeft genomen.</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                           <item>Herkomst definitie</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                           <item>Mogelijk geen waarde</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                           <item>Indicatie materiële historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                           <item>Indicatie formele historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                           <item>Indicatie kardinaliteit</item>
-                           <item>0 .. 1</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                           <item>Indicatie authentiek</item>
-                           <item>Overig</item>
-                        </part>
-                        <part type="CFG-DOC-REGELS">
-                           <item>Regels</item>
-                           <item>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het attribuut in onderzoek.</item>
-                        </part>
-                        <part type="CFG-DOC-FORMAAT">
-                           <item>Formaat</item>
-                           <item>DatumTijd</item>
-                        </part>
-                     </content>
-                  </section>
-                  <section name="registratiestatus"
-                           type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_registratiestatus"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_registratiestatus">
-                     <content>
-                        <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
-                        </part>
-                        <part type="CFG-DOC-NAAM">
-                           <item>Naam</item>
-                           <item>registratiestatus</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMST">
-                           <item>Herkomst</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-DEFINITIE">
-                           <item>Definitie</item>
-                           <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                           <item>Herkomst definitie</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                           <item>Mogelijk geen waarde</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                           <item>Indicatie materiële historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                           <item>Indicatie formele historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                           <item>Indicatie kardinaliteit</item>
-                           <item>1</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                           <item>Indicatie authentiek</item>
-                           <item>Overig</item>
-                        </part>
-                        <part type="CFG-DOC-FORMAAT">
-                           <item>Formaat</item>
-                           <item>Registratiestatus</item>
-                        </part>
-                     </content>
-                  </section>
-                  <section name="tijdstip laatste aanvulling"
-                           type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling">
-                     <content>
-                        <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
-                        </part>
-                        <part type="CFG-DOC-NAAM">
-                           <item>Naam</item>
-                           <item>tijdstip laatste aanvulling</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMST">
-                           <item>Herkomst</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-DEFINITIE">
-                           <item>Definitie</item>
-                           <item>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie ondergrond is doorgevoerd.</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                           <item>Herkomst definitie</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-TOELICHTING">
-                           <item>Toelichting</item>
-                           <item>Het gegeven is alleen aanwezig wanneer na de registratie van een deelonderzoek ander deelonderzoek is vastgelegd.</item>
-                        </part>
-                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                           <item>Mogelijk geen waarde</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                           <item>Indicatie materiële historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                           <item>Indicatie formele historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                           <item>Indicatie kardinaliteit</item>
-                           <item>0 .. 1</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                           <item>Indicatie authentiek</item>
-                           <item>Overig</item>
-                        </part>
-                        <part type="CFG-DOC-FORMAAT">
-                           <item>Formaat</item>
-                           <item>DatumTijd</item>
-                        </part>
-                     </content>
-                  </section>
-                  <section name="tijdstip laatste correctie"
-                           type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie">
-                     <content>
-                        <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
-                        </part>
-                        <part type="CFG-DOC-NAAM">
-                           <item>Naam</item>
-                           <item>tijdstip laatste correctie</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMST">
-                           <item>Herkomst</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-DEFINITIE">
-                           <item>Definitie</item>
-                           <item>De datum en het tijdstip waarop de laatste correctie in de gegevens van het registratieobject is doorgevoerd.</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                           <item>Herkomst definitie</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                           <item>Mogelijk geen waarde</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                           <item>Indicatie materiële historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                           <item>Indicatie formele historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                           <item>Indicatie kardinaliteit</item>
-                           <item>0 .. 1</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                           <item>Indicatie authentiek</item>
-                           <item>Overig</item>
-                        </part>
-                        <part type="CFG-DOC-REGELS">
-                           <item>Regels</item>
-                           <item>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het attribuut gecorrigeerd.</item>
-                        </part>
-                        <part type="CFG-DOC-FORMAAT">
-                           <item>Formaat</item>
-                           <item>DatumTijd</item>
-                        </part>
-                     </content>
-                  </section>
                   <section name="tijdstip registratie object"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipRegistratieObject"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipRegistratieObject">
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipRegistratieObject"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_tijdstipRegistratieObject">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1232,7 +1196,7 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                         <part type="CFG-DOC-INDICATIEAUTHENTIEK">
                            <item>Indicatie authentiek</item>
-                           <item>Overig</item>
+                           <item>Authentiek</item>
                         </part>
                         <part type="CFG-DOC-FORMAAT">
                            <item>Formaat</item>
@@ -1240,18 +1204,17 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                      </content>
                   </section>
-                  <section name="tijdstip uit registratie genomen"
+                  <section name="registratiestatus"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen">
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_registratiestatus"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_registratiestatus">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
-                           <item>tijdstip uit registratie genomen</item>
+                           <item>registratiestatus</item>
                         </part>
                         <part type="CFG-DOC-HERKOMST">
                            <item>Herkomst</item>
@@ -1259,7 +1222,7 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                         <part type="CFG-DOC-DEFINITIE">
                            <item>Definitie</item>
-                           <item>De datum en het tijdstip waarop het registratieobject uit registratie is genomen.</item>
+                           <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
                         </part>
                         <part type="CFG-DOC-HERKOMSTDEFINITIE">
                            <item>Herkomst definitie</item>
@@ -1279,15 +1242,65 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                         <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                            <item>Indicatie kardinaliteit</item>
+                           <item>1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>Registratiestatus</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="tijdstip laatste aanvulling"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipLaatsteAanvulling"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_tijdstipLaatsteAanvulling">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>tijdstip laatste aanvulling</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie ondergrond is doorgevoerd.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-TOELICHTING">
+                           <item>Toelichting</item>
+                           <item>Het gegeven is alleen aanwezig wanneer na de start van de registratie van een grondwatermonitoringnet aanvullende gegevens zijn vastgelegd.</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
                            <item>0 .. 1</item>
                         </part>
                         <part type="CFG-DOC-INDICATIEAUTHENTIEK">
                            <item>Indicatie authentiek</item>
-                           <item>Overig</item>
-                        </part>
-                        <part type="CFG-DOC-REGELS">
-                           <item>Regels</item>
-                           <item>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het attribuut uit registratie genomen.</item>
+                           <item>Authentiek</item>
                         </part>
                         <part type="CFG-DOC-FORMAAT">
                            <item>Formaat</item>
@@ -1297,12 +1310,11 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   </section>
                   <section name="tijdstip voltooiing registratie"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipVoltooiingRegistratie"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1342,7 +1354,7 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                         <part type="CFG-DOC-INDICATIEAUTHENTIEK">
                            <item>Indicatie authentiek</item>
-                           <item>Overig</item>
+                           <item>Authentiek</item>
                         </part>
                         <part type="CFG-DOC-REGELS">
                            <item>Regels</item>
@@ -1354,18 +1366,17 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                      </content>
                   </section>
-                  <section name="tijdstip weer in registratie genomen"
+                  <section name="gecorrigeerd"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen">
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_gecorrigeerd"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_gecorrigeerd">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
-                           <item>tijdstip weer in registratie genomen</item>
+                           <item>gecorrigeerd</item>
                         </part>
                         <part type="CFG-DOC-HERKOMST">
                            <item>Herkomst</item>
@@ -1373,7 +1384,57 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                         <part type="CFG-DOC-DEFINITIE">
                            <item>Definitie</item>
-                           <item>De datum en het tijdstip waarop het object in de registratie ondergrond is opgenomen, nadat het uit registratie was genomen.</item>
+                           <item>De aanduiding die aangeeft of er een verbetering in de gegevens van het object in de registratie ondergrond heeft plaatsgevonden.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>IndicatieJaNee</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="tijdstip laatste correctie"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipLaatsteCorrectie"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_tijdstipLaatsteCorrectie">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>tijdstip laatste correctie</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>De datum en het tijdstip waarop de laatste correctie in de gegevens van het registratieobject is doorgevoerd.</item>
                         </part>
                         <part type="CFG-DOC-HERKOMSTDEFINITIE">
                            <item>Herkomst definitie</item>
@@ -1397,11 +1458,119 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                         <part type="CFG-DOC-INDICATIEAUTHENTIEK">
                            <item>Indicatie authentiek</item>
-                           <item>Overig</item>
+                           <item>Authentiek</item>
                         </part>
                         <part type="CFG-DOC-REGELS">
                            <item>Regels</item>
-                           <item>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het attribuut weer in registratie genomen.</item>
+                           <item>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het attribuut gecorrigeerd.</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>DatumTijd</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="in onderzoek"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_inOnderzoek"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_inOnderzoek">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>in onderzoek</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>De aanduiding die aangeeft of het registratieobject door de registerbeheerder in onderzoek is genomen.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-TOELICHTING">
+                           <item>Toelichting</item>
+                           <item>Wanneer een registratieobject in onderzoek is genomen betekent dit dat er bij de registerbeheerder gerede twijfel bestaat over de juistheid van de geregistreerde gegevens en dat er een onderzoek is gestart om vast te stellen wat de juiste gegevens zijn. Normaliter gaat hieraan een melding van derden vooraf.</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>IndicatieJaNee</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="in onderzoek sinds"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_inOnderzoekSinds"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_inOnderzoekSinds">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>in onderzoek sinds</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>De datum en het tijdstip waarop de registerbeheerder het registratieobject in onderzoek heeft genomen.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. 1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-REGELS">
+                           <item>Regels</item>
+                           <item>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het attribuut in onderzoek.</item>
                         </part>
                         <part type="CFG-DOC-FORMAAT">
                            <item>Formaat</item>
@@ -1411,12 +1580,11 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   </section>
                   <section name="uit registratie genomen"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_uitRegistratieGenomen"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_uitRegistratieGenomen">
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_uitRegistratieGenomen"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_uitRegistratieGenomen">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1456,7 +1624,7 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                         <part type="CFG-DOC-INDICATIEAUTHENTIEK">
                            <item>Indicatie authentiek</item>
-                           <item>Overig</item>
+                           <item>Authentiek</item>
                         </part>
                         <part type="CFG-DOC-FORMAAT">
                            <item>Formaat</item>
@@ -1464,14 +1632,67 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                      </content>
                   </section>
-                  <section name="weer in registratie genomen"
+                  <section name="tijdstip uit registratie genomen"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_weerInRegistratieGenomen"
-                           id-global="global_attribute_DomeinmodelBROCommon_Registratiegeschiedenis_weerInRegistratieGenomen">
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipUitRegistratieGenomen"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_tijdstipUitRegistratieGenomen">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global"
-                                 idref="global_class_DomeinmodelBROCommon_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>tijdstip uit registratie genomen</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>De datum en het tijdstip waarop het registratieobject uit registratie is genomen.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. 1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-REGELS">
+                           <item>Regels</item>
+                           <item>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het attribuut uit registratie genomen.</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>DatumTijd</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="weer in registratie genomen"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_weerInRegistratieGenomen"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_weerInRegistratieGenomen">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1511,7 +1732,7 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                         <part type="CFG-DOC-INDICATIEAUTHENTIEK">
                            <item>Indicatie authentiek</item>
-                           <item>Overig</item>
+                           <item>Authentiek</item>
                         </part>
                         <part type="CFG-DOC-FORMAAT">
                            <item>Formaat</item>
@@ -1519,19 +1740,411 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                         </part>
                      </content>
                   </section>
+                  <section name="tijdstip weer in registratie genomen"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_BROGMN_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen"
+                           id-global="global_attribute_BROGMN_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global" idref="global_class_BROGMN_Registratiegeschiedenis">Registratiegeschiedenis</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>tijdstip weer in registratie genomen</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>De datum en het tijdstip waarop het object in de registratie ondergrond is opgenomen, nadat het uit registratie was genomen.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. 1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-REGELS">
+                           <item>Regels</item>
+                           <item>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het attribuut weer in registratie genomen.</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>DatumTijd</item>
+                        </part>
+                     </content>
+                  </section>
+               </section>
+               <section name="GMW-buisverwijzing"
+                        type="DETAIL-COMPOSITE"
+                        id="detail_class_BROGMN_GMWBuisverwijzing"
+                        id-global="global_class_BROGMN_GMWBuisverwijzing">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>GMW-buisverwijzing</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De verwijzing naar een specifieke buis in een grondwatermonitoringput, waar onderzoeken aan de samenstelling of stand van het grondwater worden uitgevoerd ten behoeve van het grondwatermonitoringnet.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-TOELICHTING">
+                        <item>Toelichting</item>
+                        <item>De dynamische lijst van meetpunten geeft de samenstelling van het grondwatermonitoringnet in de tijd. De verzameling meetpunten geeft inzicht in het gebied waarin wordt gemonitord.
+De bedoeling is dat voor elk moment in de tijd de volledige verzameling meetpunten vastligt. Dit wordt echter niet afgedwongen: om het aanleveren van gegevens van de verschillende registratieobjecten in het grondwaterdomein gemakkelijker te maken is het mogelijk om een grondwatermonitoringnet initieel te registreren zonder meetpunten.</item>
+                     </part>
+                  </content>
+                  <section name="BRO-ID"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_BROGMN_GMWBuisverwijzing_bROID"
+                           id-global="global_attribute_BROGMN_GMWBuisverwijzing_bROID">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global" idref="global_class_BROGMN_GMWBuisverwijzing">GMW-buisverwijzing</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>BRO-ID</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>Registratieobjectcode</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="buisnummer"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_BROGMN_GMWBuisverwijzing_buisnummer"
+                           id-global="global_attribute_BROGMN_GMWBuisverwijzing_buisnummer">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global" idref="global_class_BROGMN_GMWBuisverwijzing">GMW-buisverwijzing</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>buisnummer</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>Het nummer dat door of voor de bronhouder wordt gebruikt om de monitoringbuis in de grondwatermonitoringput te identificeren.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-TOELICHTING">
+                           <item>Toelichting</item>
+                           <item>Dit nummer verwijst naar het buisnummer dat is geregistreerd bij de monitoringbuis van de grondwatermonitoringput in de basisregistratie ondergrond.</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>Nummer3</item>
+                        </part>
+                     </content>
+                  </section>
+               </section>
+               <section name="begindatum"
+                        type="DETAIL-ATTRIBUTE"
+                        id="detail_attribute_BROGMN_Grondwatermonitoringnet_begindatum"
+                        id-global="global_attribute_BROGMN_Grondwatermonitoringnet_begindatum">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>begindatum</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De datum die het begin aangeeft van de periode waarin het monitoren van het grondwater plaatsvindt.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                        <item>Indicatie materiële historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
+                     </part>
+                     <part type="CFG-DOC-REGELS-IMBROA">
+                        <item>Regels IMBRO/A</item>
+                        <item>OnvolledigeDatum</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Datum</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
+                        <item>Indicatie afleidbaar</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-MINIMUMVALUE">
+                        <item>Minimumwaarde</item>
+                        <item>1-1-1800</item>
+                     </part>
+                     <part type="CFG-DOC-MAXIMUMVALUE">
+                        <item>Maximumwaarde</item>
+                        <item>heden</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="einddatum"
+                        type="DETAIL-ATTRIBUTE"
+                        id="detail_attribute_BROGMN_Grondwatermonitoringnet_einddatum"
+                        id-global="global_attribute_BROGMN_Grondwatermonitoringnet_einddatum">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>einddatum</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De datum die het einde aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-TOELICHTING">
+                        <item>Toelichting</item>
+                        <item>De bronhouder geeft de einddatum op wanneer het monitoren in het kader van het monitoringnet eindigt. Tot die tijd blijft de einddatum leeg.</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                        <item>Indicatie materiële historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>0 .. 1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
+                     </part>
+                     <part type="CFG-DOC-REGELS-IMBROA">
+                        <item>Regels IMBRO/A</item>
+                        <item>Onder kwaliteitsregime IMBRO/A is dit gegeven altijd aanwezig.</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Datum</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
+                        <item>Indicatie afleidbaar</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-MINIMUMVALUE">
+                        <item>Minimumwaarde</item>
+                        <item>1-1-1800</item>
+                     </part>
+                     <part type="CFG-DOC-MAXIMUMVALUE">
+                        <item>Maximumwaarde</item>
+                        <item>heden</item>
+                     </part>
+                  </content>
                </section>
             </section>
          </section>
          <!--removed empty content-->
          <!--removed empty content-->
-         <!--removed empty content-->
+         <section type="DETAILS-UNION">
+            <section name="Organisatie"
+                     type="KEUZE"
+                     id="detail_class_BROGMN_Organisatie"
+                     id-global="global_class_BROGMN_Organisatie">
+               <section name="KvK-nummer"
+                        type="DETAIL-UNIONELEMENT"
+                        id="detail_attribute_BROGMN_Organisatie_kvKNummer"
+                        id-global="global_attribute_BROGMN_Organisatie_kvKNummer">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>KvK-nummer</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>KvK-nummer</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="Europees handelsnummer"
+                        type="DETAIL-UNIONELEMENT"
+                        id="detail_attribute_BROGMN_Organisatie_europeesHandelsnummer"
+                        id-global="global_attribute_BROGMN_Organisatie_europeesHandelsnummer">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>Europees handelsnummer</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Tekst40</item>
+                     </part>
+                  </content>
+               </section>
+            </section>
+         </section>
          <!--removed empty content-->
          <!--removed empty content-->
          <section type="DETAILS-CODELIST">
+            <section name="GrondwaterAspect"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_BROGMN_GrondwaterAspect"
+                     id-global="global_class_BROGMN_GrondwaterAspect"
+                     uuid="EAID_46C32AAB_3DBB_4622_947B_B99903A2D1ED">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+                  <part>
+                     <item/>
+                     <item>kwaliteit</item>
+                     <item>De samenstelling van het grondwater.</item>
+                  </part>
+                  <part>
+                     <item/>
+                     <item>kwantiteit</item>
+                     <item>De stand of hoeveelheid van het grondwater.</item>
+                  </part>
+                  <part>
+                     <item/>
+                     <item>onbekend</item>
+                     <item>Het is onbekend welk aspect van grondwater is gemonitord. Deze waarde is alleen toegestaan onder kwaliteitsregime IMBRO/A.</item>
+                  </part>
+               </content>
+            </section>
             <section name="KaderAanlevering"
                      type="DETAIL-CODELIST"
-                     id="detail_class_DomeinmodelBROGMN_KaderAanlevering"
-                     id-global="global_class_DomeinmodelBROGMN_KaderAanlevering"
+                     id="detail_class_BROGMN_KaderAanlevering"
+                     id-global="global_class_BROGMN_KaderAanlevering"
                      uuid="EAID_29EFB509_91AF_4d83_931E_7448F922A8BD">
                <content>
                   <part>
@@ -1543,11 +2156,6 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   <itemtype type="CODE"/>
                   <itemtype type="NAME"/>
                   <itemtype type="DEFINITION"/>
-                  <part>
-                     <item/>
-                     <item>archiefoverdracht</item>
-                     <item>De gegevens zijn aangeleverd in het kader van archiefoverdracht.</item>
-                  </part>
                   <part>
                      <item/>
                      <item>drinkwaterwet</item>
@@ -1608,44 +2216,17 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                      <item>wetNatuurbescherming</item>
                      <item>De gegevens zijn aangeleverd in het kader van wet natuurbescherming.</item>
                   </part>
-               </content>
-            </section>
-            <section name="GrondwaterAspect"
-                     type="DETAIL-CODELIST"
-                     id="detail_class_DomeinmodelBROGMN_GrondwaterAspect"
-                     id-global="global_class_DomeinmodelBROGMN_GrondwaterAspect"
-                     uuid="EAID_46C32AAB_3DBB_4622_947B_B99903A2D1ED">
-               <content>
-                  <part>
-                     <item>Definitie</item>
-                     <item>Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.</item>
-                  </part>
-               </content>
-               <content>
-                  <itemtype type="CODE"/>
-                  <itemtype type="NAME"/>
-                  <itemtype type="DEFINITION"/>
                   <part>
                      <item/>
-                     <item>kwaliteit</item>
-                     <item>De samenstelling van het grondwater.</item>
-                  </part>
-                  <part>
-                     <item/>
-                     <item>kwantiteit</item>
-                     <item>De stand of hoeveelheid van het grondwater.</item>
-                  </part>
-                  <part>
-                     <item/>
-                     <item>onbekend</item>
-                     <item>Het is onbekend welk aspect van grondwater wordt gemonitord.</item>
+                     <item>archiefoverdracht</item>
+                     <item>De gegevens zijn aangeleverd in het kader van archiefoverdracht. Deze waarde is alleen toegestaan onder kwaliteitsregime IMBRO/A.</item>
                   </part>
                </content>
             </section>
             <section name="Monitoringdoel"
                      type="DETAIL-CODELIST"
-                     id="detail_class_DomeinmodelBROGMN_Monitoringdoel"
-                     id-global="global_class_DomeinmodelBROGMN_Monitoringdoel"
+                     id="detail_class_BROGMN_Monitoringdoel"
+                     id-global="global_class_BROGMN_Monitoringdoel"
                      uuid="EAID_A59AEBF6_6958_4593_87CC_096613ECA441">
                <content>
                   <part>
@@ -1659,13 +2240,28 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   <itemtype type="DEFINITION"/>
                   <part>
                      <item/>
-                     <item>beheersingStedelijkGebied</item>
-                     <item>Kennis over de stand van het ondiepe grondwater om die in stedelijke omgeving te kunnen beheersen.</item>
+                     <item>strategischBeheerKwaliteitLandelijk</item>
+                     <item>Kennis over de bruikbaarheid van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</item>
                   </part>
                   <part>
                      <item/>
-                     <item>gevolgenOntgronding</item>
-                     <item>Kennis over de gevolgen van ontgronding voor de grondwaterhuishouding.</item>
+                     <item>strategischBeheerKwantiteitLandelijk</item>
+                     <item>Kennis over de omvang van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</item>
+                  </part>
+                  <part>
+                     <item/>
+                     <item>strategischBeheerKwaliteitRegionaal</item>
+                     <item>Kennis over de bruikbaarheid van de voorraad grondwater op regionale schaal, ten behoeve van planvorming en beheerskaders.</item>
+                  </part>
+                  <part>
+                     <item/>
+                     <item>strategischBeheerKwantiteitRegionaal</item>
+                     <item>Kennis over de omvang van de voorraad grondwater op regionale schaal, ten behoeve van planvorming en beheerskaders.</item>
+                  </part>
+                  <part>
+                     <item/>
+                     <item>beheersingStedelijkGebied</item>
+                     <item>Kennis over de stand van het ondiepe grondwater om die in stedelijke omgeving te kunnen beheersen.</item>
                   </part>
                   <part>
                      <item/>
@@ -1694,48 +2290,13 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   </part>
                   <part>
                      <item/>
-                     <item>natuurbeheer</item>
-                     <item>Kennis over de stand van het grondwater om die te beheersen ten behoeve van natuurbeheer.</item>
+                     <item>waterstaatswerkBeheerKwaliteit</item>
+                     <item>Kennis over de kwaliteit van het grondwater ten behoeve van het beheer van waterstaatswerken.</item>
                   </part>
                   <part>
                      <item/>
-                     <item>natuurbescherming</item>
-                     <item>Kennis over de bruikbaarheid van het grondwater ten behoeve van de instandhouding/bescherming van de natuur.</item>
-                  </part>
-                  <part>
-                     <item/>
-                     <item>onbekend</item>
-                     <item>Het is onbekend ten behoeve van welk doel de monitoring plaatsvindt.</item>
-                  </part>
-                  <part>
-                     <item/>
-                     <item>strategischBeheerKwaliteitLandelijk</item>
-                     <item>Kennis over de bruikbaarheid van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</item>
-                  </part>
-                  <part>
-                     <item/>
-                     <item>strategischBeheerKwaliteitRegionaal</item>
-                     <item>Kennis over de bruikbaarheid van de voorraad grondwater op regionale schaal, ten behoeve van planvorming en beheerskaders.</item>
-                  </part>
-                  <part>
-                     <item/>
-                     <item>strategischBeheerKwantiteitLandelijk</item>
-                     <item>Kennis over de omvang van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</item>
-                  </part>
-                  <part>
-                     <item/>
-                     <item>strategischBeheerKwantiteitRegionaal</item>
-                     <item>Kennis over de omvang van de voorraad grondwater op regionale schaal, ten behoeve van planvorming en beheerskaders.</item>
-                  </part>
-                  <part>
-                     <item/>
-                     <item>veiligstellingDrinkwatervoorzieningKwaliteit</item>
-                     <item>Kennis over de bruikbaarheid van het grondwater ten behoeve van (het veiligstellen van) de huidige en toekomstige drinkwatervoorziening.</item>
-                  </part>
-                  <part>
-                     <item/>
-                     <item>veiligstellingDrinkwatervoorzieningKwantiteit</item>
-                     <item>Kennis over de voorraad van het grondwater ten behoeve van (het veiligstellen van) de huidige en toekomstige drinkwatervoorziening.</item>
+                     <item>waterstaatswerkBeheerKwantiteit</item>
+                     <item>Kennis over de stand van het grondwater ten behoeve van het beheer van waterstaatswerken.</item>
                   </part>
                   <part>
                      <item/>
@@ -1759,612 +2320,40 @@ Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvin
                   </part>
                   <part>
                      <item/>
-                     <item>waterstaatswerkBeheerKwaliteit</item>
-                     <item>Kennis over de kwaliteit van het grondwater ten behoeve van het beheer van waterstaatswerken.</item>
+                     <item>veiligstellingDrinkwatervoorzieningKwaliteit</item>
+                     <item>Kennis over de bruikbaarheid van het grondwater ten behoeve van (het veiligstellen van) de huidige en toekomstige drinkwatervoorziening.</item>
                   </part>
                   <part>
                      <item/>
-                     <item>waterstaatswerkBeheerKwantiteit</item>
-                     <item>Kennis over de stand van het grondwater ten behoeve van het beheer van waterstaatswerken.</item>
-                  </part>
-               </content>
-            </section>
-         </section>
-         <!--removed empty content-->
-      </section>
-   </section>
-   <section type="DOMAIN"
-            name="Domeinmodel BRO Common"
-            id="global_package_DomeinmodelBROCommon">
-      <section type="OVERVIEW-OBJECTTYPE">
-         <section name="Registratieobject"
-                  type="OBJECTTYPE"
-                  id="global_class_DomeinmodelBROCommon_Registratieobject"
-                  uuid="EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Registratieobject</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>n.v.t.</item>
-               </part>
-               <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                  <item>Herkomst definitie</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>Deze entiteit bevat de generieke attributen van het registratieobject: de gegevens van een registratieobject die voorkomen bij alle verschillende soorten registratieobjecten in de basisregistratie ondergrond.</item>
-               </part>
-            </content>
-            <section type="SHORT-ATTRIBUTES">
-               <content>
-                  <itemtype/>
-                  <itemtype type="ATTRIBUTE-NAME"/>
-                  <itemtype type="ATTRIBUTE-DEFINITION"/>
-                  <itemtype type="ATTRIBUTE-FORMAT"/>
-                  <itemtype type="ATTRIBUTE-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratieobject_bROID">BRO-ID</item>
-                     </item>
-                     <item>De identificatie van een object dat in de registratie ondergrond is opgenomen.</item>
-                     <item>
-                        <item type="global"
-                              idref="global_class_DomeinmodelBROCommon_Registratieobjectcode">Registratieobjectcode</item>
-                     </item>
-                     <item>1</item>
+                     <item>veiligstellingDrinkwatervoorzieningKwantiteit</item>
+                     <item>Kennis over de voorraad van het grondwater ten behoeve van (het veiligstellen van) de huidige en toekomstige drinkwatervoorziening.</item>
                   </part>
                   <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratieobject_bronhouder">bronhouder</item>
-                     </item>
-                     <item>TODO</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_Organisatie">Organisatie</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratieobject_dataleverancier">dataleverancier</item>
-                     </item>
-                     <item>De identificatie die de organisatie die het object aan de basisregistratie ondergrond heeft aangeleverd, als onderneming in het Handelsregister heeft.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_Organisatie">Organisatie</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratieobject_kwaliteitsregime">kwaliteitsregime</item>
-                     </item>
-                     <item>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</item>
-                     <item>
-                        <item type="global"
-                              idref="global_class_DomeinmodelBROCommon_Kwaliteitsregime">Kwaliteitsregime</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Registratieobject_objectIDBronhouder">object-ID bronhouder</item>
-                     </item>
-                     <item>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie ondergrond.</item>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_Tekst200">Tekst200</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-               </content>
-            </section>
-         </section>
-      </section>
-      <!--removed empty content-->
-      <!--removed empty content-->
-      <section type="OVERVIEW-UNION">
-         <section name="Organisatie"
-                  type="UNION"
-                  id="global_class_DomeinmodelBROCommon_Organisatie"
-                  uuid="EAID_E38550EF_707A_4e86_9BF1_963B68CC2CC4">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Organisatie</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>TODO</item>
-               </part>
-            </content>
-            <section type="SHORT-UNIONELEMENTS">
-               <content>
-                  <itemtype/>
-                  <itemtype type="UNIONELEMENT-NAME"/>
-                  <itemtype type="UNIONELEMENT-DEFINITION"/>
-                  <itemtype type="UNIONELEMENT-FORMAT"/>
-                  <itemtype type="UNIONELEMENT-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Organisatie_europeesHandelsnummer">Europees handelsnummer</item>
-                     </item>
                      <item/>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_Tekst40">Tekst40</item>
-                     </item>
-                     <item>1</item>
+                     <item>gevolgenOntgronding</item>
+                     <item>Kennis over de gevolgen van ontgronding voor de grondwaterhuishouding.</item>
                   </part>
                   <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_DomeinmodelBROCommon_Organisatie_kvKNummer">KvK-nummer</item>
-                     </item>
                      <item/>
-                     <item>
-                        <item type="global" idref="global_class_DomeinmodelBROCommon_KvKNummer">KvK-nummer</item>
-                     </item>
-                     <item>1</item>
+                     <item>natuurbescherming</item>
+                     <item>Kennis over de bruikbaarheid van het grondwater ten behoeve van de instandhouding/bescherming van de natuur.</item>
+                  </part>
+                  <part>
+                     <item/>
+                     <item>natuurbeheer</item>
+                     <item>Kennis over de stand van het grondwater om die te beheersen ten behoeve van natuurbeheer.</item>
+                  </part>
+                  <part>
+                     <item/>
+                     <item>onbekend</item>
+                     <item>Het is onbekend ten behoeve van welk doel de monitoring heeft plaatsgevonden. Deze waarde is alleen toegestaan onder kwaliteitsregime IMBRO/A.</item>
                   </part>
                </content>
             </section>
-         </section>
-      </section>
-      <!--removed empty content-->
-      <section type="OVERVIEW-PRIMITIVEDATATYPE">
-         <section name="Datum"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_DomeinmodelBROCommon_Datum"
-                  uuid="EAID_CA1AE7E1_B12C_40c8_9CF7_52573A8239B4">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Datum</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Het domein Datum geeft een datum volgens de Gregoriaanse kalender tot op de dag nauwkeurig. De opbouw is JJJJ-MM-DD.
-Wanneer een attribuut een domein van het type Datum heeft is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is.</item>
-               </part>
-               <part type="CFG-DOC-PATROON">
-                  <item>Patroon</item>
-                  <item>JJJJ-MM-DD</item>
-               </part>
-            </content>
-         </section>
-         <section name="DatumTijd"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_DomeinmodelBROCommon_DatumTijd"
-                  uuid="EAID_67600D6A_3950_462c_A9F8_9C4898D13DF0">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>DatumTijd</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Het domein DatumTijd geeft een tijdstip volgens de Gregoriaanse kalender tot op de seconde nauwkeurig. De opbouw is JJJJ-MM-DDTUU:MM:SS+UU:MM.
-Wanneer een attribuut een domein van het type DatumTijd heeft is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is.</item>
-               </part>
-               <part type="CFG-DOC-PATROON">
-                  <item>Patroon</item>
-                  <item>JJJJ-MM-DDTUU:MM:SS+UU:MM</item>
-               </part>
-            </content>
-         </section>
-         <section name="Nummer3"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_DomeinmodelBROCommon_Nummer3"
-                  uuid="EAID_E141D757_BEA8_48aa_AC10_AF19A17712AE">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Nummer3</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Een domein van het type nummer is een opeenvolging van cijfers met een bepaalde maximale lengte. Een nummer heeft geen rekenkundige betekenis, maar heeft een betekenisvolle volgorde. Een domein van het type nummer wordt volledig gespecificeerd door met de aanduiding nummer ook de maximale lengte mee te geven. In het domeinmodel is de algemene aanduiding NummerN, waarbij N de maximale lengte aangeeft.</item>
-               </part>
-            </content>
-         </section>
-         <section name="KvK-nummer"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_DomeinmodelBROCommon_KvKNummer"
-                  uuid="EAID_CC665945_1F41_46d9_9010_D42C45E7E042">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>KvK-nummer</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Het domein KvK-nummer geeft het identificerende gegeven van een onderneming in het Handelsregister. De opbouw is NNNNNNNN.</item>
-               </part>
-            </content>
-         </section>
-         <section name="Tekst40"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_DomeinmodelBROCommon_Tekst40"
-                  uuid="EAID_BE533F94_BA41_43cb_A5FE_9C37933CF7FA">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Tekst40</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Een domein van het type tekst bestaat uit een stuk tekst van een bepaalde maximale lengte. De tekst mag alleen bestaan uit de tekens die voorkomen in de MES-1 set. De MES-1 set omvat 335 tekens en wordt gebruikt binnen de landen van de Europese Unie die een Latijns schrift kennen.
-Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding tekst ook de maximale lengte mee te geven. In het domeinmodel wordt het domein aangeduid als TekstN, waarbij N de maximale lengte aangeeft.</item>
-               </part>
-            </content>
-         </section>
-         <section name="Tekst200"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_DomeinmodelBROCommon_Tekst200"
-                  uuid="EAID_A3CCB773_81DF_4da3_8016_817F02297137">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Tekst200</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Een domein van het type tekst bestaat uit een stuk tekst van een bepaalde maximale lengte. De tekst mag alleen bestaan uit de tekens die voorkomen in de MES-1 set. De MES-1 set omvat 335 tekens en wordt gebruikt binnen de landen van de Europese Unie die een Latijns schrift kennen.
-Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding tekst ook de maximale lengte mee te geven. In het domeinmodel wordt het domein aangeduid als TekstN, waarbij N de maximale lengte aangeeft.</item>
-               </part>
-            </content>
-         </section>
-         <section name="Registratieobjectcode"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_DomeinmodelBROCommon_Registratieobjectcode"
-                  uuid="EAID_4EB8C8EF_F07A_49d3_AFCB_773194499FDA">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Registratieobjectcode</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>De identificatie van een object in de registratie ondergrond.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>Opbouw: BHRNNNNNNNNNNNN
-De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde aan het object toe.</item>
-               </part>
-            </content>
-         </section>
-      </section>
-      <section type="OVERVIEW-CODELIST">
-         <content>
-            <part>
-               <item id="global_class_DomeinmodelBROCommon_Registratiestatus"
-                     uuid="EAID_F5229DCB_D57A_47f7_B144_05DD13DAAB0C"
-                     idref="detail_class_DomeinmodelBROCommon_Registratiestatus">Registratiestatus</item>
-               <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
-            </part>
-         </content>
-      </section>
-      <section type="OVERVIEW-ENUMERATION">
-         <content>
-            <part>
-               <item id="global_class_DomeinmodelBROCommon_IndicatieJaNee"
-                     uuid="EAID_1EE1AAF4_A1C0_4dfa_BA12_43D20B8A36CB"
-                     idref="detail_class_DomeinmodelBROCommon_IndicatieJaNee">IndicatieJaNee</item>
-               <item>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden. Uitbreiding van de keuzelijst is niet mogelijk.</item>
-            </part>
-            <part>
-               <item id="global_class_DomeinmodelBROCommon_Kwaliteitsregime"
-                     uuid="EAID_2E962A93_45D1_44a6_B6C5_F8614253BC8E"
-                     idref="detail_class_DomeinmodelBROCommon_Kwaliteitsregime">Kwaliteitsregime</item>
-               <item>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden voor het duiden van de kwaliteitseis waaraan de gegevens van het object voldoen. Uitbreiding van de keuzelijst is niet mogelijk.</item>
-            </part>
-         </content>
-      </section>
-      <section type="DETAILS">
-         <section type="DETAILS-OBJECTTYPE">
-            <section name="Registratieobject"
-                     type="OBJECTTYPE"
-                     id="detail_class_DomeinmodelBROCommon_Registratieobject"
-                     id-global="global_class_DomeinmodelBROCommon_Registratieobject">
-               <section name="BRO-ID"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROCommon_Registratieobject_bROID"
-                        id-global="global_attribute_DomeinmodelBROCommon_Registratieobject_bROID">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>BRO-ID</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De identificatie van een object dat in de registratie ondergrond is opgenomen.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                        <item>Indicatie materiële historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Registratieobjectcode</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="bronhouder"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROCommon_Registratieobject_bronhouder"
-                        id-global="global_attribute_DomeinmodelBROCommon_Registratieobject_bronhouder">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>bronhouder</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>TODO</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                        <item>Indicatie materiële historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Overig</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Organisatie</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="dataleverancier"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROCommon_Registratieobject_dataleverancier"
-                        id-global="global_attribute_DomeinmodelBROCommon_Registratieobject_dataleverancier">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>dataleverancier</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De identificatie die de organisatie die het object aan de basisregistratie ondergrond heeft aangeleverd, als onderneming in het Handelsregister heeft.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Organisatie</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="kwaliteitsregime"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROCommon_Registratieobject_kwaliteitsregime"
-                        id-global="global_attribute_DomeinmodelBROCommon_Registratieobject_kwaliteitsregime">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>kwaliteitsregime</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Kwaliteitsregime</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="object-ID bronhouder"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_DomeinmodelBROCommon_Registratieobject_objectIDBronhouder"
-                        id-global="global_attribute_DomeinmodelBROCommon_Registratieobject_objectIDBronhouder">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>object-ID bronhouder</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie ondergrond.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Tekst200</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-            </section>
-         </section>
-         <!--removed empty content-->
-         <!--removed empty content-->
-         <section type="DETAILS-UNION">
-            <section name="Organisatie"
-                     type="KEUZE"
-                     id="detail_class_DomeinmodelBROCommon_Organisatie"
-                     id-global="global_class_DomeinmodelBROCommon_Organisatie">
-               <section name="Europees handelsnummer"
-                        type="DETAIL-UNIONELEMENT"
-                        id="detail_attribute_DomeinmodelBROCommon_Organisatie_europeesHandelsnummer"
-                        id-global="global_attribute_DomeinmodelBROCommon_Organisatie_europeesHandelsnummer">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>Europees handelsnummer</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Tekst40</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="KvK-nummer"
-                        type="DETAIL-UNIONELEMENT"
-                        id="detail_attribute_DomeinmodelBROCommon_Organisatie_kvKNummer"
-                        id-global="global_attribute_DomeinmodelBROCommon_Organisatie_kvKNummer">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>KvK-nummer</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>KvK-nummer</item>
-                     </part>
-                  </content>
-               </section>
-            </section>
-         </section>
-         <!--removed empty content-->
-         <!--removed empty content-->
-         <section type="DETAILS-CODELIST">
             <section name="Registratiestatus"
                      type="DETAIL-CODELIST"
-                     id="detail_class_DomeinmodelBROCommon_Registratiestatus"
-                     id-global="global_class_DomeinmodelBROCommon_Registratiestatus"
+                     id="detail_class_BROGMN_Registratiestatus"
+                     id-global="global_class_BROGMN_Registratiestatus"
                      uuid="EAID_F5229DCB_D57A_47f7_B144_05DD13DAAB0C">
                <content>
                   <part>
@@ -2378,13 +2367,13 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                   <itemtype type="DEFINITION"/>
                   <part>
                      <item/>
-                     <item>aangevuld</item>
-                     <item>Het registeren van de gegevens van het object heeft na de start van de registratie een vervolg gekregen. De gegevens in de registratie ondergrond zijn minimaal een keer aangevuld met nieuwe gegevens.</item>
+                     <item>geregistreerd</item>
+                     <item>Het registeren van de gegevens van het object is gestart. De gegevens uit het eerste brondocument zijn in de registratie ondergrond vastgelegd. Er zijn daarna geen nieuwe gegevens geregistreerd.</item>
                   </part>
                   <part>
                      <item/>
-                     <item>geregistreerd</item>
-                     <item>Het registeren van de gegevens van het object is gestart. De gegevens uit het eerste brondocument zijn in de registratie ondergrond vastgelegd. Er zijn daarna geen nieuwe gegevens geregistreerd.</item>
+                     <item>aangevuld</item>
+                     <item>Het registeren van de gegevens van het object heeft na de start van de registratie een vervolg gekregen. De gegevens in de registratie ondergrond zijn minimaal een keer aangevuld met nieuwe gegevens.</item>
                   </part>
                   <part>
                      <item/>
@@ -2397,8 +2386,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
          <section type="DETAILS-ENUMERATION">
             <section name="IndicatieJaNee"
                      type="DETAIL-ENUMERATION"
-                     id="detail_class_DomeinmodelBROCommon_IndicatieJaNee"
-                     id-global="global_class_DomeinmodelBROCommon_IndicatieJaNee"
+                     id="detail_class_BROGMN_IndicatieJaNee"
+                     id-global="global_class_BROGMN_IndicatieJaNee"
                      uuid="EAID_1EE1AAF4_A1C0_4dfa_BA12_43D20B8A36CB">
                <content>
                   <part>
@@ -2424,8 +2413,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
             </section>
             <section name="Kwaliteitsregime"
                      type="DETAIL-ENUMERATION"
-                     id="detail_class_DomeinmodelBROCommon_Kwaliteitsregime"
-                     id-global="global_class_DomeinmodelBROCommon_Kwaliteitsregime"
+                     id="detail_class_BROGMN_Kwaliteitsregime"
+                     id-global="global_class_BROGMN_Kwaliteitsregime"
                      uuid="EAID_2E962A93_45D1_44a6_B6C5_F8614253BC8E">
                <content>
                   <part>
@@ -2440,12 +2429,12 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                   <part>
                      <item/>
                      <item>IMBRO</item>
-                     <item>De strikte kwaliteitseis die na beï¿½indiging van de transitieperiode geldt voor alle objecten die nadien geregistreerd zijn.</item>
+                     <item>De strikte kwaliteitseis die geldt voor alle objecten die actief zijn op of na het moment dat het registreren van grondwatermonitoringnetten in de basisregistratie ondergrond is gestart. Een object is actief tussen de begindatum en de einddatum.</item>
                   </part>
                   <part>
                      <item/>
                      <item>IMBRO/A</item>
-                     <item>De minder strikte kwaliteitseis die tot beï¿½indiging van de transitieperiode gebruikt kan zijn.</item>
+                     <item>De minder strikte kwaliteitseis die gebruikt kan zijn voor objecten die actief waren tot aan het moment dat het registreren van grondwatermonitoringnetten in de basisregistratie ondergrond is gestart. Een object is actief tussen de begindatum en de einddatum.</item>
                   </part>
                </content>
             </section>
