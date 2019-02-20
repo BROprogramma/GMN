@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
       generator-version="1.49.1"
-      generator-date="2019-02-20T11:33:36Z">
+      generator-date="2019-02-20T15:51:45Z">
    <section type="DOMAIN" name="BRO GMN" id="global_package_BROGMN">
       <section type="IMAGEMAPS"
                name="BRO GMN-imagemap"
@@ -1983,10 +1983,6 @@ De bedoeling is dat voor elk moment in de tijd de volledige verzameling meetpunt
                      <part type="CFG-DOC-REGELS">
                         <item>Regels</item>
                         <item>De begindatum mag niet in de toekomst liggen.</item>
-                     </part>
-                     <part type="CFG-DOC-REGELS-IMBROA">
-                        <item>Regels IMBRO/A</item>
-                        <item>OnvolledigeDatum</item>
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
