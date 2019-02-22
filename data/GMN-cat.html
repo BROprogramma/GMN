@@ -2,10 +2,11 @@
 <section id="cat" class="normative">
    <h2>Catalogus</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20190222-090157 imvertor --></p>
+      <!--Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20190222-161236 imvertor --></p>
    <div class="imageinfo overview"><img src="data/Images/EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C.png" usemap="#imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C"><map name="imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C">
+         <area shape="rect" coords="705,339,963,220" alt="" href="#graph_EAID_FD4CB41D_3FA7_46c9_81A9_44C8869F16A6">
          <area shape="rect" coords="356,151,614,22" alt="" href="#graph_EAID_AF36F25F_EDC0_4e99_A937_DF9E6889C6F0">
-         <area shape="rect" coords="356,404,614,220" alt="" href="#graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></map><p><b>Domeinmodel BRO GMN - overzicht</b></p>
+         <area shape="rect" coords="355,390,612,221" alt="" href="#graph_EAID_A35817A4_9167_4620_BB25_5933C44F44E1"></map><p><b>Domeinmodel BRO GMN - overzicht</b></p>
    </div>
    <section id="">
       <h3>Objecttypen </h3>
@@ -421,17 +422,132 @@
                   </td>
                   <td>0 .. 1</td>
                </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties</h5>
+         
+         
+         <table>
+            <colgroup width="50%"></colgroup>
+            <colgroup width="50%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_class_BROGMN_GMWBuisverwijzing">meetpunt</a>
-                     :
+                     Grondwatermonitoringnet
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_BROGMN_Registratieobject">Registratieobject</a>
+                     
+                     
                   </td>
-                  <td>De verwijzing naar een specifieke buis in een grondwatermonitoringput, waar onderzoeken
-                     aan de samenstelling of stand van het grondwater worden uitgevoerd ten behoeve van
-                     het grondwatermonitoringnet.
+                  <td>Het geheel van gegevens dat betrekking heeft op een grondwatermonitoringnet: een verzameling
+                     locaties waar periodiek onderzoek aan het grondwater op een of meerdere bepaalde dieptes
+                     wordt gedaan om de toestand van het grondwater in het gebied vanuit een perspectief
+                     te bepalen, om de eventuele veranderingen daarin te kunnen volgen.
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Grondwatermonitoringnet
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_BROGMN_Grondwatermonitoringnet_meetpunt">bestaat uit: meetpunt</a>
+                     
+                     
+                     <a class="link" href="#global_class_BROGMN_Meetpunt">Meetpunt</a>
+                     
+                     [ 0 .. * ]
+                     
                   </td>
                   <td></td>
-                  <td>0 .. *</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+      </section>
+      <a class="anchor" name="graph_EAID_FD4CB41D_3FA7_46c9_81A9_44C8869F16A6"></a><a class="anchor" name="global_class_BROGMN_Meetpunt"></a><section id="global_class_BROGMN_Meetpunt">
+         <h4>Objecttype Meetpunt</h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Meetpunt</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td>BRO</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>De gegevens die het grondwatermonitoringnet identificeren.</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td>BRO</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="50%"></colgroup>
+            <colgroup width="10%"></colgroup>
+            <colgroup width="10%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_BROGMN_Meetpunt_begindatum">begindatum</a>
+                     
+                  </td>
+                  <td>De datum waarop de periode waarin het meetpunt deel uitmaakt van het grondwatermonitoringnet
+                     begint.
+                  </td>
+                  <td>
+                     <a class="link" href="#global_class_BROGMN_Datum">Datum</a>
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_BROGMN_Meetpunt_einddatum">einddatum</a>
+                     
+                  </td>
+                  <td>De datum waarop de periode waarin het meetpunt deel uitmaakt van het grondwatermonitoringnet
+                     eindigt.
+                  </td>
+                  <td>
+                     <a class="link" href="#global_class_BROGMN_Datum">Datum</a>
+                     
+                  </td>
+                  <td>0 .. 1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_class_BROGMN_GMWBuisverwijzing">GMW-buisverwijzing</a>
+                     :
+                  </td>
+                  <td>De gegevens die nodig zijn voor een verwijzing naar een specifieke buis in een grondwatermonitoringput.</td>
+                  <td></td>
+                  <td>1</td>
                </tr>
                <tr>
                   <td>- 
@@ -476,18 +592,18 @@
                </tr>
                <tr>
                   <td>
-                     Grondwatermonitoringnet
-                     is specialisatie van
                      
-                     <a class="link" href="#global_class_BROGMN_Registratieobject">Registratieobject</a>
+                     <a class="link" href="#global_class_BROGMN_Grondwatermonitoringnet">Grondwatermonitoringnet</a>
                      
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_BROGMN_Grondwatermonitoringnet_meetpunt">bestaat uit: meetpunt</a>
+                     
+                     Meetpunt
+                     [ 0 .. * ]
                      
                   </td>
-                  <td>Het geheel van gegevens dat betrekking heeft op een grondwatermonitoringnet: een verzameling
-                     locaties waar periodiek onderzoek aan het grondwater op een of meerdere bepaalde dieptes
-                     wordt gedaan om de toestand van het grondwater in het gebied vanuit een perspectief
-                     te bepalen, om de eventuele veranderingen daarin te kunnen volgen.
-                  </td>
+                  <td></td>
                </tr>
             </tbody>
          </table>
@@ -498,6 +614,99 @@
    </section>
    <section id="">
       <h3>Unions </h3>
+      <a class="anchor" name="graph_EAID_90AD47E9_8AED_4308_9074_EB21DBC71042"></a><a class="anchor" name="global_class_BROGMN_OnvolledigeDatum"></a><section id="global_class_BROGMN_OnvolledigeDatum">
+         <h4>Union Onvolledige datum</h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Onvolledige datum</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td>BRO</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Voor gegevens die onder het kwaliteitsregime IMBRO/A aangeleverd worden, geldt een
+                     derde domein met vier keuzemogelijkheden.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="">
+            <h5>Overzicht keuze elementen </h5>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="50%"></colgroup>
+               <colgroup width="10%"></colgroup>
+               <colgroup width="10%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Union element</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BROGMN_OnvolledigeDatum_volledigeDatum">volledige datum</a>
+                        
+                     </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_BROGMN_Datum">Datum</a>
+                        
+                     </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BROGMN_OnvolledigeDatum_jaarEnMaand">jaar en maand</a>
+                        
+                     </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_BROGMN_Tekst7">Tekst7</a>
+                        
+                     </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BROGMN_OnvolledigeDatum_jaartal">jaartal</a>
+                        
+                     </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_BROGMN_Aantal4">Aantal4</a>
+                        
+                     </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BROGMN_OnvolledigeDatum_onbekend">onbekend</a>
+                        
+                     </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_BROGMN_RedenGeenWaarde">RedenGeenWaarde</a>
+                        
+                     </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+      </section>
       <a class="anchor" name="graph_EAID_E38550EF_707A_4e86_9BF1_963B68CC2CC4"></a><a class="anchor" name="global_class_BROGMN_Organisatie"></a><section id="global_class_BROGMN_Organisatie">
          <h4>Union Organisatie</h4>
          
@@ -515,7 +724,9 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>TODO</td>
+                  <td>De aanduiding van de organisatie: ofwel het KvK-nummer, of het equivalent daarvan
+                     in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
+                  </td>
                </tr>
             </tbody>
          </table>
@@ -540,7 +751,9 @@
                         <a class="link" href="#detail_attribute_BROGMN_Organisatie_kvKNummer">KvK-nummer</a>
                         
                      </td>
-                     <td></td>
+                     <td>Het identificerende gegeven van een onderneming in het Handelsregister. De opbouw
+                        is NNNNNNNN.
+                     </td>
                      <td>
                         <a class="link" href="#global_class_BROGMN_KvKNummer">KvK-nummer</a>
                         
@@ -552,7 +765,9 @@
                         <a class="link" href="#detail_attribute_BROGMN_Organisatie_europeesHandelsnummer">Europees handelsnummer</a>
                         
                      </td>
-                     <td></td>
+                     <td>Het domein Europees handelsnummer geeft het identificerende gegeven van een onderneming
+                        in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
+                     </td>
                      <td>
                         <a class="link" href="#global_class_BROGMN_Tekst40">Tekst40</a>
                         
@@ -569,6 +784,29 @@
    </section>
    <section id="">
       <h3>Primitieve datatypen </h3>
+      <a class="anchor" name="graph_EAID_AE945C98_EF28_43c3_88B5_2A0B1DCF856B"></a><a class="anchor" name="global_class_BROGMN_Aantal4"></a><section id="global_class_BROGMN_Aantal4">
+         <h4>Primitief datatype Aantal4</h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Aantal4</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Een domein van het type aantal is een natuurlijk getal met een bepaalde maximale lengte.
+                     Het wordt gebruikt voor een telbare hoeveelheid. Een domein wordt volledig gespecificeerd
+                     door met de aanduiding ook de maximale lengte mee te geven. In het domeinmodel is
+                     de algemene aanduiding AantalN, waarbij N de maximale lengte aangeeft.
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
       <a class="anchor" name="graph_EAID_CA1AE7E1_B12C_40c8_9CF7_52573A8239B4"></a><a class="anchor" name="global_class_BROGMN_Datum"></a><section id="global_class_BROGMN_Datum">
          <h4>Primitief datatype Datum</h4>
          
@@ -693,6 +931,35 @@
          </table>
          
       </section>
+      <a class="anchor" name="graph_EAID_ADA38463_8ACC_4813_9774_FA6568E9224F"></a><a class="anchor" name="global_class_BROGMN_Tekst7"></a><section id="global_class_BROGMN_Tekst7">
+         <h4>Primitief datatype Tekst7</h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Tekst7</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Een domein van het type tekst bestaat uit een stuk tekst van een bepaalde maximale
+                     lengte. De tekst mag alleen bestaan uit de tekens die voorkomen in de MES-1 set. De
+                     MES-1 set omvat 335 tekens en wordt gebruikt binnen de landen van de Europese Unie
+                     die een Latijns schrift kennen.<br>Een domein van het type tekst wordt volledig gespecificeerd door met de aanduiding
+                     tekst ook de maximale lengte mee te geven. In het domeinmodel wordt het domein aangeduid
+                     als TekstN, waarbij N de maximale lengte aangeeft.
+                  </td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td>NNNN-NN</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
       <a class="anchor" name="graph_EAID_BE533F94_BA41_43cb_A5FE_9C37933CF7FA"></a><a class="anchor" name="global_class_BROGMN_Tekst40"></a><section id="global_class_BROGMN_Tekst40">
          <h4>Primitief datatype Tekst40</h4>
          
@@ -803,6 +1070,10 @@
                   voor het duiden van de kwaliteitseis waaraan de gegevens van het object voldoen. Uitbreiding
                   van de keuzelijst is niet mogelijk.
                </td>
+            </tr>
+            <tr>
+               <th><a class="anchor" name="global_class_BROGMN_RedenGeenWaarde"></a><a class="link" href="#detail_class_BROGMN_RedenGeenWaarde">RedenGeenWaarde</a></th>
+               <td>Geen datum bekend, met als vaste waarde onbekend.</td>
             </tr>
          </tbody>
       </table>
@@ -2070,8 +2341,362 @@
             </section>
             
          </section>
+         <a class="anchor" name="detail_attribute_BROGMN_Grondwatermonitoringnet_begindatum"></a><section id="detail_attribute_BROGMN_Grondwatermonitoringnet_begindatum">
+            <h6>Attribuutsoort details <a href="#global_class_BROGMN_Grondwatermonitoringnet">Grondwatermonitoringnet</a> begindatum
+            </h6>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>begindatum</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De datum die het begin aangeeft van de periode waarin het monitoren van het grondwater
+                        plaatsvindt.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>Domein IMBRO/A: OnvolledigeDatum</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Minimumwaarde</th>
+                     <td>1-1-1800</td>
+                  </tr>
+                  <tr>
+                     <th>Maximumwaarde</th>
+                     <td>heden</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_BROGMN_Grondwatermonitoringnet_einddatum"></a><section id="detail_attribute_BROGMN_Grondwatermonitoringnet_einddatum">
+            <h6>Attribuutsoort details <a href="#global_class_BROGMN_Grondwatermonitoringnet">Grondwatermonitoringnet</a> einddatum
+            </h6>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>einddatum</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De datum die het einde aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>De bronhouder geeft de einddatum op wanneer het monitoren in het kader van het monitoringnet
+                        eindigt. Tot die tijd blijft de einddatum leeg.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>De einddatum ligt na de begindatum van het grondwatermonitoringnet.</td>
+                  </tr>
+                  <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>Onder kwaliteitsregime IMBRO/A is dit gegeven altijd aanwezig.<br>Domein IMBRO/A: OnvolledigeDatum.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Minimumwaarde</th>
+                     <td>1-1-1800</td>
+                  </tr>
+                  <tr>
+                     <th>Maximumwaarde</th>
+                     <td>heden</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_association_BROGMN_Grondwatermonitoringnet_meetpunt"></a><section id="detail_association_BROGMN_Grondwatermonitoringnet_meetpunt">
+            <h6>Relatiesoort details <a href="#global_class_BROGMN_Grondwatermonitoringnet">Grondwatermonitoringnet</a> bestaat uit
+            </h6>
+            
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>bestaat uit</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>0 .. *</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Gerelateerd objecttype</th>
+                     <td>
+                        <a class="link" href="#global_class_BROGMN_Meetpunt">Meetpunt</a>
+                        
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+      </section>
+      <a class="anchor" name="detail_class_BROGMN_Meetpunt"></a><section id="detail_class_BROGMN_Meetpunt">
+         <h5>Objecttype Meetpunt</h5>
+         <a class="anchor" name="detail_attribute_BROGMN_Meetpunt_begindatum"></a><section id="detail_attribute_BROGMN_Meetpunt_begindatum">
+            <h6>Attribuutsoort details <a href="#global_class_BROGMN_Meetpunt">Meetpunt</a> begindatum
+            </h6>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>begindatum</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De datum waarop de periode waarin het meetpunt deel uitmaakt van het grondwatermonitoringnet
+                        begint.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>De begindatum van het meetpunt ligt niet voor de begindatum van het grondwatermonitoringnet.</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Minimumwaarde</th>
+                     <td>1-1-1800</td>
+                  </tr>
+                  <tr>
+                     <th>Maximumwaarde</th>
+                     <td>heden</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_BROGMN_Meetpunt_einddatum"></a><section id="detail_attribute_BROGMN_Meetpunt_einddatum">
+            <h6>Attribuutsoort details <a href="#global_class_BROGMN_Meetpunt">Meetpunt</a> einddatum
+            </h6>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>einddatum</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>De datum waarop de periode waarin het meetpunt deel uitmaakt van het grondwatermonitoringnet
+                        eindigt.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>BRO</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>De einddatum van het meetpunt krijgt een waarde wanneer de bronhouder deze opgeeft,
+                        of wanneer de bronhouder de einddatum van het grondwatermonitoringnet opgeeft. In
+                        dat laatste geval wordt voor alle meetpunten zonder einddatum de einddatum gelijk
+                        gesteld aan de opgegeven einddatum van het grondwatermonitoringnet.<br>Tot die tijd blijft de einddatum leeg.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>De einddatum van het meetpunt ligt na de begindatum van het meetpunt.<br>De einddatum van het meetpunt ligt niet na de einddatum van het grondwatermonitoringnet.
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie afleidbaar</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Minimumwaarde</th>
+                     <td>1-1-1800</td>
+                  </tr>
+                  <tr>
+                     <th>Maximumwaarde</th>
+                     <td>heden</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
          <a class="anchor" name="detail_class_BROGMN_GMWBuisverwijzing"></a><section id="detail_class_BROGMN_GMWBuisverwijzing">
-            <h6>Gegevensgroeptype details <a href="#global_class_BROGMN_Grondwatermonitoringnet">Grondwatermonitoringnet</a> GMW-buisverwijzing
+            <h6>Gegevensgroeptype details <a href="#global_class_BROGMN_Meetpunt">Meetpunt</a> GMW-buisverwijzing
             </h6>
             
             <table>
@@ -2088,23 +2713,11 @@
                   </tr>
                   <tr>
                      <th>Definitie</th>
-                     <td>De verwijzing naar een specifieke buis in een grondwatermonitoringput, waar onderzoeken
-                        aan de samenstelling of stand van het grondwater worden uitgevoerd ten behoeve van
-                        het grondwatermonitoringnet.
-                     </td>
+                     <td>De gegevens die nodig zijn voor een verwijzing naar een specifieke buis in een grondwatermonitoringput.</td>
                   </tr>
                   <tr>
                      <th>Herkomst definitie</th>
                      <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>De dynamische lijst van meetpunten geeft de samenstelling van het grondwatermonitoringnet
-                        in de tijd. De verzameling meetpunten geeft inzicht in het gebied waarin wordt gemonitord.<br>De bedoeling is dat voor elk moment in de tijd de volledige verzameling meetpunten
-                        vastligt. Dit wordt echter niet afgedwongen: om het aanleveren van gegevens van de
-                        verschillende registratieobjecten in het grondwaterdomein gemakkelijker te maken is
-                        het mogelijk om een grondwatermonitoringnet initieel te registreren zonder meetpunten.
-                     </td>
                   </tr>
                </tbody>
             </table>
@@ -2216,8 +2829,16 @@
             </section>
             
          </section>
-         <a class="anchor" name="detail_attribute_BROGMN_Grondwatermonitoringnet_begindatum"></a><section id="detail_attribute_BROGMN_Grondwatermonitoringnet_begindatum">
-            <h6>Attribuutsoort details <a href="#global_class_BROGMN_Grondwatermonitoringnet">Grondwatermonitoringnet</a> begindatum
+         
+      </section>
+      
+      
+      
+      
+      <a class="anchor" name="detail_class_BROGMN_OnvolledigeDatum"></a><section id="detail_class_BROGMN_OnvolledigeDatum">
+         <h5>Keuze Onvolledige datum</h5>
+         <a class="anchor" name="detail_attribute_BROGMN_OnvolledigeDatum_volledigeDatum"></a><section id="detail_attribute_BROGMN_OnvolledigeDatum_volledigeDatum">
+            <h6>Union element details <a href="#global_class_BROGMN_OnvolledigeDatum">Onvolledige datum</a> volledige datum
             </h6>
             
             <table>
@@ -2226,72 +2847,22 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>begindatum</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>De datum die het begin aangeeft van de periode waarin het monitoren van het grondwater
-                        plaatsvindt.
-                     </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Mogelijk geen waarde</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie materiële historie</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie formele historie</th>
-                     <td>Nee</td>
+                     <td>volledige datum</td>
                   </tr>
                   <tr>
                      <th>Indicatie kardinaliteit</th>
                      <td>1</td>
                   </tr>
                   <tr>
-                     <th>Indicatie authentiek</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>De begindatum mag niet in de toekomst liggen.</td>
-                  </tr>
-                  <tr>
-                     <th>Regels IMBRO/A</th>
-                     <td>Domein IMBRO/A: OnvolledigeDatum</td>
-                  </tr>
-                  <tr>
                      <th>Formaat</th>
                      <td>Datum</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie afleidbaar</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Minimumwaarde</th>
-                     <td>1-1-1800</td>
-                  </tr>
-                  <tr>
-                     <th>Maximumwaarde</th>
-                     <td>heden</td>
                   </tr>
                </tbody>
             </table>
             
          </section>
-         <a class="anchor" name="detail_attribute_BROGMN_Grondwatermonitoringnet_einddatum"></a><section id="detail_attribute_BROGMN_Grondwatermonitoringnet_einddatum">
-            <h6>Attribuutsoort details <a href="#global_class_BROGMN_Grondwatermonitoringnet">Grondwatermonitoringnet</a> einddatum
+         <a class="anchor" name="detail_attribute_BROGMN_OnvolledigeDatum_jaarEnMaand"></a><section id="detail_attribute_BROGMN_OnvolledigeDatum_jaarEnMaand">
+            <h6>Union element details <a href="#global_class_BROGMN_OnvolledigeDatum">Onvolledige datum</a> jaar en maand
             </h6>
             
             <table>
@@ -2300,65 +2871,63 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>einddatum</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>De datum die het einde aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>BRO</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>De bronhouder geeft de einddatum op wanneer het monitoren in het kader van het monitoringnet
-                        eindigt. Tot die tijd blijft de einddatum leeg.
-                     </td>
-                  </tr>
-                  <tr>
-                     <th>Mogelijk geen waarde</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie materiële historie</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie formele historie</th>
-                     <td>Nee</td>
+                     <td>jaar en maand</td>
                   </tr>
                   <tr>
                      <th>Indicatie kardinaliteit</th>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie authentiek</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Regels IMBRO/A</th>
-                     <td>Onder kwaliteitsregime IMBRO/A is dit gegeven altijd aanwezig.</td>
+                     <td>1</td>
                   </tr>
                   <tr>
                      <th>Formaat</th>
-                     <td>Datum</td>
+                     <td>Tekst7</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_BROGMN_OnvolledigeDatum_jaartal"></a><section id="detail_attribute_BROGMN_OnvolledigeDatum_jaartal">
+            <h6>Union element details <a href="#global_class_BROGMN_OnvolledigeDatum">Onvolledige datum</a> jaartal
+            </h6>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>jaartal</td>
                   </tr>
                   <tr>
-                     <th>Indicatie afleidbaar</th>
-                     <td>Nee</td>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
                   </tr>
                   <tr>
-                     <th>Minimumwaarde</th>
-                     <td>1-1-1800</td>
+                     <th>Formaat</th>
+                     <td>Aantal4</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_attribute_BROGMN_OnvolledigeDatum_onbekend"></a><section id="detail_attribute_BROGMN_OnvolledigeDatum_onbekend">
+            <h6>Union element details <a href="#global_class_BROGMN_OnvolledigeDatum">Onvolledige datum</a> onbekend
+            </h6>
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>onbekend</td>
                   </tr>
                   <tr>
-                     <th>Maximumwaarde</th>
-                     <td>heden</td>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>RedenGeenWaarde</td>
                   </tr>
                </tbody>
             </table>
@@ -2366,10 +2935,6 @@
          </section>
          
       </section>
-      
-      
-      
-      
       <a class="anchor" name="detail_class_BROGMN_Organisatie"></a><section id="detail_class_BROGMN_Organisatie">
          <h5>Keuze Organisatie</h5>
          <a class="anchor" name="detail_attribute_BROGMN_Organisatie_kvKNummer"></a><section id="detail_attribute_BROGMN_Organisatie_kvKNummer">
@@ -2383,6 +2948,12 @@
                   <tr>
                      <th>Naam</th>
                      <td>KvK-nummer</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>Het identificerende gegeven van een onderneming in het Handelsregister. De opbouw
+                        is NNNNNNNN.
+                     </td>
                   </tr>
                   <tr>
                      <th>Indicatie kardinaliteit</th>
@@ -2409,6 +2980,12 @@
                      <td>Europees handelsnummer</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>Het domein Europees handelsnummer geeft het identificerende gegeven van een onderneming
+                        in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
+                     </td>
+                  </tr>
+                  <tr>
                      <th>Indicatie kardinaliteit</th>
                      <td>1</td>
                   </tr>
@@ -2432,7 +3009,7 @@
 <section id="lis" class="normative">
    <h2>Inhoud van enumeraties en codelijsten</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20190222-090157 imvertor --></p><a class="anchor" name="graph_EAID_46C32AAB_3DBB_4622_947B_B99903A2D1ED"></a><a class="anchor" name="detail_class_BROGMN_GrondwaterAspect"></a><section id="detail_class_BROGMN_GrondwaterAspect">
+      <!--Conceptualmodel-GrondwatermonitoringnetGMN-0.1-0-20180301-20190222-161236 imvertor --></p><a class="anchor" name="graph_EAID_46C32AAB_3DBB_4622_947B_B99903A2D1ED"></a><a class="anchor" name="detail_class_BROGMN_GrondwaterAspect"></a><section id="detail_class_BROGMN_GrondwaterAspect">
       <h3>Codelijst details GrondwaterAspect</h3>
       
       <table>
@@ -2474,9 +3051,7 @@
                <td>onbekend</td>
                <td></td>
                <td>✔</td>
-               <td>Het is onbekend welk aspect van grondwater is gemonitord. Deze waarde is alleen toegestaan
-                  onder kwaliteitsregime IMBRO/A.
-               </td>
+               <td>Het is onbekend welk aspect van grondwater is gemonitord.</td>
             </tr>
          </tbody>
       </table>
@@ -2595,9 +3170,7 @@
                <td>archiefoverdracht</td>
                <td></td>
                <td>✔</td>
-               <td>De gegevens zijn aangeleverd in het kader van archiefoverdracht. Deze waarde is alleen
-                  toegestaan onder kwaliteitsregime IMBRO/A.
-               </td>
+               <td>De gegevens zijn aangeleverd in het kader van archiefoverdracht.</td>
             </tr>
          </tbody>
       </table>
@@ -2793,9 +3366,7 @@
                <td>onbekend</td>
                <td></td>
                <td>✔</td>
-               <td>Het is onbekend ten behoeve van welk doel de monitoring heeft plaatsgevonden. Deze
-                  waarde is alleen toegestaan onder kwaliteitsregime IMBRO/A.
-               </td>
+               <td>Het is onbekend ten behoeve van welk doel de monitoring heeft plaatsgevonden.</td>
             </tr>
          </tbody>
       </table>
@@ -2931,6 +3502,38 @@
                   tot aan het moment dat het registreren van grondwatermonitoringnetten in de basisregistratie
                   ondergrond is gestart. Een object is actief tussen de begindatum en de einddatum.
                </td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section><a class="anchor" name="graph_EAID_B2AE594E_84E6_4e9c_B44F_27F5B4AE6DE7"></a><a class="anchor" name="detail_class_BROGMN_RedenGeenWaarde"></a><section id="detail_class_BROGMN_RedenGeenWaarde">
+      <h3>Enumeratie details RedenGeenWaarde</h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>Geen datum bekend, met als vaste waarde onbekend.</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <colgroup width="10%"></colgroup>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+            <tr>
+               <td></td>
+               <td>onbekend</td>
+               <td>TODO.</td>
             </tr>
          </tbody>
       </table>
