@@ -3,8 +3,8 @@
       subpath="Conceptual model/Grondwatermonitoringnet (GMN)/20180301"
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
-      generator-version="1.51.1"
-      generator-date="2019-02-21T14:53:22Z">
+      generator-version="1.51.2"
+      generator-date="2019-02-22T08:01:54Z">
    <chapter title="CHAPTER-CATALOG" type="cat">
       <section type="DOMAIN" name="BRO GMN" id="global_package_BROGMN">
          <section type="IMAGEMAPS"
@@ -2130,22 +2130,26 @@ De bedoeling is dat voor elk moment in de tijd de volledige verzameling meetpunt
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>kwaliteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De samenstelling van het grondwater.</item>
                </part>
                <part>
-                  <item/>
                   <item>kwantiteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De stand of hoeveelheid van het grondwater.</item>
                </part>
                <part>
-                  <item/>
                   <item>onbekend</item>
+                  <item/>
+                  <item>✔</item>
                   <item>Het is onbekend welk aspect van grondwater is gemonitord. Deze waarde is alleen toegestaan onder kwaliteitsregime IMBRO/A.</item>
                </part>
             </content>
@@ -2162,72 +2166,86 @@ De bedoeling is dat voor elk moment in de tijd de volledige verzameling meetpunt
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>drinkwaterwet</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van de drinkwaterwet.</item>
                </part>
                <part>
-                  <item/>
                   <item>kaderrichtlijnWater</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van de kaderrichtlijn water.</item>
                </part>
                <part>
-                  <item/>
                   <item>ontgrondingenwet</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van de ontgrondingenwet.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterschapswet</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van de waterschapswet.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterwetGrondwaterzorgplicht</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van de grondwaterzorgplicht volgens de waterwet.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterwetOnttrekkingInfiltratie</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van meldingen en/of vergunningen met betrekking tot grondwateronttrekking en/of waterinfiltratie volgens de waterwet.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterwetPeilbeheer</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van peilbeheer volgens de waterwet.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterwetStrategischGrondwaterbeheer</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van strategisch grondwaterbeheer volgens de waterwet.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterwetWaterstaatswerkAanlegWijziging</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van door de bronhouder uitgevoerde aanleg of wijziging van waterstaatswerken volgens de waterwet.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterwetWaterstaatswerkBeheer</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van het beheer van waterstaatswerken door de bronhouder volgens de waterwet.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterwetWaterstaatswerkIngreep</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van een vergunning voor een ingreep aan waterstaatswerken volgens de waterwet.</item>
                </part>
                <part>
-                  <item/>
                   <item>wetNatuurbescherming</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van wet natuurbescherming.</item>
                </part>
                <part>
-                  <item/>
                   <item>archiefoverdracht</item>
+                  <item/>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in het kader van archiefoverdracht. Deze waarde is alleen toegestaan onder kwaliteitsregime IMBRO/A.</item>
                </part>
             </content>
@@ -2244,117 +2262,140 @@ De bedoeling is dat voor elk moment in de tijd de volledige verzameling meetpunt
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>strategischBeheerKwaliteitLandelijk</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de bruikbaarheid van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</item>
                </part>
                <part>
-                  <item/>
                   <item>strategischBeheerKwantiteitLandelijk</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de omvang van de voorraad grondwater op landelijke schaal, ten behoeve van planvorming en beheerskaders.</item>
                </part>
                <part>
-                  <item/>
                   <item>strategischBeheerKwaliteitRegionaal</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de bruikbaarheid van de voorraad grondwater op regionale schaal, ten behoeve van planvorming en beheerskaders.</item>
                </part>
                <part>
-                  <item/>
                   <item>strategischBeheerKwantiteitRegionaal</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de omvang van de voorraad grondwater op regionale schaal, ten behoeve van planvorming en beheerskaders.</item>
                </part>
                <part>
-                  <item/>
                   <item>beheersingStedelijkGebied</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de stand van het ondiepe grondwater om die in stedelijke omgeving te kunnen beheersen.</item>
                </part>
                <part>
-                  <item/>
                   <item>gevolgenOnttrekkingKwaliteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van water voor de chemische samenstelling (verontreiniging) van het grondwater.</item>
                </part>
                <part>
-                  <item/>
                   <item>gevolgenOnttrekkingKwantiteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de gevolgen van het onttrekken van grondwater en/of het infiltreren van water voor de omvang van de voorraad grondwater die de mens ter beschikking staat.</item>
                </part>
                <part>
-                  <item/>
                   <item>gevolgenPeilbeheer</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de gevolgen van maatregelen/ingrepen in het kader van peilbeheer voor de stand van het grondwater.</item>
                </part>
                <part>
-                  <item/>
                   <item>gevolgenWaterstaatswerkKwaliteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de gevolgen van de aanleg of wijziging van een waterstaatswerk voor de kwaliteit van het grondwater.</item>
                </part>
                <part>
-                  <item/>
                   <item>gevolgenWaterstaatswerkKwantiteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de gevolgen van de aanleg of wijziging van een waterstaatswerk voor de stand van het grondwater.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterstaatswerkBeheerKwaliteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de kwaliteit van het grondwater ten behoeve van het beheer van waterstaatswerken.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterstaatswerkBeheerKwantiteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de stand van het grondwater ten behoeve van het beheer van waterstaatswerken.</item>
                </part>
                <part>
-                  <item/>
                   <item>veiligstellingGrondwaterKwaliteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over grondwaterverontreinigingen op de schaal van een grondwaterlichaam die de bruikbaarheid ten behoeve van mens en natuur bedreigen, met als doel het borgen van een goede chemische toestand en het signaleren van stijgende trends.</item>
                </part>
                <part>
-                  <item/>
                   <item>veiligstellingGrondwaterKwantiteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de omvang van de voorraad grondwater die beschikbaar is voor de mens op de schaal van een grondwaterlichaam, met als doel de veiligstelling hiervan.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterstaatkundigeVerzorgingKwaliteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de bruikbaarheid van het grondwater ten behoeve van het operationeel beheer / de waterstaatkundige verzorging van het gebied.</item>
                </part>
                <part>
-                  <item/>
                   <item>waterstaatkundigeVerzorgingKwantiteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de omvang en/of peil van het grondwater ten behoeve van het operationeel beheer / de waterstaatkundige verzorging van het gebied.</item>
                </part>
                <part>
-                  <item/>
                   <item>veiligstellingDrinkwatervoorzieningKwaliteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de bruikbaarheid van het grondwater ten behoeve van (het veiligstellen van) de huidige en toekomstige drinkwatervoorziening.</item>
                </part>
                <part>
-                  <item/>
                   <item>veiligstellingDrinkwatervoorzieningKwantiteit</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de voorraad van het grondwater ten behoeve van (het veiligstellen van) de huidige en toekomstige drinkwatervoorziening.</item>
                </part>
                <part>
-                  <item/>
                   <item>gevolgenOntgronding</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de gevolgen van ontgronding voor de grondwaterhuishouding.</item>
                </part>
                <part>
-                  <item/>
                   <item>natuurbescherming</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de bruikbaarheid van het grondwater ten behoeve van de instandhouding/bescherming van de natuur.</item>
                </part>
                <part>
-                  <item/>
                   <item>natuurbeheer</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Kennis over de stand van het grondwater om die te beheersen ten behoeve van natuurbeheer.</item>
                </part>
                <part>
-                  <item/>
                   <item>onbekend</item>
+                  <item/>
+                  <item>✔</item>
                   <item>Het is onbekend ten behoeve van welk doel de monitoring heeft plaatsgevonden. Deze waarde is alleen toegestaan onder kwaliteitsregime IMBRO/A.</item>
                </part>
             </content>
