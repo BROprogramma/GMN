@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
       generator-version="1.51.2"
-      generator-date="2019-02-22T15:12:34Z">
+      generator-date="2019-02-25T16:25:19Z">
    <chapter title="CHAPTER-CATALOG" type="cat">
       <section type="DOMAIN" name="BRO GMN" id="global_package_BROGMN">
          <section type="IMAGEMAPS"
@@ -431,7 +431,7 @@
                   </part>
                   <part type="CFG-DOC-DEFINITIE">
                      <item>Definitie</item>
-                     <item>De gegevens die het grondwatermonitoringnet identificeren.</item>
+                     <item>Een locatie waar ten behoeve van het grondwatermonitoringnet metingen aan grondwater op een bepaalde diepte gedaan worden.</item>
                   </part>
                   <part type="CFG-DOC-HERKOMSTDEFINITIE">
                      <item>Herkomst definitie</item>
@@ -2930,22 +2930,26 @@ De einddatum van het meetpunt ligt niet na de einddatum van het grondwatermonito
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>geregistreerd</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Het registeren van de gegevens van het object is gestart. De gegevens uit het eerste brondocument zijn in de registratie ondergrond vastgelegd. Er zijn daarna geen nieuwe gegevens geregistreerd.</item>
                </part>
                <part>
-                  <item/>
                   <item>aangevuld</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Het registeren van de gegevens van het object heeft na de start van de registratie een vervolg gekregen. De gegevens in de registratie ondergrond zijn minimaal een keer aangevuld met nieuwe gegevens.</item>
                </part>
                <part>
-                  <item/>
                   <item>voltooid</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Het registeren van de gegevens van het object is voltooid. Alle gegevens zijn in de registratie ondergrond vastgelegd en er kunnen geen nieuwe gegevens meer worden geregistreerd.</item>
                </part>
             </content>
@@ -2964,17 +2968,20 @@ De einddatum van het meetpunt ligt niet na de einddatum van het grondwatermonito
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>ja</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Ja</item>
                </part>
                <part>
-                  <item/>
                   <item>nee</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Nee</item>
                </part>
             </content>
@@ -2991,17 +2998,20 @@ De einddatum van het meetpunt ligt niet na de einddatum van het grondwatermonito
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>IMBRO</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De strikte kwaliteitseis die geldt voor alle objecten die actief zijn op of na het moment dat het registreren van grondwatermonitoringnetten in de basisregistratie ondergrond is gestart. Een object is actief tussen de begindatum en de einddatum.</item>
                </part>
                <part>
-                  <item/>
                   <item>IMBRO/A</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De minder strikte kwaliteitseis die gebruikt kan zijn voor objecten die actief waren tot aan het moment dat het registreren van grondwatermonitoringnetten in de basisregistratie ondergrond is gestart. Een object is actief tussen de begindatum en de einddatum.</item>
                </part>
             </content>
@@ -3018,13 +3028,15 @@ De einddatum van het meetpunt ligt niet na de einddatum van het grondwatermonito
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>onbekend</item>
-                  <item>TODO.</item>
+                  <item>✔</item>
+                  <item>✔</item>
+                  <item>Onbekend.</item>
                </part>
             </content>
          </section>
