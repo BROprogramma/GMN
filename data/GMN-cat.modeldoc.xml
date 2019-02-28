@@ -3,8 +3,8 @@
       subpath="Conceptual model/Grondwatermonitoringnet (GMN)/20180301"
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
-      generator-version="1.51.2"
-      generator-date="2019-02-25T16:25:19Z">
+      generator-version="1.51.4"
+      generator-date="2019-02-28T13:23:19Z">
    <chapter title="CHAPTER-CATALOG" type="cat">
       <section type="DOMAIN" name="BRO GMN" id="global_package_BROGMN">
          <section type="IMAGEMAPS"
@@ -477,7 +477,7 @@
                         <item>
                            <item type="detail" idref="detail_attribute_BROGMN_GMWBuisverwijzing_bROID">BRO-ID</item>
                         </item>
-                        <item>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</item>
+                        <item>De identificatie van de grondwatermonitoringput in de basisregistratie ondergrond.</item>
                         <item>
                            <item type="global" idref="global_class_BROGMN_Registratieobjectcode">Registratieobjectcode</item>
                         </item>
@@ -488,7 +488,7 @@
                            <item type="detail"
                                  idref="detail_attribute_BROGMN_GMWBuisverwijzing_buisnummer">buisnummer</item>
                         </item>
-                        <item>Het nummer dat door of voor de bronhouder wordt gebruikt om de monitoringbuis in de grondwatermonitoringput te identificeren.</item>
+                        <item>Het identificerende nummer van de monitoringbuis in de grondwatermonitoringput in de basisregistratie ondergrond.</item>
                         <item>
                            <item type="global" idref="global_class_BROGMN_Nummer3">Nummer3</item>
                         </item>
@@ -2404,7 +2404,7 @@ De einddatum van het meetpunt ligt niet na de einddatum van het grondwatermonito
                            </part>
                            <part type="CFG-DOC-DEFINITIE">
                               <item>Definitie</item>
-                              <item>De identificatie van de grondwatermonitoringput in de registratie ondergrond.</item>
+                              <item>De identificatie van de grondwatermonitoringput in de basisregistratie ondergrond.</item>
                            </part>
                            <part type="CFG-DOC-HERKOMSTDEFINITIE">
                               <item>Herkomst definitie</item>
@@ -2454,15 +2454,11 @@ De einddatum van het meetpunt ligt niet na de einddatum van het grondwatermonito
                            </part>
                            <part type="CFG-DOC-DEFINITIE">
                               <item>Definitie</item>
-                              <item>Het nummer dat door of voor de bronhouder wordt gebruikt om de monitoringbuis in de grondwatermonitoringput te identificeren.</item>
+                              <item>Het identificerende nummer van de monitoringbuis in de grondwatermonitoringput in de basisregistratie ondergrond.</item>
                            </part>
                            <part type="CFG-DOC-HERKOMSTDEFINITIE">
                               <item>Herkomst definitie</item>
                               <item>BRO</item>
-                           </part>
-                           <part type="CFG-DOC-TOELICHTING">
-                              <item>Toelichting</item>
-                              <item>Dit nummer verwijst naar het buisnummer dat is geregistreerd bij de monitoringbuis van de grondwatermonitoringput in de basisregistratie ondergrond.</item>
                            </part>
                            <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                               <item>Mogelijk geen waarde</item>
