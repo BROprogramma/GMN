@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
       generator-version="1.51.4"
-      generator-date="2019-03-01T10:32:17Z">
+      generator-date="2019-03-01T13:13:28Z">
    <chapter title="CHAPTER-CATALOG" type="cat">
       <section type="DOMAIN" name="BRO GMN" id="global_package_BROGMN">
          <section type="IMAGEMAPS"
@@ -558,7 +558,7 @@
                   </part>
                   <part type="CFG-DOC-DEFINITIE">
                      <item>Definitie</item>
-                     <item>Voor gegevens die onder het kwaliteitsregime IMBRO/A aangeleverd worden, geldt een derde domein met vier keuzemogelijkheden.</item>
+                     <item>Een domein voor datums, met vier keuzemogelijkheden. Dit domein kan alleen gebruikt worden onder kwaliteitsregime IMBRO/A.</item>
                   </part>
                </content>
                <section type="SHORT-UNIONELEMENTS">
