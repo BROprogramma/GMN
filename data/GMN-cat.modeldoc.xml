@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_940F1260_BB49_43a8_8F9A_ED9BDA5D32A6"
       generator-version="1.51.4"
-      generator-date="2019-02-28T13:23:19Z">
+      generator-date="2019-03-01T10:32:17Z">
    <chapter title="CHAPTER-CATALOG" type="cat">
       <section type="DOMAIN" name="BRO GMN" id="global_package_BROGMN">
          <section type="IMAGEMAPS"
@@ -411,7 +411,7 @@
                            </item>
                            <item>[ 0 .. * ]</item>
                         </item>
-                        <item/>
+                        <item>Een locatie waar ten behoeve van het grondwatermonitoringnet metingen aan grondwater op een bepaalde diepte gedaan worden.</item>
                      </part>
                   </content>
                </section>
@@ -534,7 +534,7 @@
                            <item>Meetpunt</item>
                            <item>[ 0 .. * ]</item>
                         </item>
-                        <item/>
+                        <item>Een locatie waar ten behoeve van het grondwatermonitoringnet metingen aan grondwater op een bepaalde diepte gedaan worden.</item>
                      </part>
                   </content>
                </section>
@@ -2194,6 +2194,10 @@ Domein IMBRO/A: OnvolledigeDatum.</item>
                         <part type="CFG-DOC-HERKOMST">
                            <item>Herkomst</item>
                            <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>Een locatie waar ten behoeve van het grondwatermonitoringnet metingen aan grondwater op een bepaalde diepte gedaan worden.</item>
                         </part>
                         <part type="CFG-DOC-HERKOMSTDEFINITIE">
                            <item>Herkomst definitie</item>
