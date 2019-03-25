@@ -2,13 +2,15 @@
 
 Repository voor het ontwikkelen van de gegevenscatalogus Grondwatermonitoringnet. De werkversie van deze gegevenscatalogus is hier te bekijken: 
 
-https://broprogramma.github.io/GMN
+https://broprogramma.github.io/GMN (NTB niet gebruiken voor publieke consultatie)
 
-## WAARSCHUWING 
-Deze repository bevat op dit moment slechts een werkversie van de gegevenscatalogus GMN die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen consultatieversie, maar een document in wording waarvan de inhoud onvolledig is, incorrect kan zijn en op elk moment kan wijzigen. Hoofdstuk vijf is automatisch gegenereerd uit een UML model dat nog in ontwikkeling is.
+## Publieke Consultatie
+Van 25 maart tot 7 mei loopt de consultatie van de catalogus [“Grondwatermonitoringnet"][1]. De catalogus wordt geconsulteerd in de vorm zoals hij in de ministeriële regeling verschijnt. Gebruik daarovoor [de hier gelinkte PDF versie catalogus][1].
 
-Niettemin zijn reacties op de inhoud welkom, bij voorkeur door het aanmaken van of reageren op [een issue in dit repository][1]. (Hiervoor heeft u een github account nodig). 
+In de [instructies voor de publieke consultatie][2] wordt uitgelegd hoe u kunt reageren.
 
-Als er een consultatieversie beschikbaar komt, zal die in deze repository gepubliceerd worden.
+Voor het goed begrijpen van de catalogus zoals hij in de ministeriële regeling verschijnt raden we u ten sterkste aan eerst [het achtergrond document][3] te lezen. U kunt niet op dit inleidend document reageren, maar het geeft wel een goede inleiding waarmee de catalogus beter begrepen kan worden.
 
-[1]: https://github.com/BROprogramma/GMN/issues
+[1]: https://github.com/BROprogramma/GMN/raw/gh-pages/Catalogus%20GMN%200.9%20-%2020190325.pdf
+[2]: https://github.com/BROprogramma/GMN/blob/gh-pages/consultatie-instructie.md
+[3]: https://github.com/BROprogramma/GMN/raw/gh-pages/Catalogus%20inleiding_GMN0.9_20190321.pdf
