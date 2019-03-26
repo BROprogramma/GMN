@@ -5,7 +5,7 @@ Repository voor het ontwikkelen van de gegevenscatalogus Grondwatermonitoringnet
 https://broprogramma.github.io/GMN (NTB niet gebruiken voor publieke consultatie)
 
 ## Publieke Consultatie
-Van 25 maart tot 7 mei loopt de consultatie van de catalogus [“Grondwatermonitoringnet"][1]. De catalogus wordt geconsulteerd in de vorm zoals hij in de ministeriële regeling verschijnt. Gebruik daarovoor [de hier gelinkte PDF versie catalogus][1].
+Van 25 maart tot 7 mei loopt de consultatie van de catalogus [“Grondwatermonitoringnet"][1]. De catalogus wordt geconsulteerd in de vorm zoals hij in de ministeriële regeling verschijnt. Gebruik daarvoor [de hier gelinkte PDF versie catalogus][1].
 
 In de [instructies voor de publieke consultatie][2] wordt uitgelegd hoe u kunt reageren.
 
