@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:dsgmn="http://www.broservices.nl/xsd/dsgmn/0.2"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+           xmlns:gmncom="http://www.broservices.nl/xsd/gmncommon/0.2"
+           xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+           targetNamespace="http://www.broservices.nl/xsd/dsgmn/0.2"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="0.2.0">
+
+   <xs:annotation>
+      <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+         <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+      </xs:appinfo>
+   </xs:annotation>
+
+   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
+   <xs:import namespace="http://www.broservices.nl/xsd/gmncommon/0.2" schemaLocation="gmncommon.xsd"/>
+   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+
+   <xs:element name="dispatchDataRequest" type="brocom:DispatchDataRequestType" />
+   <xs:element name="parseFault" type="brocom:ParseFaultType" />
+
+   <xs:element name="dispatchDataResponse" type="dsgmn:DispatchDataResponseType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek grondwatermonitoringnet registratieobject verzonden naar de aanvrager.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="DispatchDataResponseType">
+      <xs:complexContent>
+         <xs:extension base="brocom:DispatchResponseType">
+            <xs:sequence>
+               <xs:element minOccurs="0"
+                           maxOccurs="1"
+                           name="dispatchDocument"
+                           nillable="false"
+                           type="brocom:AbstractRegistrationObjectPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element dispatchDocument bevat de gegevens van een GMN-registratieobject. Vanwege het polymorfe karakter is het type of een BRODO uit de package brocom of een GMNO of een GMO_DP uit de package dsgmn. Deze drie types hebben allen als gemeenschappelijke vader het type AbstractRegistrationObject uit de package brocom.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+
+   <xs:element name="GMN_O"
+               type="dsgmn:GMN_OType"
+               substitutionGroup="brocom:RegistrationObject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over een grondwatermonitoringnet registratieobject in de basisregistratie ondergrond, dat niet uit registratie is genomen en welke verstrekt worden aan een aanvrager die niet bronhouder noch dataleverancier van het registratieobject is.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="GMN_OType">
+      <xs:complexContent>
+         <xs:extension base="brocom:RegistrationObjectType">
+            <xs:sequence>
+               <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De naam waaronder het monitoringnet bekend is.
+Explanation: Dit is een naam die binnen het werkveld herkenbaar is. De identificatie die de bronhouder in zijn eigen administratie gebruikt, voordat het grondwatermonitoringnet was geregistreerd in de basisregistratie ondergrond, ligt vast in object-ID bronhouder.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="deliveryContext"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           type="gmncom:DeliveryContextType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>DeliveryContext</CodeListName>
+                        <CodeListURI/>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
+Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie. Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvindt. Aangezien de wetgeving kan veranderen gedurende de periode van monitoren, terwijl het monitoringdoel gelijk kan blijven, geldt dat de rechtsgrond gedurende de levensduur van het grondwatermonitoringnet kan veranderen. Het kader aanlevering van een grondwatermonitoringnet kan anders zijn dan het kader aanlevering van een grondwatermonitoringput waarnaar vanuit een meetpunt in het grondwatermonitoringnet wordt verwezen.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="monitoringPurpose"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           type="gmncom:MonitoringPurposeType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>MonitoringPurpose</CodeListName>
+                        <CodeListURI/>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.
+Explanation: Voor de aspecten kwaliteit en kwantiteit zijn er verschillende monitoringdoelen. In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel de kwaliteit als de kwantiteit worden gedaan, wordt het monitoringdoel bij het primaire, meest belangrijke aspect vastgelegd.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="groundwaterAspect"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           type="gmncom:GroundwaterAspectType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>GroundwaterAspect</CodeListName>
+                        <CodeListURI/>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.
+Explanation: In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel de kwaliteit als de kwantiteit worden gedaan, wordt in dit attribuut het primaire, meest belangrijke aspect vastgelegd.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="1"
+                           maxOccurs="1"
+                           name="registrationHistory"
+                           nillable="false"
+                           type="brocom:RegistrationHistoryType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens die de geschiedenis van het object in de registratie ondergrond markeren.De gegevens worden geautomatiseerd door de basisregistratie ondergrond geproduceerd.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="startDate"
+                           type="brocom:PartialDateType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum die het begin aangeeft van de periode waarin het monitoren van het grondwater plaatsvindt.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="endDate"
+                           type="brocom:PartialDateType"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum die het einde aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.
+Explanation: De bronhouder geeft de einddatum op wanneer het monitoren in het kader van het monitoringnet eindigt. Tot die tijd blijft de einddatum leeg.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="GMN_OPropertyType">
+      <xs:sequence minOccurs="1">
+         <xs:element ref="dsgmn:GMN_O"/>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:element name="GMN_O_DP"
+               type="dsgmn:GMN_O_DPType"
+               substitutionGroup="dsgmn:GMN_O">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over een grondwatermonitoringnet registratieobject in de basisregistratie ondergrond, dat niet uit registratie is genomen en welke verstrekt worden aan een aanvrager die tevens bronhouder en/of dataleverancier van het registratieobject is.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="GMN_O_DPType">
+      <xs:complexContent>
+         <xs:extension base="dsgmn:GMN_OType"/>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="GMN_O_DPPropertyType">
+      <xs:sequence minOccurs="1">
+         <xs:element ref="dsgmn:GMN_O_DP"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>
