@@ -14,7 +14,7 @@
       </xs:appinfo>
    </xs:annotation>
 
-   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
    <xs:complexType name="DeliveryContextType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
