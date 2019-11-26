@@ -1,7 +1,7 @@
 <section id="cat" class="normative" level="1">
    <h2>Gegevensdefinitie</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--Conceptualmodel-GrondwatermonitoringnetGMN-0.9.2-2-20191108-20191126-085912 imvertor 1.55.2--></p>
+      <!--Conceptualmodel-GrondwatermonitoringnetGMN-0.9.2-2-20191108-20191126-094236 imvertor 1.55.2--></p>
    <section id="" level="3">
       <h3>Het domeinmodel   </h3>
       <div class="imageinfo overview"><img src="data/Images/EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C.png" usemap="#imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C"><map name="imagemap-EAID_16A72207_068F_4cb7_8848_6A51D3D09C6C">
@@ -1397,6 +1397,16 @@
                   </td>
                </tr>
                <tr>
+                  <th>Toelichting</th>
+                  <td>
+                     
+                     <p xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:imvert="http://www.imvertor.org/schema/system">Het gegeven komt uit een brondocument dat bij het aanvullen van de registratie is
+                        aangeleverd.
+                     </p>
+                     
+                  </td>
+               </tr>
+               <tr>
                   <th>Relaties met andere entiteiten</th>
                   <td>
                      <a class="link" href="#global_class_BROGMN_Monitoringnetgeschiedenis">Monitoringnetgeschiedenis</a>
@@ -1482,6 +1492,10 @@
                      <td>Datum</td>
                   </tr>
                   <tr>
+                     <th>&nbsp;&nbsp;Naam IMBRO/A</th>
+                     <td>OnvolledigeDatum</td>
+                  </tr>
+                  <tr>
                      <th>Regels</th>
                      <td>
                         
@@ -1522,7 +1536,7 @@
                <tr>
                   <th>Relaties met andere entiteiten</th>
                   <td>Meetpunt 
-                     gevormd door 1..* 
+                     gevormd door 1 
                      <a class="link" href="#global_class_BROGMN_GMWMonitoringbuis">GMW-monitoringbuis</a>
                      <br>
                      <a class="link" href="#global_class_BROGMN_Grondwatermonitoringnet">Grondwatermonitoringnet</a>
@@ -1563,15 +1577,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst40</td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst uitbreidbaar</td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Domein IMBRO/A</th>
-                     <td>OnvolledigeDatum</td>
+                     <td>Tekst 40</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -1769,7 +1775,7 @@
                   <td>
                      <a class="link" href="#global_class_BROGMN_Meetpunt">Meetpunt</a>
                      
-                     gevormd door 1..* GMW-monitoringbuis<br></td>
+                     gevormd door 1 GMW-monitoringbuis<br></td>
                </tr>
             </tbody>
          </table><a class="anchor" name="detail_attribute_BROGMN_GMWMonitoringbuis_bROID"></a><section id="detail_attribute_BROGMN_GMWMonitoringbuis_bROID" level="5">
@@ -2599,7 +2605,13 @@
             <tbody>
                <tr>
                   <td>Definitie</td>
-                  <td></td>
+                  <td>
+                     
+                     <p xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:imvert="http://www.imvertor.org/schema/system">De lijst van mogelijke gebeurtenissen die na het starten van het grondwatermonitoringnet
+                        maar voor het beëindigen ervan hebben plaatsgevonden.
+                     </p>
+                     
+                  </td>
                </tr>
             </tbody>
          </table>
@@ -2619,19 +2631,37 @@
                   <td>toevoegenMeetpunt</td>
                   <td>✔</td>
                   <td>✔</td>
-                  <td></td>
+                  <td>
+                     
+                     <p xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:imvert="http://www.imvertor.org/schema/system">Het toevoegen van een aanvullend meetpunt aan het grondwatermonitoringnet.</p>
+                     
+                  </td>
                </tr>
                <tr>
                   <td>beëindigenMeetpunt</td>
                   <td>✔</td>
                   <td>✔</td>
-                  <td></td>
+                  <td>
+                     
+                     <p xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:imvert="http://www.imvertor.org/schema/system">Het verwijderen van een meetpunt uit het grondwatermonitoringnet waarbij er minimaal
+                        één ander meetpunt moet blijven bestaan.<br clear="none"></br>
+                        
+                     </p>
+                     
+                  </td>
                </tr>
                <tr>
                   <td>opvolgingMonitoringbuis</td>
                   <td>✔</td>
                   <td>✔</td>
-                  <td></td>
+                  <td>
+                     
+                     <p xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:imvert="http://www.imvertor.org/schema/system">Het vervangen van de verwijzing van een meetpunt, van de ene grondwatermonitoringput
+                        - monitoringbuis combinatie naar een andere GMW-monitoringbuis combinatie waarbij
+                        er altijd één GMW-monitoringbuis combinatie is gekoppeld aan een meetpunt.
+                     </p>
+                     
+                  </td>
                </tr>
             </tbody>
          </table>
