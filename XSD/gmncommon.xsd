@@ -1,48 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:gmncom="http://www.broservices.nl/xsd/gmncommon/0.2"
+<xs:schema xmlns:gmncom="http://www.broservices.nl/xsd/gmncommon/1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
-           targetNamespace="http://www.broservices.nl/xsd/gmncommon/0.2"
+           targetNamespace="http://www.broservices.nl/xsd/gmncommon/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="0.2.0">
+           version="1.0.0">
 
-   <xs:annotation>
-      <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
-         <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
-      </xs:appinfo>
-   </xs:annotation>
+    <xs:annotation>
+        <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+            <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+        </xs:appinfo>
+    </xs:annotation>
 
-   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
-   <xs:complexType name="DeliveryContextType">
-      <xs:simpleContent>
-         <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace"
-                          type="xs:anyURI"
-                          use="required"
-                          fixed="urn:bro:gmn:DeliveryContext"/>
-         </xs:restriction>
-      </xs:simpleContent>
-   </xs:complexType>
-   <xs:complexType name="GroundwaterAspectType">
-      <xs:simpleContent>
-         <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace"
-                          type="xs:anyURI"
-                          use="required"
-                          fixed="urn:bro:gmn:GroundwaterAspect"/>
-         </xs:restriction>
-      </xs:simpleContent>
-   </xs:complexType>
-   <xs:complexType name="MonitoringPurposeType">
-      <xs:simpleContent>
-         <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace"
-                          type="xs:anyURI"
-                          use="required"
-                          fixed="urn:bro:gmn:MonitoringPurpose"/>
-         </xs:restriction>
-      </xs:simpleContent>
-   </xs:complexType>
+    <!--
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+    -->
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
+
+    <xs:complexType name="DeliveryContextType">
+        <xs:simpleContent>
+            <xs:restriction base="gml:CodeWithAuthorityType">
+                <xs:attribute name="codeSpace"
+                              type="xs:anyURI"
+                              use="required"
+                              fixed="urn:bro:gmn:DeliveryContext"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="EventNameType">
+        <xs:simpleContent>
+            <xs:restriction base="gml:CodeWithAuthorityType">
+                <xs:attribute name="codeSpace"
+                              type="xs:anyURI"
+                              use="required"
+                              fixed="urn:bro:gmn:EventName"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="GroundwaterAspectType">
+        <xs:simpleContent>
+            <xs:restriction base="gml:CodeWithAuthorityType">
+                <xs:attribute name="codeSpace"
+                              type="xs:anyURI"
+                              use="required"
+                              fixed="urn:bro:gmn:GroundwaterAspect"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="MonitoringPurposeType">
+        <xs:simpleContent>
+            <xs:restriction base="gml:CodeWithAuthorityType">
+                <xs:attribute name="codeSpace"
+                              type="xs:anyURI"
+                              use="required"
+                              fixed="urn:bro:gmn:MonitoringPurpose"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
 </xs:schema>
