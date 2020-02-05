@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrationRequest 
+      xmlns="http://www.broservices.nl/xsd/isgmn/1.0"
+      xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+      xmlns:gml="http://www.opengis.net/gml/3.2"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.broservices.nl/xsd/isgmn/1.0 ../../XSD/isgmn-messages.xsd"
+      >
+
+  <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
+       Het is niet gevalideert door de innamewebservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+  -->
+  <brocom:requestReference>Groningen_01</brocom:requestReference>
+  <!--Optional: dataleverancier is niet de bronhouder, dus is het gegeven aanwezig. -->
+  <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+  <!--Optional: brondocument is GMN_StartRegistration, dus mag het gegeven niet aanwezig zijn.
+  <brocom:broId>GMN123456789012</brocom:broId>
+  -->
+  <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+  <!--Optional: niet toegestaan bij GMN.
+  <brocom:underPrivilege>ja</brocom:underPrivilege>
+  -->
+  <sourceDocument>
+    <GMN_StartRegistration gml:id="id_0001">
+        <objectIdAccountableParty>meetnet_07</objectIdAccountableParty>
+        <name>Provinciaal meetnet grondwater Groningen; Delfzijl</name>
+        <deliveryContext codeSpace="urn:bro:gmn:DeliveryContext">kaderrichtlijnWater</deliveryContext>
+        <monitoringPurpose codeSpace="urn:bro:gmn:MonitoringPurpose">strategischBeheerKwaliteitRegionaal</monitoringPurpose>
+        <groundwaterAspect codeSpace="urn:bro:gmn:GroundwaterAspect">kwantiteit</groundwaterAspect>
+        <startDateMonitoring>
+          <!--You have a CHOICE of the next 4 items at this level-->
+          <!-- 
+          <brocom:date>1990-03-01</brocom:date>
+          <brocom:yearMonth>1990-03</brocom:yearMonth>
+          <brocom:year>1990</brocom:year>
+          <brocom:voidReason>onbekend</brocom:voidReason>
+           -->
+          <brocom:date>1990-03-01</brocom:date>
+        </startDateMonitoring>
+        <!-- 1 or more repetitions: -->
+        <measuringPoint>
+          <MeasuringPoint gml:id="id_0002">
+            <measuringPointCode>GMW07F000123</measuringPointCode>
+            <monitoringTube>
+              <GroundwaterMonitoringTube gml:id="id_0003">
+                <broId>GMW123456789001</broId>
+                <tubeNumber>3</tubeNumber>
+              </GroundwaterMonitoringTube>
+            </monitoringTube>
+          </MeasuringPoint>
+        </measuringPoint>
+    </GMN_StartRegistration>
+  </sourceDocument>
+</registrationRequest>
