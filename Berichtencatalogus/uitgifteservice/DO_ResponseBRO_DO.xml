@@ -1,29 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dispatchDataResponse
-    xmlns="http://www.broservices.nl/xsd/dsgmn/0.2"
+    xmlns="http://www.broservices.nl/xsd/dsgmn/1.0"
     xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
     xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.broservices.nl/xsd/dsgmn/0.2 ../../XSD/dsgmn-messages.xsd"
+    xsi:schemaLocation="http://www.broservices.nl/xsd/dsgmn/1.0 ../../XSD/dsgmn-messages.xsd"
     >
   <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de uitgifteservice.
        Het is niet gevalideert door de uitgifteservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
   -->
   <brocom:responseType>dispatch</brocom:responseType>
   <brocom:requestReference>uitgifte-38</brocom:requestReference>
-  <brocom:dispatchTime>2019-08-23T13:16:17+02:00</brocom:dispatchTime>
+  <!-- optional. Alleen aanwezig als responseType = rejection.
+  <brocom:rejectionTime>2020-08-15T13:16:17+02:00</brocom:rejectionTime>
+  -->
+  <!-- optional. Alleen aanwezig als responseType = dispatch. -->
+  <brocom:dispatchTime>2020-12-31T13:16:17+02:00</brocom:dispatchTime>
+  <!-- optional. Alleen aanwezig als responseType = rejection.
+  <brocom:rejectionReason>...</brocom:rejectionReason>
+  -->
+  <!-- 0 or more repetitions: Alleen aanwezig als responseType = rejection.
+  <brocom:criterionError>
+    <brocom:sequenceNumber>1</brocom:sequenceNumber>
+    <brocom:specification>...</brocom:specification>
+  </brocom:criterionError>
+  -->
+  <!-- optional. Alleen aanwezig als responseType = dispatch. -->
   <dispatchDocument>
     <!-- Expect one of the following options
     <BRO_DO gml:id="?">?</BRO_DO>
-    <GMN_O gml:id="?">?</GMN_O>
-    <GMN_O_DP gml:id="?">?</GMN_O_DP>
-    Aanvrager is niet bronhouder noch dataleverancier en het object is uit registratie genomen, dus is het uitgiftedocument BRO_DO
+    <GMN_PO gml:id="?">?</GMN_PO>
+    <GMN_PO_DP gml:id="?">?</GMN_PO_DP>
+    <GMN_PPO gml:id="?">?</GMN_PPO>
+    <GMN_PPO_DP gml:id="?">?</GMN_PPO_DP>
+    De aanvrager is niet bronhouder noch dataleverancier en het object is uit registratie genomen, dus is het uitgiftedocument BRO_DO.
     -->
     <brocom:BRO_DO gml:id="SEQ_0001">
       <brocom:broId>GMN123456789012</brocom:broId>
       <brocom:deregistered>ja</brocom:deregistered>
-      <brocom:deregistrationTime>2019-09-02T07:42:19+02:00</brocom:deregistrationTime>
+      <brocom:deregistrationTime>2020-08-13T07:42:19+02:00</brocom:deregistrationTime>
     </brocom:BRO_DO>
   </dispatchDocument>
 </dispatchDataResponse>

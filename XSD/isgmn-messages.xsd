@@ -28,11 +28,24 @@
     <xs:element name="intakeResponse" type="brocom:IntakeResponseType" />
     <xs:element name="parseFault" type="brocom:ParseFaultType" />
 
-    <!--
-    <xs:element name="correctionRequest" type="isgmn:CorrectionRequestType">
+    <!-- 
+    -->
+    <xs:element name="replaceRequest" type="isgmn:CorrectionRequestType">
       <xs:annotation>
-        <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht CorrectionRequest is een specialisatie van de abstract klasse CorrectionRequest uit de package brocommon, waaraan het een correctiereden en een brondocument toevoegt. Met een CorrectionRequest, dat een dataleverancier (ofwel tevens bronhouder danwel in opdracht van de bronhouder) aanbiedt bij de innamewebservice van het BRO systeem, worden in de registratie opgenomen gegevens vervangen.
-          Explanation: Gegevens over een registratieobject met een levenscyclus, zoals bij een grondwatermonitoringnet, worden initieel geregistreerd, eventueel aangevuld en eventueel uiteindelijk beëindigd. Met een correctieverzoek kunnen fouten in geregistreerde gegevens en fouten in de geregistreerde tijdlijn (materiële historie) worden verbeterd. Met een vervangen (replace) operatie kunnen de in de registratie opgenomen gegevens van een registratieobject of een deel daarvan worden vervangen door de gegevens in het brondocument van het correctieverzoek. Met een invoegen (insert) operatie kunnen gegevens in de tijdlijn worden tussengevoegd. NB: met een registreren (register) operatie worden gegevenss toegevoegd aan het einde van de tijdlijn. Met een verwijderen (delete) operatie kunnen gegevens op een bepaald moment in de tijdlijn worden verwijderd.</xs:documentation>
+        <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht replaceRequest is een specialisatie van de abstract klasse CorrectionRequest uit de package brocommon, waaraan het een correctiereden en een brondocument toevoegt. Met een replaceRequest kan een bronhouder en/of dataleverancier geregistreerde gegevens vervangen (corrigeren), met uitzondering van identificerende gegevens van objecten en datums of tijdstippen in de materiële historie (punten op de tijdlijn).
+          Explanation: Gegevens over een registratieobject met een levenscyclus, zoals bij een grondwatermonitoringnet, worden initieel geregistreerd, eventueel aangevuld en eventueel uiteindelijk beëindigd. Met een replaceRequest kunnen fouten in de geregistreerde gegevens worden verbeterd door de in de registratie opgenomen gegevens of een deel daarvan te vervangen door de gegevens in het brondocument van het replaceRequest. Met een insertRequest kunnen gegevens in de tijdlijn worden tussengevoegd. Met een moveRequest kan een situatie, waarbij een gebeurtenis is geregistreerd met een foute waarde voor de datum waarop de gebeurtenis heeft plaatsgevonden, gecorrigeerd worden. Met een deleteRequest kunnen gegevens op een bepaald moment in de tijdlijn worden verwijderd. NB: met een registrationRequest worden gegevensstoegevoegd aan het einde van de tijdlijn.</xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="insertRequest" type="isgmn:CorrectionRequestType">
+      <xs:annotation>
+        <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht insertRequest is een specialisatie van de abstract klasse CorrectionRequest uit de package brocommon, waaraan het een correctiereden en een brondocument toevoegt. Met een insertRequest kan een bronhouder en/of dataleverancier geregistreerde gegevens met materiële historie uitbreiden door het tussenvoegen (dus niet toevoegen aan het einde van de huidige tijdlijn) van gegevens ergens in de huidige tijdlijn (tussenvoegen van gegevens op een bepaalde datum of bepaald tijdstip op de tijdlijn).
+          Explanation: Gegevens over een registratieobject met een levenscyclus, zoals bij een grondwatermonitoringnet, worden initieel geregistreerd, eventueel aangevuld en eventueel uiteindelijk beëindigd. Met een replaceRequest kunnen fouten in de geregistreerde gegevens worden verbeterd door de in de registratie opgenomen gegevens of een deel daarvan te vervangen door de gegevens in het brondocument van het replaceRequest. Met een insertRequest kunnen gegevens in de tijdlijn worden tussengevoegd. Met een moveRequest kan een situatie, waarbij een gebeurtenis is geregistreerd met een foute waarde voor de datum waarop de gebeurtenis heeft plaatsgevonden, gecorrigeerd worden. Met een deleteRequest kunnen gegevens op een bepaald moment in de tijdlijn worden verwijderd. NB: met een registrationRequest worden gegevensstoegevoegd aan het einde van de tijdlijn.</xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="deleteRequest" type="isgmn:CorrectionRequestType">
+      <xs:annotation>
+        <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht deleteRequest is een specialisatie van de abstract klasse CorrectionRequest uit de package brocommon, waaraan het een correctiereden en een brondocument toevoegt. Met een deleteRequest kan een bronhouder en/of dataleverancier geregistreerde gegevens in de materiële historie verwijderen (waarde van gegevens op een datum of tijdstip op de tijdlijn verwijderen).
+          Explanation: Gegevens over een registratieobject met een levenscyclus, zoals bij een grondwatermonitoringnet, worden initieel geregistreerd, eventueel aangevuld en eventueel uiteindelijk beëindigd. Met een replaceRequest kunnen fouten in de geregistreerde gegevens worden verbeterd door de in de registratie opgenomen gegevens of een deel daarvan te vervangen door de gegevens in het brondocument van het replaceRequest. Met een insertRequest kunnen gegevens in de tijdlijn worden tussengevoegd. Met een moveRequest kan een situatie, waarbij een gebeurtenis is geregistreerd met een foute waarde voor de datum waarop de gebeurtenis heeft plaatsgevonden, gecorrigeerd worden. Met een deleteRequest kunnen gegevens op een bepaald moment in de tijdlijn worden verwijderd. NB: met een registrationRequest worden gegevensstoegevoegd aan het einde van de tijdlijn.</xs:documentation>
       </xs:annotation>
     </xs:element>
     <xs:complexType name="CorrectionRequestType">
@@ -52,7 +65,7 @@
               </xs:annotation>
             </xs:element>
             <xs:element name="sourceDocument"
-                        type="isgmn:SourceDocumentPropertyType"
+                        type="isgmn:SourceDocumentType"
                         minOccurs="1"
                         maxOccurs="1">
               <xs:annotation>
@@ -67,8 +80,8 @@
 
     <xs:element name="moveRequest" type="isgmn:MoveRequestType">
       <xs:annotation>
-        <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht MoveRequest is een specialisatie van CorrectionRequest, waaraan het een te corrigeren datum toevoegt. Met een MoveRequest, dat een dataleverancier (ofwel tevens bronhouder danwel in opdracht van de bronhouder) aanbiedt bij de innamewebservice van het BRO systeem, wordt een eerdere registratie of aanvulling verplaatst in de tijdlijn van de materiële geschiedenis.
-          Explanation: Gegevens over een registratieobject met een levenscyclus, zoals bij een grondwatermonitoringnet, worden initieel geregistreerd, eventueel aangevuld en eventueel uiteindelijk beëindigd. Met een Verplaatsverzoek kan een situatie, waarbij een gebeurtenis is geregistreerd met een foute waarde voor de datum waarop de gebeurtenis heeft plaatsgevonden, gecorrigeerd worden.</xs:documentation>
+        <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht moveRequest is een specialisatie van CorrectionRequest, waaraan het een te corrigeren datum toevoegt. Met een MoveRequest kan een bronhouder en/of dataleverancier geregistreerde gegevens met materiële historie verplaatsen langs de tijdlijn (verplaatsen in de tijd; wijzigen van de datum of het tijdstip op de tijdlijn).
+          Explanation: Gegevens over een registratieobject met een levenscyclus, zoals bij een grondwatermonitoringnet, worden initieel geregistreerd, eventueel aangevuld en eventueel uiteindelijk beëindigd. Met een replaceRequest kunnen fouten in de geregistreerde gegevens worden verbeterd door de in de registratie opgenomen gegevens of een deel daarvan te vervangen door de gegevens in het brondocument van het replaceRequest. Met een insertRequest kunnen gegevens in de tijdlijn worden tussengevoegd. Met een moveRequest kan een situatie, waarbij een gebeurtenis is geregistreerd met een foute waarde voor de datum waarop de gebeurtenis heeft plaatsgevonden, gecorrigeerd worden. Met een deleteRequest kunnen gegevens op een bepaald moment in de tijdlijn worden verwijderd. NB: met een registrationRequest worden gegevensstoegevoegd aan het einde van de tijdlijn.</xs:documentation>
       </xs:annotation>
     </xs:element>
     <xs:complexType name="MoveRequestType">
@@ -88,6 +101,7 @@
         </xs:extension>
       </xs:complexContent>
     </xs:complexType>
+    <!--
     -->
 
     <xs:element name="registrationRequest" type="isgmn:RegistrationRequestType">
@@ -100,7 +114,7 @@
             <xs:extension base="brocom:RegistrationRequestType">
                 <xs:sequence>
                     <xs:element name="sourceDocument"
-                                type="isgmn:SourceDocumentPropertyType"
+                                type="isgmn:SourceDocumentType"
                                 minOccurs="1"
                                 maxOccurs="1">
                         <xs:annotation>
@@ -425,12 +439,10 @@
         </xs:simpleContent>
     </xs:complexType>
 
-    <xs:element name="SourceDocument" type="isgmn:SourceDocumentType">
+    <xs:complexType name="SourceDocumentType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het datatype sourceDocument biedt de keuze uit een aantal verschillende typen brondocumenten, waarvan er één opgenomen is in het registratieverzoek.</xs:documentation>
         </xs:annotation>
-    </xs:element>
-    <xs:complexType name="SourceDocumentType">
         <xs:choice minOccurs="1" maxOccurs="1">
             <xs:element ref="isgmn:GMN_StartRegistration"/>
             <xs:element ref="isgmn:GMN_AddMeasuringPoint"/>
@@ -438,10 +450,5 @@
             <xs:element ref="isgmn:GMN_EndRegistration"/>
             <xs:element ref="isgmn:GMN_ReplaceMonitoringTube"/>
         </xs:choice>
-    </xs:complexType>
-    <xs:complexType name="SourceDocumentPropertyType">
-        <xs:sequence minOccurs="0">
-            <xs:element ref="isgmn:SourceDocument"/>
-        </xs:sequence>
     </xs:complexType>
 </xs:schema>

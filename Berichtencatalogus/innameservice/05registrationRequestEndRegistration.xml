@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrationRequest 
+      xmlns="http://www.broservices.nl/xsd/isgmn/1.0"
+      xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+      xmlns:gml="http://www.opengis.net/gml/3.2"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.broservices.nl/xsd/isgmn/1.0 ../../XSD/isgmn-messages.xsd"
+      >
+
+  <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innamewebservice.
+       Het is niet gevalideert door de innamewebservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+  -->
+  <brocom:requestReference>Groningen_05</brocom:requestReference>
+  <!--Optional: dataleverancier is niet de bronhouder, dus is het gegeven aanwezig. -->
+  <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+  <!--Optional: brondocument is GMN_AddMeasuringPoint, dus moet het gegeven aanwezig zijn. -->
+  <brocom:broId>GMN123456789012</brocom:broId>
+  <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+  <!--Optional: niet toegestaan bij GMN.
+  <brocom:underPrivilege>ja</brocom:underPrivilege>
+  -->
+  <sourceDocument>
+    <GMN_EndRegistration gml:id="id_0001">
+      <endDateMonitoring>
+        <!--You have a CHOICE of the next 4 items at this level-->
+        <!-- 
+        <brocom:date>2020-12-30</brocom:date>
+        <brocom:yearMonth>2020-12</brocom:yearMonth>
+        <brocom:year>2020</brocom:year>
+        <brocom:voidReason>onbekend</brocom:voidReason>
+         -->
+        <brocom:date>2020-12-30</brocom:date>
+      </endDateMonitoring>
+    </GMN_EndRegistration>
+  </sourceDocument>
+</registrationRequest>
