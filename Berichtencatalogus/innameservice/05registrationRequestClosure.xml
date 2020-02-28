@@ -20,17 +20,17 @@
   <brocom:underPrivilege>ja</brocom:underPrivilege>
   -->
   <sourceDocument>
-    <GMN_EndRegistration gml:id="id_0001">
+    <GMN_Closure gml:id="id_0001">
       <endDateMonitoring>
         <!--You have a CHOICE of the next 4 items at this level-->
         <!-- 
-        <brocom:date>2020-12-30</brocom:date>
-        <brocom:yearMonth>2020-12</brocom:yearMonth>
-        <brocom:year>2020</brocom:year>
+        <brocom:date>2021-12-30</brocom:date>
+        <brocom:yearMonth>2021-12</brocom:yearMonth>
+        <brocom:year>2021</brocom:year>
         <brocom:voidReason>onbekend</brocom:voidReason>
          -->
-        <brocom:date>2020-12-30</brocom:date>
+        <brocom:date>2021-12-30</brocom:date>
       </endDateMonitoring>
-    </GMN_EndRegistration>
+    </GMN_Closure>
   </sourceDocument>
 </registrationRequest>

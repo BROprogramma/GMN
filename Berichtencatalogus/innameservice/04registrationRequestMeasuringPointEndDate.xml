@@ -20,40 +20,20 @@
   <brocom:underPrivilege>ja</brocom:underPrivilege>
   -->
   <sourceDocument>
-    <GMN_ReplaceMonitoringTube gml:id="id_0001">
+    <GMN_MeasuringPointEndDate gml:id="id_0001">
         <eventDate>
           <!--You have a CHOICE of the next 4 items at this level-->
           <!-- 
-          <brocom:date>2020-11-27</brocom:date>
-          <brocom:yearMonth>2020-11</brocom:yearMonth>
-          <brocom:year>2020</brocom:year>
+          <brocom:date>2021-12-02</brocom:date>
+          <brocom:yearMonth>2021-12</brocom:yearMonth>
+          <brocom:year>2021</brocom:year>
           <brocom:voidReason>onbekend</brocom:voidReason>
            -->
-          <brocom:date>2020-11-27</brocom:date>
+          <brocom:date>2021-12-02</brocom:date>
         </eventDate>
         <!-- 1 or more repetitions: -->
-        <measuringPoint>
-          <MeasuringPoint gml:id="id_0002">
-            <measuringPointCode>GMW07F000123</measuringPointCode>
-            <monitoringTube>
-              <GroundwaterMonitoringTube gml:id="id_0003">
-                <broId>GMW123456789001</broId>
-                <tubeNumber>2</tubeNumber>
-              </GroundwaterMonitoringTube>
-            </monitoringTube>
-          </MeasuringPoint>
-        </measuringPoint>
-        <measuringPoint>
-          <MeasuringPoint gml:id="id_0004">
-            <measuringPointCode>GMW07E000013</measuringPointCode>
-            <monitoringTube>
-              <GroundwaterMonitoringTube gml:id="id_0005">
-                <broId>GMW123456789028</broId>
-                <tubeNumber>1</tubeNumber>
-              </GroundwaterMonitoringTube>
-            </monitoringTube>
-          </MeasuringPoint>
-        </measuringPoint>
-    </GMN_ReplaceMonitoringTube>
+        <measuringPointCode>GMW07E000002</measuringPointCode>
+        <measuringPointCode>GMW07F000004</measuringPointCode>
+    </GMN_MeasuringPointEndDate>
   </sourceDocument>
 </registrationRequest>

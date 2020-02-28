@@ -30,20 +30,31 @@
         <startDateMonitoring>
           <!--You have a CHOICE of the next 4 items at this level-->
           <!-- 
-          <brocom:date>1990-03-01</brocom:date>
-          <brocom:yearMonth>1990-03</brocom:yearMonth>
-          <brocom:year>1990</brocom:year>
+          <brocom:date>2021-03-01</brocom:date>
+          <brocom:yearMonth>2021-03</brocom:yearMonth>
+          <brocom:year>2021</brocom:year>
           <brocom:voidReason>onbekend</brocom:voidReason>
            -->
-          <brocom:date>1990-03-01</brocom:date>
+          <brocom:date>2021-03-01</brocom:date>
         </startDateMonitoring>
         <!-- 1 or more repetitions: -->
         <measuringPoint>
           <MeasuringPoint gml:id="id_0002">
-            <measuringPointCode>GMW07F000123</measuringPointCode>
+            <measuringPointCode>GMW07F000001</measuringPointCode>
             <monitoringTube>
               <GroundwaterMonitoringTube gml:id="id_0003">
                 <broId>GMW123456789001</broId>
+                <tubeNumber>2</tubeNumber>
+              </GroundwaterMonitoringTube>
+            </monitoringTube>
+          </MeasuringPoint>
+        </measuringPoint>
+        <measuringPoint>
+          <MeasuringPoint gml:id="id_0004">
+            <measuringPointCode>GMW07F000002</measuringPointCode>
+            <monitoringTube>
+              <GroundwaterMonitoringTube gml:id="id_0005">
+                <broId>GMW123456789002</broId>
                 <tubeNumber>3</tubeNumber>
               </GroundwaterMonitoringTube>
             </monitoringTube>
