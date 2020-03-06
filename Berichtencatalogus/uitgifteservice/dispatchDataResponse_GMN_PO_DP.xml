@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <gmn:dispatchDataResponse
+            xmlns:gmn="http://www.broservices.nl/xsd/dsgmn/1.0"
+            xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+            xmlns:gml="http://www.opengis.net/gml/3.2"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.broservices.nl/xsd/dsgmn/1.0 https://schema.broservices.nl/xsd/isgmn/1.0/dsgmn-messages.xsd">
+      <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de uitgifteservice.
+           Het is niet gevalideert door de uitgifteservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+      -->
+      <brocom:responseType>dispatch</brocom:responseType>
+      <brocom:requestReference>uitgifte-38</brocom:requestReference>
+      <!-- optional. Alleen aanwezig als responseType = rejection.
+      <brocom:rejectionTime>2021-08-15T13:16:17+02:00</brocom:rejectionTime>
+      -->
+      <!-- optional. Alleen aanwezig als responseType = dispatch. -->
+      <brocom:dispatchTime>2021-12-31T13:16:17+01:00</brocom:dispatchTime>
+      <!-- optional. Alleen aanwezig als responseType = rejection.
+      <brocom:rejectionReason>...</brocom:rejectionReason>
+      -->
+      <!-- 0 or more repetitions: Alleen aanwezig als responseType = rejection.
+      <brocom:criterionError>
+        ...
+      </brocom:criterionError>
+      -->
+      <!-- optional. Alleen aanwezig als responseType = dispatch. -->
+      <gmn:dispatchDocument>
+        <!-- Expect one of the following options, all of which are defined in the substitutiongroup brocom:AbstractRegistrationObject.
+        <BRO_DO gml:id="?">?</BRO_DO>
+        <GMN_PO gml:id="?">?</GMN_PO>
+        <GMN_PO_DP gml:id="?">?</GMN_PO_DP>
+        <GMN_PPO gml:id="?">?</GMN_PPO>
+        <GMN_PPO_DP gml:id="?">?</GMN_PPO_DP>
+        -->
+        <gmn:GMN_PO_DP gml:id="SEQ_0001">
+          <brocom:broId>GMN123456789012</brocom:broId>
+          <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+          <!-- optional. Alleen aanwezig als het uitgiftedocument GMN_PO_DP of GMN_PPO_DP is. -->
+          <brocom:objectIdAccountableParty>meetnet_07</brocom:objectIdAccountableParty>
+          <!-- optional. Alleen aanwezig als het uitgiftedocument GMN_PO_DP of GMN_PPO_DP is. -->
+          <brocom:deliveryResponsibleParty>52766179</brocom:deliveryResponsibleParty>
+          <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+          <gmn:name>Provinciaal meetnet grondwater Groningen; Delfzijl</gmn:name>
+          <gmn:deliveryContext codeSpace="urn:bro:gmn:DeliveryContext">kaderrichtlijnWater</gmn:deliveryContext>
+          <gmn:monitoringPurpose codeSpace="urn:bro:gmn:MonitoringPurpose">strategischBeheerKwaliteitRegionaal</gmn:monitoringPurpose>
+          <gmn:groundwaterAspect codeSpace="urn:bro:gmn:GroundwaterAspect">kwantiteit</gmn:groundwaterAspect>
+          <gmn:monitoringNetHistory>
+            <gmn:startDateMonitoring>
+              <!--You have a CHOICE of the next 4 items at this level-->
+              <!--
+              <brocom:date>2021-03-01</brocom:date>
+              <brocom:yearMonth>2021-03</brocom:yearMonth>
+              <brocom:year>2021</brocom:year>
+              <brocom:voidReason>onbekend</brocom:voidReason>
+               -->
+              <brocom:date>2021-03-01</brocom:date>
+            </gmn:startDateMonitoring>
+            <!-- optional. Alleen aanwezig als de registratie is beëindigd (registrationStatus = voltooid). -->
+            <gmn:endDateMonitoring>
+              <!--You have a CHOICE of the next 4 items at this level-->
+              <!--
+              <brocom:date>2021-12-30</brocom:date>
+              <brocom:yearMonth>2021-12</brocom:yearMonth>
+              <brocom:year>2021</brocom:year>
+              <brocom:voidReason>onbekend</brocom:voidReason>
+               -->
+              <brocom:date>2021-12-30</brocom:date>
+            </gmn:endDateMonitoring>
+            <!-- 0 or more repetitions: alleen aanwezig als het uitgiftedocument GMN_PPO of GMN_PPO_DP is.
+            <gmn:intermediateEvent>
+              ...
+            </gmn:intermediateEvent>
+            -->
+          </gmn:monitoringNetHistory>
+          <gmn:registrationHistory>
+            <brocom:objectRegistrationTime>2021-03-07T13:11:57+01:00</brocom:objectRegistrationTime>
+            <brocom:registrationStatus codeSpace="urn:bro:RegistrationStatus">voltooid</brocom:registrationStatus>
+            <!-- optional. -->
+            <brocom:latestAdditionTime>2021-12-03T13:11:57+01:00</brocom:latestAdditionTime>
+            <brocom:registrationCompletionTime>2021-12-30T15:42:08+01:00</brocom:registrationCompletionTime>
+            <brocom:corrected>nee</brocom:corrected>
+            <!-- optional. Alleen aanwezig als corrected = ja.
+            <brocom:latestCorrectionTime>...</brocom:latestCorrectionTime>
+            -->
+            <brocom:underReview>nee</brocom:underReview>
+            <!-- optional. Alleen aanwezig als underReview = ja.
+            <brocom:underReviewTime>...</brocom:underReviewTime>
+            -->
+            <brocom:deregistered>ja</brocom:deregistered>
+            <!-- optional. Alleen aanwezig als deregistered = ja. -->
+            <brocom:deregistrationTime>2022-01-13T13:15:57+01:00</brocom:deregistrationTime>
+            <brocom:reregistered>ja</brocom:reregistered>
+            <!-- optional. Alleen aanwezig als reregistered = ja. -->
+            <brocom:reregistrationTime>2022-01-14T13:08:31+01:00</brocom:reregistrationTime>
+          </gmn:registrationHistory>
+          <!-- 1 or more repetitions: -->
+          <gmn:measuringPoint>
+            <gmn:MeasuringPoint gml:id="SEQ_0002">
+              <gmn:measuringPointCode>GMW07F000001</gmn:measuringPointCode>
+              <gmn:startDate>
+                <!--You have a CHOICE of the next 4 items at this level-->
+                <!--
+                <brocom:date>2021-03-01</brocom:date>
+                <brocom:yearMonth>2021-03</brocom:yearMonth>
+                <brocom:year>2021</brocom:year>
+                <brocom:voidReason>onbekend</brocom:voidReason>
+                 -->
+                <brocom:date>2021-03-01</brocom:date>
+              </gmn:startDate>
+              <!-- optional. Alleen aanwezig als het uitgiftedocument GMN_PPO of GMN_PPO_DP is en het meetpunt beëindigd is.
+              <gmn:endDate>
+                ...
+              </gmn:endDate>
+              -->
+              <!-- 1 or more repetitions: -->
+              <gmn:monitoringTube>
+                <gmn:GroundwaterMonitoringTube gml:id="SEQ_0003">
+                  <gmn:broId>GMW123456789001</gmn:broId>
+                  <gmn:tubeNumber>2</gmn:tubeNumber>
+                  <gmn:startDate>
+                    <!--You have a CHOICE of the next 4 items at this level-->
+                    <!--
+                    <brocom:date>2021-03-01</brocom:date>
+                    <brocom:yearMonth>2021-03</brocom:yearMonth>
+                    <brocom:year>2021</brocom:year>
+                    <brocom:voidReason>onbekend</brocom:voidReason>
+                     -->
+                    <brocom:date>2021-03-01</brocom:date>
+                  </gmn:startDate>
+                  <!-- optional. Alleen aanwezig als het uitgiftedocument GMN_PPO of GMN_PPO_DP is en de buisverwijzing een opvolger heeft.
+                  <gmn:endDate>
+                    ...
+                  </gmn:endDate>
+                  -->
+                </gmn:GroundwaterMonitoringTube>
+              </gmn:monitoringTube>
+            </gmn:MeasuringPoint>
+          </gmn:measuringPoint>
+          <gmn:measuringPoint>
+            <gmn:MeasuringPoint gml:id="SEQ_0004">
+              <gmn:measuringPointCode>GMW07F000002</gmn:measuringPointCode>
+              <gmn:startDate>
+                <brocom:date>2021-03-01</brocom:date>
+              </gmn:startDate>
+              <gmn:monitoringTube>
+                <gmn:GroundwaterMonitoringTube gml:id="SEQ_0005">
+                  <gmn:broId>GMW123456789007</gmn:broId>
+                  <gmn:tubeNumber>1</gmn:tubeNumber>
+                  <gmn:startDate>
+                    <brocom:date>2021-11-27</brocom:date>
+                  </gmn:startDate>
+                </gmn:GroundwaterMonitoringTube>
+              </gmn:monitoringTube>
+            </gmn:MeasuringPoint>
+          </gmn:measuringPoint>
+          <gmn:measuringPoint>
+            <gmn:MeasuringPoint gml:id="SEQ_0007">
+              <gmn:measuringPointCode>GMW07E000001</gmn:measuringPointCode>
+              <gmn:startDate>
+                <brocom:date>2021-08-15</brocom:date>
+              </gmn:startDate>
+              <gmn:monitoringTube>
+                <gmn:GroundwaterMonitoringTube gml:id="SEQ_0008">
+                  <gmn:broId>GMW123456789003</gmn:broId>
+                  <gmn:tubeNumber>1</gmn:tubeNumber>
+                  <gmn:startDate>
+                    <brocom:date>2021-08-15</brocom:date>
+                  </gmn:startDate>
+                </gmn:GroundwaterMonitoringTube>
+              </gmn:monitoringTube>
+            </gmn:MeasuringPoint>
+          </gmn:measuringPoint>
+          <gmn:measuringPoint>
+            <gmn:MeasuringPoint gml:id="SEQ_0009">
+              <gmn:measuringPointCode>GMW08B000001</gmn:measuringPointCode>
+              <gmn:startDate>
+                <brocom:date>2021-08-15</brocom:date>
+              </gmn:startDate>
+              <gmn:monitoringTube>
+                <gmn:GroundwaterMonitoringTube gml:id="SEQ_0010">
+                  <gmn:broId>GMW123456789005</gmn:broId>
+                  <gmn:tubeNumber>1</gmn:tubeNumber>
+                  <gmn:startDate>
+                    <brocom:date>2021-08-15</brocom:date>
+                  </gmn:startDate>
+                </gmn:GroundwaterMonitoringTube>
+              </gmn:monitoringTube>
+            </gmn:MeasuringPoint>
+          </gmn:measuringPoint>
+        </gmn:GMN_PO_DP>
+      </gmn:dispatchDocument>
+    </gmn:dispatchDataResponse>
+  </soap:Body>
+</soap:Envelope>
