@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moveRequest 
+      xmlns="http://www.broservices.nl/xsd/isgmn/1.0"
+      xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+      xmlns:gml="http://www.opengis.net/gml/3.2"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.broservices.nl/xsd/isgmn/1.0 ../../XSD/isgmn-messages.xsd"
+      >
+
+  <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
+       Het is niet gevalideert door de innameservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+  -->
+  <brocom:requestReference>Groningen_02</brocom:requestReference>
+  <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+  <!--Optional: maar in een moveRequest moet het gegeven aanwezig zijn. -->
+  <brocom:broId>GMN123456789012</brocom:broId>
+  <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+  <correctionReason codeSpace="urn:bro:gmn:CorrectionReason">eigenCorrectie</correctionReason>
+  <sourceDocument>
+    <GMN_AddMeasuringPoint gml:id="id_0001">
+        <eventDate>
+          <!-- De nieuwe waarde die de hudidige waarde moet gaan vervangen. -->
+          <brocom:date>1990-03-01</brocom:date>
+        </eventDate>
+        <measuringPoint>
+          <MeasuringPoint gml:id="id_0002">
+            <measuringPointCode>GMW07F000124</measuringPointCode>
+            <monitoringTube>
+              <GroundwaterMonitoringTube gml:id="id_0003">
+                <broId>GMW123456789012</broId>
+                <tubeNumber>1</tubeNumber>
+              </GroundwaterMonitoringTube>
+            </monitoringTube>
+          </MeasuringPoint>
+        </measuringPoint>
+        <measuringPoint>
+          <MeasuringPoint gml:id="id_0004">
+            <measuringPointCode>GMW07F000125</measuringPointCode>
+            <monitoringTube>
+              <GroundwaterMonitoringTube gml:id="id_0005">
+                <broId>GMW123456789018</broId>
+                <tubeNumber>1</tubeNumber>
+              </GroundwaterMonitoringTube>
+            </monitoringTube>
+          </MeasuringPoint>
+        </measuringPoint>
+        <measuringPoint>
+          <MeasuringPoint gml:id="id_0006">
+            <measuringPointCode>GMW07E000012</measuringPointCode>
+            <monitoringTube>
+              <GroundwaterMonitoringTube gml:id="id_0007">
+                <broId>GMW123456789019</broId>
+                <tubeNumber>1</tubeNumber>
+              </GroundwaterMonitoringTube>
+            </monitoringTube>
+          </MeasuringPoint>
+        </measuringPoint>
+        <measuringPoint>
+          <MeasuringPoint gml:id="id_0008">
+            <measuringPointCode>GMW07E000013</measuringPointCode>
+            <monitoringTube>
+              <GroundwaterMonitoringTube gml:id="id_0009">
+                <broId>GMW123456789027</broId>
+                <tubeNumber>2</tubeNumber>
+              </GroundwaterMonitoringTube>
+            </monitoringTube>
+          </MeasuringPoint>
+        </measuringPoint>
+    </GMN_AddMeasuringPoint>
+  </sourceDocument>
+  <dateToBeCorrected>
+    <!-- De oorsponkelijk aangeleverde waarde die vervangen moet worden. -->
+    <brocom:date>2021-08-15</brocom:date>
+  </dateToBeCorrected>
+</moveRequest>
