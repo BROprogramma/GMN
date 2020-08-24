@@ -13,7 +13,7 @@
   <brocom:requestReference>Groningen_05</brocom:requestReference>
   <!--Optional: dataleverancier is niet de bronhouder, dus is het gegeven aanwezig. -->
   <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
-  <!--Optional: brondocument is GMN_AddMeasuringPoint, dus moet het gegeven aanwezig zijn. -->
+  <!--Optional: brondocument is GMN_Closure, dus moet het gegeven aanwezig zijn. -->
   <brocom:broId>GMN123456789012</brocom:broId>
   <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
   <!--Optional: niet toegestaan bij GMN.
