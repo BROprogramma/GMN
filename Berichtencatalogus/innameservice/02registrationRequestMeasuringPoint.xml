@@ -31,46 +31,12 @@
            -->
           <brocom:date>2021-08-15</brocom:date>
         </eventDate>
-        <!-- 1 or more repetitions: -->
         <measuringPoint>
           <MeasuringPoint gml:id="id_0002">
             <measuringPointCode>GMW07E000001</measuringPointCode>
             <monitoringTube>
               <GroundwaterMonitoringTube gml:id="id_0003">
                 <broId>GMW123456789003</broId>
-                <tubeNumber>1</tubeNumber>
-              </GroundwaterMonitoringTube>
-            </monitoringTube>
-          </MeasuringPoint>
-        </measuringPoint>
-        <measuringPoint>
-          <MeasuringPoint gml:id="id_0004">
-            <measuringPointCode>GMW07E000002</measuringPointCode>
-            <monitoringTube>
-              <GroundwaterMonitoringTube gml:id="id_0005">
-                <broId>GMW123456789004</broId>
-                <tubeNumber>1</tubeNumber>
-              </GroundwaterMonitoringTube>
-            </monitoringTube>
-          </MeasuringPoint>
-        </measuringPoint>
-        <measuringPoint>
-          <MeasuringPoint gml:id="id_0006">
-            <measuringPointCode>GMW08B000001</measuringPointCode>
-            <monitoringTube>
-              <GroundwaterMonitoringTube gml:id="id_0007">
-                <broId>GMW123456789005</broId>
-                <tubeNumber>1</tubeNumber>
-              </GroundwaterMonitoringTube>
-            </monitoringTube>
-          </MeasuringPoint>
-        </measuringPoint>
-        <measuringPoint>
-          <MeasuringPoint gml:id="id_0008">
-            <measuringPointCode>GMW07F000004</measuringPointCode>
-            <monitoringTube>
-              <GroundwaterMonitoringTube gml:id="id_0009">
-                <broId>GMW123456789006</broId>
                 <tubeNumber>1</tubeNumber>
               </GroundwaterMonitoringTube>
             </monitoringTube>

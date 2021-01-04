@@ -31,7 +31,6 @@
            -->
           <brocom:date>2021-11-27</brocom:date>
         </eventDate>
-        <!-- 1 or more repetitions: -->
         <measuringPoint>
           <MeasuringPoint gml:id="id_0002">
             <measuringPointCode>GMW07F000002</measuringPointCode>
@@ -39,17 +38,6 @@
               <GroundwaterMonitoringTube gml:id="id_0003">
                 <broId>GMW123456789007</broId>
                 <tubeNumber>1</tubeNumber>
-              </GroundwaterMonitoringTube>
-            </monitoringTube>
-          </MeasuringPoint>
-        </measuringPoint>
-        <measuringPoint>
-          <MeasuringPoint gml:id="id_0004">
-            <measuringPointCode>GMW07F000004</measuringPointCode>
-            <monitoringTube>
-              <GroundwaterMonitoringTube gml:id="id_0005">
-                <broId>GMW123456789006</broId>
-                <tubeNumber>2</tubeNumber>
               </GroundwaterMonitoringTube>
             </monitoringTube>
           </MeasuringPoint>

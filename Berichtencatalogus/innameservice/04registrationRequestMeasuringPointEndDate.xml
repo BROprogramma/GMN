@@ -31,9 +31,7 @@
            -->
           <brocom:date>2021-12-02</brocom:date>
         </eventDate>
-        <!-- 1 or more repetitions: -->
         <measuringPointCode>GMW07E000002</measuringPointCode>
-        <measuringPointCode>GMW07F000004</measuringPointCode>
     </GMN_MeasuringPointEndDate>
   </sourceDocument>
 </registrationRequest>
