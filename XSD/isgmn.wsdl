@@ -19,17 +19,21 @@
 
     <wsdl:types>
         <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/isgmn/1.0" targetNamespace="http://www.broservices.nl/wsdl/isgmn/1.0">
-            <!--
             <xsd:import namespace="http://www.broservices.nl/xsd/isgmn/1.0" schemaLocation="https://schema.broservices.nl/xsd/isgmn/1.0/isgmn-messages.xsd"/>
             <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
-            -->
-            <xsd:import namespace="http://www.broservices.nl/xsd/isgmn/1.0" schemaLocation="isgmn-messages.xsd"/>
-            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
         </xsd:schema>
     </wsdl:types>
 
     <wsdl:message name="registrationRequest">
         <wsdl:part element="msg:registrationRequest" name="request"/>
+    </wsdl:message>
+
+    <wsdl:message name="replaceRequest">
+        <wsdl:part element="msg:replaceRequest" name="request" />
+    </wsdl:message>
+
+    <wsdl:message name="moveRequest">
+        <wsdl:part element="msg:moveRequest" name="request" />
     </wsdl:message>
 
     <wsdl:message name="intakeResponse">
@@ -50,6 +54,16 @@
             <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isgmn/intakeResponse"/>
             <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isgmn/parseSoapFault"/>
         </wsdl:operation>
+        <wsdl:operation name="replace">
+            <wsdl:input message="tns:replaceRequest" wsam:Action="http://www.broservices.nl/wus/isgmn/replaceRequest" />
+            <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isgmn/intakeResponse" />
+            <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isgmn/parseSoapFault" />
+        </wsdl:operation>
+        <wsdl:operation name="move">
+            <wsdl:input message="tns:moveRequest" wsam:Action="http://www.broservices.nl/wus/isgmn/moveRequest" />
+            <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isgmn/intakeResponse" />
+            <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isgmn/parseSoapFault" />
+        </wsdl:operation>
     </wsdl:portType>
 
     <wsdl:binding name="isgmn_SOAP" type="tns:isgmn">
@@ -65,6 +79,32 @@
             </wsdl:output>
             <wsdl:fault name="parseFault">
                 <soap:fault use="literal" name="parseFault"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="replace">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+                <soap:header use="literal" part="deliveryResponsibleParty" message="tns:DeliveryResponsiblePartyHeader" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="parseFault">
+                <soap:fault use="literal" name="parseFault" />
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="move">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+                <soap:header use="literal" part="deliveryResponsibleParty" message="tns:DeliveryResponsiblePartyHeader" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="parseFault">
+                <soap:fault use="literal" name="parseFault" />
             </wsdl:fault>
         </wsdl:operation>
     </wsdl:binding>

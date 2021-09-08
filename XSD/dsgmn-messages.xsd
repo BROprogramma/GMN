@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2012-2020 TNO Geologische Dienst Nederland
+
+    Alle rechten voorbehouden.
+    Niets uit deze software mag worden vermenigvuldigd en/of openbaar gemaakt door middel van druk, fotokopie,
+    microfilm of op welke andere wijze dan ook, zonder voorafgaande toestemming van TNO.
+
+    Indien deze software in opdracht werd uitgebracht, wordt voor de rechten en verplichtingen van opdrachtgever
+    en opdrachtnemer verwezen naar de Algemene Voorwaarden voor opdrachten aan TNO, dan wel de betreffende
+    terzake tussen de partijen gesloten overeenkomst.
+
+-->
 <xs:schema xmlns:dsgmn="http://www.broservices.nl/xsd/dsgmn/1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:gmncom="http://www.broservices.nl/xsd/gmncommon/1.0"
@@ -8,7 +21,7 @@
            targetNamespace="http://www.broservices.nl/xsd/dsgmn/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.0">
+           version="1.0.3">
 
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
@@ -16,17 +29,17 @@
         </xs:appinfo>
     </xs:annotation>
 
+    <xs:import namespace="http://www.broservices.nl/xsd/gmncommon/1.0" schemaLocation="gmncommon.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
     <!--
     <xs:import namespace="http://www.broservices.nl/xsd/gmncommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/gmncommon/1.0/gmncommon.xsd"/>
     <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
-    -->
-    <xs:import namespace="http://www.broservices.nl/xsd/gmncommon/1.0" schemaLocation="gmncommon.xsd"/>
-    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
-    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
+	-->
 
     <xs:element name="parseFault" type="brocom:ParseFaultType" />
-
+    
     <xs:element name="dispatchDataRequest" type="dsgmn:DispatchDataRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het DispatchDataRequest is een specialisatie van de abstract klasse Dispatch­Data­Request in de package brocommon, waaraan het een element dataToBeDelivered toevoegt.</xs:documentation>
@@ -37,9 +50,9 @@
             <xs:extension base="brocom:DispatchDataRequestType">
                 <xs:sequence>
                     <xs:element name="dataToBeDelivered"
-                                type="dsgmn:DataToBeDeliveredType"
-                                minOccurs="1"
-                                maxOccurs="1">
+                           type="dsgmn:DataToBeDeliveredType"
+                           minOccurs="1"
+                           maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduiding welke gegevens over het registratieobject worden opgevraagd: alleen de actuele gegevens (present object data) of de actuele gegevens en de volledige materiële geschiedenis (past and present object data).</xs:documentation>
                         </xs:annotation>
@@ -59,10 +72,10 @@
             <xs:extension base="brocom:DispatchResponseType">
                 <xs:sequence>
                     <xs:element minOccurs="0"
-                                maxOccurs="1"
-                                name="dispatchDocument"
-                                nillable="false"
-                                type="brocom:AbstractRegistrationObjectPropertyType">
+                           maxOccurs="1"
+                           name="dispatchDocument"
+                           nillable="false"
+                           type="brocom:AbstractRegistrationObjectPropertyType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element dispatchDocument bevat de gegevens van een GMN-registratieobject. Vanwege het polymorfe karakter is het type of een BRODO uit de package brocom of een GMNO of een GMO_DP uit de package dsgmn. Deze drie types hebben allen als gemeenschappelijke vader het type AbstractRegistrationObject uit de package brocom.</xs:documentation>
                         </xs:annotation>
@@ -73,85 +86,90 @@
     </xs:complexType>
 
     <xs:element name="GMN_PO"
-                type="dsgmn:GMN_POType"
-                substitutionGroup="brocom:RegistrationObject">
+               type="dsgmn:GMN_POType"
+               substitutionGroup="brocom:RegistrationObject">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat de actuele gegevens bevat van een grondwatermonitoringnet, dat niet uit registratie is genomen, die beschikbaar zijn voor een standaard afnemer.
-                Explanation: De gegevens zijn volledig gedefinieerd in de catalogus grondwatermonitoringnet. Uitgiftedocument GMN_PO bevat alle gegevens uit de catalogus. Uitgiftedocument, met uitzondering van object-ID bronhouder en dataleverancier van het objecttype Registratieobject en de reeks van tussentijdse gebeurtenissen. GMNPO bevat alleen actuele Meetpunten van het grondwatermonitoringnet, dat wil zeggen het gegeven einddatum meetput is niet aanwezig. GMNPO bevat bij ieder meetpunt de actuele buisverwijzing, een relatie naar een object van het type GMW-monitoringbuis, dat wil zeggen het gegeven einddatum buisverwijzing is niet aanwezig. Bij zowel meetpunt als bij GMW-monitoringbuis is bij uitgifte een startdatum toegevoegd, waarvan de waarde wordt afgeleid van de aangeboden brondocumenten (tussentijdse gebeurtenissen).</xs:documentation>
+Explanation: De gegevens zijn volledig gedefinieerd in de catalogus grondwatermonitoringnet. Uitgiftedocument GMN_PO bevat alle gegevens uit de catalogus. Uitgiftedocument, met uitzondering van object-ID bronhouder en dataleverancier van het objecttype Registratieobject en de reeks van tussentijdse gebeurtenissen. GMNPO bevat alleen actuele Meetpunten van het grondwatermonitoringnet, dat wil zeggen het gegeven einddatum meetput is niet aanwezig. GMNPO bevat bij ieder meetpunt de actuele buisverwijzing, een relatie naar een object van het type GMW-monitoringbuis, dat wil zeggen het gegeven einddatum buisverwijzing is niet aanwezig. Bij zowel meetpunt als bij GMW-monitoringbuis is bij uitgifte een startdatum toegevoegd, waarvan de waarde wordt afgeleid van de aangeboden brondocumenten (tussentijdse gebeurtenissen).</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:complexType name="GMN_POType">
         <xs:complexContent>
             <xs:extension base="brocom:RegistrationObjectType">
                 <xs:sequence>
-                    <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
+                    <xs:element name="name" minOccurs="1" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De naam waaronder het monitoringnet bekend is.
-                                Explanation: Dit is een naam die binnen het werkveld herkenbaar is. De identificatie die de bronhouder in zijn eigen administratie gebruikt, voordat het grondwatermonitoringnet was geregistreerd in de basisregistratie ondergrond, ligt vast in object-ID bronhouder.</xs:documentation>
+Explanation: Dit is een naam die binnen het werkveld herkenbaar is. De identificatie die de bronhouder in zijn eigen administratie gebruikt, voordat het grondwatermonitoringnet was geregistreerd in de basisregistratie ondergrond, ligt vast in object-ID bronhouder.</xs:documentation>
                         </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="200"/>
+                            </xs:restriction>
+                        </xs:simpleType>
                     </xs:element>
                     <xs:element name="deliveryContext"
-                                minOccurs="1"
-                                maxOccurs="1"
-                                type="gmncom:DeliveryContextType">
+                           minOccurs="1"
+                           maxOccurs="1"
+                           type="gmncom:DeliveryContextType">
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>DeliveryContext</CodeListName>
                                 <CodeListURI/>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
-                                Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie. Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvindt. Aangezien de wetgeving kan veranderen gedurende de periode van monitoren, terwijl het monitoringdoel gelijk kan blijven, geldt dat de rechtsgrond gedurende de levensduur van het grondwatermonitoringnet kan veranderen. Het kader aanlevering van een grondwatermonitoringnet kan anders zijn dan het kader aanlevering van een grondwatermonitoringput waarnaar vanuit een meetpunt in het grondwatermonitoringnet wordt verwezen.</xs:documentation>
+Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie. Het betreft hier de huidige rechtsgrond op basis waarvan de monitoring plaatsvindt. Aangezien de wetgeving kan veranderen gedurende de periode van monitoren, terwijl het monitoringdoel gelijk kan blijven, geldt dat de rechtsgrond gedurende de levensduur van het grondwatermonitoringnet kan veranderen. Het kader aanlevering van een grondwatermonitoringnet kan anders zijn dan het kader aanlevering van een grondwatermonitoringput waarnaar vanuit een meetpunt in het grondwatermonitoringnet wordt verwezen.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="monitoringPurpose"
-                                minOccurs="1"
-                                maxOccurs="1"
-                                type="gmncom:MonitoringPurposeType">
+                           minOccurs="1"
+                           maxOccurs="1"
+                           type="gmncom:MonitoringPurposeType">
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>MonitoringPurpose</CodeListName>
                                 <CodeListURI/>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het doel waarvoor de monitoring in het grondwatermonitoringnet plaatsvindt.
-                                Explanation: Voor de aspecten kwaliteit en kwantiteit zijn er verschillende monitoringdoelen. In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel de kwaliteit als de kwantiteit worden gedaan, wordt het monitoringdoel bij het primaire, meest belangrijke aspect vastgelegd.</xs:documentation>
+Explanation: Voor de aspecten kwaliteit en kwantiteit zijn er verschillende monitoringdoelen. In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel de kwaliteit als de kwantiteit worden gedaan, wordt het monitoringdoel bij het primaire, meest belangrijke aspect vastgelegd.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="groundwaterAspect"
-                                minOccurs="1"
-                                maxOccurs="1"
-                                type="gmncom:GroundwaterAspectType">
+                           minOccurs="1"
+                           maxOccurs="1"
+                           type="gmncom:GroundwaterAspectType">
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>GroundwaterAspect</CodeListName>
                                 <CodeListURI/>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het aspect van grondwater dat wordt gemonitord in het grondwatermonitoringnet.
-                                Explanation: In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel de kwaliteit als de kwantiteit worden gedaan, wordt in dit attribuut het primaire, meest belangrijke aspect vastgelegd.</xs:documentation>
+Explanation: In het geval dat er in het kader van het grondwatermonitoringnet metingen aan zowel de kwaliteit als de kwantiteit worden gedaan, wordt in dit attribuut het primaire, meest belangrijke aspect vastgelegd.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element minOccurs="1"
-                                maxOccurs="1"
-                                name="monitoringNetHistory"
-                                nillable="false"
-                                type="dsgmn:MonitoringNetHistoryType">
+                           maxOccurs="1"
+                           name="monitoringNetHistory"
+                           nillable="false"
+                           type="dsgmn:MonitoringNetHistoryType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het geheel van gebeurtenissen dat de geschiedenis van het grondwatermonitoringnet in de werkelijkheid beschrijft.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element minOccurs="1"
-                                maxOccurs="1"
-                                name="registrationHistory"
-                                nillable="false"
-                                type="brocom:RegistrationHistoryType">
+                           maxOccurs="1"
+                           name="registrationHistory"
+                           nillable="false"
+                           type="brocom:RegistrationHistoryType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens die de geschiedenis van het object in de registratie ondergrond markeren.De gegevens worden geautomatiseerd door de basisregistratie ondergrond gegenereerd.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element minOccurs="1"
-                                maxOccurs="unbounded"
-                                name="measuringPoint"
-                                nillable="false"
-                                type="dsgmn:MeasuringPointPropertyType"/>
+                           maxOccurs="unbounded"
+                           name="measuringPoint"
+                           nillable="false"
+                           type="dsgmn:MeasuringPointPropertyType"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -163,11 +181,11 @@
     </xs:complexType>
 
     <xs:element name="GMN_PO_DP"
-                type="dsgmn:GMN_PO_DPType"
-                substitutionGroup="dsgmn:GMN_PO">
+               type="dsgmn:GMN_PO_DPType"
+               substitutionGroup="brocom:RegistrationObject">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat de actuele gegevens bevat van een grondwatermonitoringnet die beschikbaar zijn voor de dataleverancier en/of bronhouder, ongeacht of registratieobject uit registratie is genomen of niet.
-                Explanation: De gegevens zijn volledig gedefinieerd in de catalogus grondwatermonitoringnet. Uitgiftedocument GMNPODP bevat alle gegevens uit de catalogus, met uitzondering van de reeks van tussentijdse gebeurtenissen. Uitgiftedocument GMNPODP bevat alleen actuele Meetpunten van het grondwatermonitoringnet, dat wil zeggen het gegeven einddatum meetput is niet aanwezig. GMNPODP bevat bij ieder meetpunt de actuele buisverwijzing, een relatie naar een object van het type GMW-monitoringbuis, dat wil zeggen het gegeven einddatum buisverwijzing is niet aanwezig. Bij zowel meetpunt als bij GMW-monitoringbuis is bij uitgifte een startdatum toegevoegd, waarvan de waarde wordt afgeleid van de aangeboden brondocumenten (tussentijdse gebeurtenissen).</xs:documentation>
+Explanation: De gegevens zijn volledig gedefinieerd in de catalogus grondwatermonitoringnet. Uitgiftedocument GMNPODP bevat alle gegevens uit de catalogus, met uitzondering van de reeks van tussentijdse gebeurtenissen. Uitgiftedocument GMNPODP bevat alleen actuele Meetpunten van het grondwatermonitoringnet, dat wil zeggen het gegeven einddatum meetput is niet aanwezig. GMNPODP bevat bij ieder meetpunt de actuele buisverwijzing, een relatie naar een object van het type GMW-monitoringbuis, dat wil zeggen het gegeven einddatum buisverwijzing is niet aanwezig. Bij zowel meetpunt als bij GMW-monitoringbuis is bij uitgifte een startdatum toegevoegd, waarvan de waarde wordt afgeleid van de aangeboden brondocumenten (tussentijdse gebeurtenissen).</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:complexType name="GMN_PO_DPType">
@@ -182,11 +200,11 @@
     </xs:complexType>
 
     <xs:element name="GMN_PPO"
-                type="dsgmn:GMN_PPOType"
-                substitutionGroup="dsgmn:GMN_PO">
+               type="dsgmn:GMN_PPOType"
+               substitutionGroup="brocom:RegistrationObject">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat chronologisch geordend de gegevens bevat van een grondwatermonitoringnet, dat niet uit registratie is genomen, die beschikbaar zijn voor een standaard afnemer.
-                Explanation: De gegevens zijn volledig gedefinieerd in de catalogus grondwatermonitoringnet. Uitgiftedocument GMN_PPO bevat alle gegevens uit de catalogus, met uitzondering van object-ID bronhouder en dataleverancier van het objecttype Registratieobject. Uitgiftedocument GMNPPO bevat alle Meetpunten van het grondwatermonitoringnet, ongeacht of het meetpunt actueel is of al is beëindigd. GMNPPO bevat bij ieder meetpunt de (reeks van) buisverwijzingen, een reeks van relaties naar een object van het type GMW-monitoringbuis, die in opeenvolgende periodes het meetpunt gevormd hebben. Bij zowel meetpunt als bij GMW-monitoringbuis is bij uitgifte een start- en einddatum toegevoegd, waarvan de waarde wordt afgeleid van de aangeboden brondocumenten (tussentijdse gebeurtenissen).</xs:documentation>
+Explanation: De gegevens zijn volledig gedefinieerd in de catalogus grondwatermonitoringnet. Uitgiftedocument GMN_PPO bevat alle gegevens uit de catalogus, met uitzondering van object-ID bronhouder en dataleverancier van het objecttype Registratieobject. Uitgiftedocument GMNPPO bevat alle Meetpunten van het grondwatermonitoringnet, ongeacht of het meetpunt actueel is of al is beëindigd. GMNPPO bevat bij ieder meetpunt de (reeks van) buisverwijzingen, een reeks van relaties naar een object van het type GMW-monitoringbuis, die in opeenvolgende periodes het meetpunt gevormd hebben. Bij zowel meetpunt als bij GMW-monitoringbuis is bij uitgifte een start- en einddatum toegevoegd, waarvan de waarde wordt afgeleid van de aangeboden brondocumenten (tussentijdse gebeurtenissen).</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:complexType name="GMN_PPOType">
@@ -201,11 +219,11 @@
     </xs:complexType>
 
     <xs:element name="GMN_PPO_DP"
-                type="dsgmn:GMN_PPO_DPType"
-                substitutionGroup="dsgmn:GMN_PPO">
+               type="dsgmn:GMN_PPO_DPType"
+               substitutionGroup="brocom:RegistrationObject">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat chronologisch geordend de gegevens bevat van een grondwatermonitoringnet die beschikbaar zijn voor de dataleverancier en/of bronhouder, ongeacht of het registratieobject uit registratie is genomen of niet.
-                Explanation: De gegevens zijn volledig gedefinieerd in de catalogus grondwatermonitoringnet. Uitgiftedocument GMNPPODP bevat alle gegevens uit de catalogus. Uitgiftedocument GMNPPODP bevat alle Meetpunten van het grondwatermonitoringnet, ongeacht of het meetpunt actueel is of al is beëindigd. GMNPPODP bevat bij ieder meetpunt de (reeks van) buisverwijzingen, een reeks van relaties naar een object van het type GMW-monitoringbuis, die in opeenvolgende periodes het meetpunt gevormd hebben. Bij zowel meetpunt als bij GMW-monitoringbuis is bij uitgifte een start- en einddatum toegevoegd, waarvan de waarde wordt afgeleid van de aangeboden brondocumenten (tussentijdse gebeurtenissen).</xs:documentation>
+Explanation: De gegevens zijn volledig gedefinieerd in de catalogus grondwatermonitoringnet. Uitgiftedocument GMNPPODP bevat alle gegevens uit de catalogus. Uitgiftedocument GMNPPODP bevat alle Meetpunten van het grondwatermonitoringnet, ongeacht of het meetpunt actueel is of al is beëindigd. GMNPPODP bevat bij ieder meetpunt de (reeks van) buisverwijzingen, een reeks van relaties naar een object van het type GMW-monitoringbuis, die in opeenvolgende periodes het meetpunt gevormd hebben. Bij zowel meetpunt als bij GMW-monitoringbuis is bij uitgifte een start- en einddatum toegevoegd, waarvan de waarde wordt afgeleid van de aangeboden brondocumenten (tussentijdse gebeurtenissen).</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:complexType name="GMN_PPO_DPType">
@@ -220,11 +238,11 @@
     </xs:complexType>
 
     <xs:element name="GroundwaterMonitoringTube"
-                type="dsgmn:GroundwaterMonitoringTubeType"
-                substitutionGroup="gml:AbstractFeature">
+               type="dsgmn:GroundwaterMonitoringTubeType"
+               substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens die nodig zijn voor de unieke identificatie van een specifieke buis in een grondwatermonitoringput.
-                Explanation: Het BRO-ID van de grondwatermonitoringput wordt opgenomen plus het volgnummer van de specifieke buis in de put.</xs:documentation>
+Explanation: Het BRO-ID van de grondwatermonitoringput wordt opgenomen plus het volgnummer van de specifieke buis in de put.</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:complexType name="GroundwaterMonitoringTubeType">
@@ -232,34 +250,39 @@
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
                     <xs:element name="broId"
-                                minOccurs="1"
-                                maxOccurs="1"
-                                type="brocom:RegistrationObjectCodeType">
+                           minOccurs="1"
+                           maxOccurs="1"
+                           type="brocom:RegistrationObjectCodeType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van de grondwatermonitoringput in de basisregistratie ondergrond.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="tubeNumber" type="xs:integer" minOccurs="1" maxOccurs="1">
+                    <xs:element name="tubeNumber" minOccurs="1" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het identificerende nummer van de monitoringbuis in de grondwatermonitoringput in de basisregistratie ondergrond.</xs:documentation>
                         </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:totalDigits value="3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
                     </xs:element>
                     <xs:element name="startDate"
-                                type="brocom:PartialDateType"
-                                minOccurs="1"
-                                maxOccurs="1">
+                           type="brocom:PartialDateType"
+                           minOccurs="1"
+                           maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de monitoringbuis in de grondwatermonitoringput als meetpunt in het grondwatermonitoringnet is gestart.
-                                Explanation: De startdatum van de buisverwijzing van de meetpunten die gelijk worden geregistreerd met het starten van het registratie object, wordt afgeleid van de begindatum monitoring van de entiteit Monitoringnetgeschiedenis. Wanneer een meetpunt na het starten van de registratie wordt geregistreerd, wordt de startdatum van de buisverwijzing van het meetpunt afgeleid van de datum gebeurtenis van de tussentijdse gebeurtenis meetpuntToevoegen. Wanneer de verwijzing naar de monitoringbuis (en put) van een actief meetpunt tussentijds wijzigt, wordt de startdatum van de buisverwijzing van het meetpunt afgeleid van de datum gebeurtenis van de tussentijdse gebeurtenis monitoringbuisVervangen.</xs:documentation>
+Explanation: De startdatum van de buisverwijzing van de meetpunten die gelijk worden geregistreerd met het starten van het registratie object, wordt afgeleid van de begindatum monitoring van de entiteit Monitoringnetgeschiedenis. Wanneer een meetpunt na het starten van de registratie wordt geregistreerd, wordt de startdatum van de buisverwijzing van het meetpunt afgeleid van de datum gebeurtenis van de tussentijdse gebeurtenis meetpuntToevoegen. Wanneer de verwijzing naar de monitoringbuis (en put) van een actief meetpunt tussentijds wijzigt, wordt de startdatum van de buisverwijzing van het meetpunt afgeleid van de datum gebeurtenis van de tussentijdse gebeurtenis monitoringbuisVervangen.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="endDate"
-                                type="brocom:PartialDateType"
-                                minOccurs="0"
-                                maxOccurs="1">
+                           type="brocom:PartialDateType"
+                           minOccurs="0"
+                           maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de monitoringbuis in de grondwatermonitoringput als meetpunt in het grondwatermonitoringnet is beëindigd.
-                                Explanation: Wanneer het grondwatermonitoringnet wordt beëindigd, blijft de einddatum buisverwijzing afwezig van alle, nog aan actieve meetpunten gekoppelde, monitoringbuizen. Wanneer het meetpunt voor de beëindiging van het meetnet wordt beëindigd, blijft de einddatum buisverwijzing afwezig van de, aan het meetpunt gekoppelde monitoringbuis. Wanneer de verwijzing naar de monitoringbuis (en put) van een actief meetpunt tussentijds wijzigt, wordt de einddatum van de buisverwijzing van het meetpunt afgeleid van de datum gebeurtenis van de tussentijdse gebeurtenis monitoringbuisVervangen.</xs:documentation>
+Explanation: Wanneer het grondwatermonitoringnet wordt beëindigd, blijft de einddatum buisverwijzing afwezig van alle, nog aan actieve meetpunten gekoppelde, monitoringbuizen. Wanneer het meetpunt voor de beëindiging van het meetnet wordt beëindigd, blijft de einddatum buisverwijzing afwezig van de, aan het meetpunt gekoppelde monitoringbuis. Wanneer de verwijzing naar de monitoringbuis (en put) van een actief meetpunt tussentijds wijzigt, wordt de einddatum van de buisverwijzing van het meetpunt afgeleid van de datum gebeurtenis van de tussentijdse gebeurtenis monitoringbuisVervangen.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                 </xs:sequence>
@@ -267,15 +290,14 @@
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="GroundwaterMonitoringTubePropertyType">
-        <xs:sequence minOccurs="0">
+        <xs:sequence minOccurs="1">
             <xs:element ref="dsgmn:GroundwaterMonitoringTube"/>
         </xs:sequence>
-        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
     </xs:complexType>
 
     <xs:element name="MeasuringPoint"
-                type="dsgmn:MeasuringPointType"
-                substitutionGroup="gml:AbstractFeature">
+               type="dsgmn:MeasuringPointType"
+               substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een locatie waar ten behoeve van het grondwatermonitoringnet metingen aan grondwater op een bepaalde diepte gedaan worden.</xs:documentation>
         </xs:annotation>
@@ -284,98 +306,108 @@
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
-                    <xs:element name="measuringPointCode"
-                                type="xs:string"
-                                minOccurs="1"
-                                maxOccurs="1">
+                    <xs:element name="measuringPointCode" minOccurs="1" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het door de bronhouder aangeleverde identificerend gegeven van het meetpunt.</xs:documentation>
                         </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="40"/>
+                            </xs:restriction>
+                        </xs:simpleType>
                     </xs:element>
                     <xs:element name="startDate"
-                                type="brocom:PartialDateType"
-                                minOccurs="1"
-                                maxOccurs="1">
+                           type="brocom:PartialDateType"
+                           minOccurs="1"
+                           maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop het meetpunt als onderdeel van het grondwatermonitoringnet is gestart.
-                                Explanation: De startdatum van de meetpunten die gelijk worden geregistreerd met het starten van het registratie object, wordt afgeleid van de begindatum monitoring van de entiteit Monitoringnetgeschiedenis. Wanneer een meetpunt na het starten van de registratie wordt geregistreerd, wordt de startdatum van het meetpunt afgeleid van de datum gebeurtenis van de tussentijdse gebeurtenis meetpuntToevoegen.</xs:documentation>
+Explanation: De startdatum van de meetpunten die gelijk worden geregistreerd met het starten van het registratie object, wordt afgeleid van de begindatum monitoring van de entiteit Monitoringnetgeschiedenis. Wanneer een meetpunt na het starten van de registratie wordt geregistreerd, wordt de startdatum van het meetpunt afgeleid van de datum gebeurtenis van de tussentijdse gebeurtenis meetpuntToevoegen.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="endDate"
-                                type="brocom:PartialDateType"
-                                minOccurs="0"
-                                maxOccurs="1">
+                           type="brocom:PartialDateType"
+                           minOccurs="0"
+                           maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop het meetpunt als onderdeel van het grondwatermonitoringnet is beëindigd.
-                                Explanation: Wanneer het grondwatermonitoringnet wordt beëindigd, blijft de einddatum van alle nog actieve meetpunten afwezig. Wanneer het meetpunt voor de beëindiging van het meetnet wordt beëindigd, wordt de einddatum van het meetpunt afgeleid van de datum gebeurtenis van de tussentijdse gebeurtenis meetpuntBeeindigen.</xs:documentation>
+Explanation: Wanneer het grondwatermonitoringnet wordt beëindigd, blijft de einddatum van alle nog actieve meetpunten afwezig. Wanneer het meetpunt voor de beëindiging van het meetnet wordt beëindigd, wordt de einddatum van het meetpunt afgeleid van de datum gebeurtenis van de tussentijdse gebeurtenis meetpuntBeeindigen.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element minOccurs="1"
-                                maxOccurs="unbounded"
-                                name="monitoringTube"
-                                nillable="false"
-                                type="dsgmn:GroundwaterMonitoringTubePropertyType"/>
+                           maxOccurs="unbounded"
+                           name="monitoringTube"
+                           nillable="false"
+                           type="dsgmn:GroundwaterMonitoringTubePropertyType"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="MeasuringPointPropertyType">
-        <xs:sequence minOccurs="0">
+        <xs:sequence minOccurs="1">
             <xs:element ref="dsgmn:MeasuringPoint"/>
         </xs:sequence>
-        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
     </xs:complexType>
 
     <xs:complexType name="IntermediateEventType">
         <xs:sequence>
             <xs:element name="eventName"
-                        minOccurs="1"
-                        maxOccurs="1"
-                        type="gmncom:EventNameType">
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="gmncom:EventNameType">
                 <xs:annotation>
                     <xs:appinfo>
                         <CodeListName>EventName</CodeListName>
                         <CodeListURI/>
                     </xs:appinfo>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de tussentijdse gebeurtenis.
-                        Explanation: Het gegeven staat niet in een brondocument. In de basisregistratie ondergrond wordt het gegeven afgeleid op het moment dat het betreffende brondocument (voor het toevoegen van een meetpunt, het beëindigen van een meetpunt of het vervangen van de verwijzing naar een monitoringbuis) wordt aangeleverd.</xs:documentation>
+Explanation: Het gegeven staat niet in een brondocument. In de basisregistratie ondergrond wordt het gegeven afgeleid op het moment dat het betreffende brondocument (voor het toevoegen van een meetpunt, het beëindigen van een meetpunt of het vervangen van de verwijzing naar een monitoringbuis) wordt aangeleverd.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="eventDate"
-                        type="brocom:PartialDateType"
-                        minOccurs="1"
-                        maxOccurs="1">
+                     type="brocom:PartialDateType"
+                     minOccurs="1"
+                     maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de tussentijdse gebeurtenis heeft plaatsgevonden.</xs:documentation>
                 </xs:annotation>
             </xs:element>
+            <xs:element name="measuringPointCode" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het door de bronhouder aangeleverde identificerend gegeven van het meetpunt.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="40"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="MonitoringNetHistoryType">
         <xs:sequence>
             <xs:element name="startDateMonitoring"
-                        type="brocom:PartialDateType"
-                        minOccurs="1"
-                        maxOccurs="1">
+                     type="brocom:PartialDateType"
+                     minOccurs="1"
+                     maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum die het begin aangeeft van de periode waarin het monitoren van het grondwater plaatsvindt.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="endDateMonitoring"
-                        type="brocom:PartialDateType"
-                        minOccurs="0"
-                        maxOccurs="1">
+                     type="brocom:PartialDateType"
+                     minOccurs="0"
+                     maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum die het einde aangeeft van de periode waarin de grondwatermonitoring plaatsvindt.
-                        Explanation: De bronhouder geeft de einddatum op wanneer het monitoren in het kader van het monitoringnet eindigt. Tot die tijd blijft de einddatum leeg.</xs:documentation>
+Explanation: De bronhouder geeft de einddatum op wanneer het monitoren in het kader van het monitoringnet eindigt. Tot die tijd blijft de einddatum leeg.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element minOccurs="0"
-                        maxOccurs="unbounded"
-                        name="intermediateEvent"
-                        nillable="false"
-                        type="dsgmn:IntermediateEventType">
+                     maxOccurs="unbounded"
+                     name="intermediateEvent"
+                     nillable="false"
+                     type="dsgmn:IntermediateEventType">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een gebeurtenis die na het starten van het grondwatermonitoringnet maar voor het beëindigen ervan heeft plaatsgevonden.</xs:documentation>
                 </xs:annotation>

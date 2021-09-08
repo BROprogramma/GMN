@@ -3,6 +3,7 @@
                   xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
                   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
                   xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+                  xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
                   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                   xmlns:msg="http://www.broservices.nl/xsd/dsgmn/1.0"
                   xmlns:tns="http://www.broservices.nl/wsdl/dsgmn/1.0"
@@ -13,15 +14,13 @@
         in the context of the base registry subsurface (Basisregistratie Ondergrond).
         This is version 1.0.0
         Changes compared to Version 1.0.0:
-        -
+        - added soap header for delivery responsible party
     </wsdl:documentation>
 
     <wsdl:types>
         <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/dsgmn/1.0" targetNamespace="http://www.broservices.nl/wsdl/dsgmn/1.0">
-            <!--
             <xsd:import namespace="http://www.broservices.nl/xsd/dsgmn/1.0" schemaLocation="https://schema.broservices.nl/xsd/dsgmn/1.0/dsgmn-messages.xsd"/>
-            -->
-            <xsd:import namespace="http://www.broservices.nl/xsd/dsgmn/1.0" schemaLocation="dsgmn-messages.xsd"/>
+            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd" />
         </xsd:schema>
     </wsdl:types>
 
@@ -35,6 +34,10 @@
 
     <wsdl:message name="parseSoapFault">
         <wsdl:part element="msg:parseFault" name="parseFault"/>
+    </wsdl:message>
+
+    <wsdl:message name="DeliveryResponsiblePartyHeader">
+        <wsdl:part name="deliveryResponsibleParty" element="brocom:deliveryResponsibleParty" />
     </wsdl:message>
 
     <wsdl:portType name="dsgmn">
@@ -51,6 +54,7 @@
             <soap:operation soapAction="" style="document"/>
             <wsdl:input>
                 <soap:body use="literal"/>
+                <soap:header use="literal" part="deliveryResponsibleParty" message="tns:DeliveryResponsiblePartyHeader" />
             </wsdl:input>
             <wsdl:output>
                 <soap:body use="literal"/>

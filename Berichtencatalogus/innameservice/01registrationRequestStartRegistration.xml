@@ -6,9 +6,8 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.broservices.nl/xsd/isgmn/1.0 ../../XSD/isgmn-messages.xsd"
       >
-
-  <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
-       Het is niet gevalideert door de innamewebservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+  <!-- Disclaimer: dit voorbeeldbericht valideert tegen de validatieservice van het demo-bronhouderportaal, maar de gegevens zijn fictief en waarschijnlijk niet correct.
+      xsi:schemaLocation="http://www.broservices.nl/xsd/isgmn/1.0 https://schema.broservices.nl/xsd/isgmn/1.0/isgmn-messages.xsd"
   -->
   <brocom:requestReference>Groningen_01</brocom:requestReference>
   <!--Optional: dataleverancier is niet de bronhouder, dus is het gegeven aanwezig. -->
@@ -16,7 +15,7 @@
   <!--Optional: brondocument is GMN_StartRegistration, dus mag het gegeven niet aanwezig zijn.
   <brocom:broId>GMN123456789012</brocom:broId>
   -->
-  <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+  <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
   <!--Optional: niet toegestaan bij GMN.
   <brocom:underPrivilege>ja</brocom:underPrivilege>
   -->
@@ -35,7 +34,7 @@
           <brocom:year>2021</brocom:year>
           <brocom:voidReason>onbekend</brocom:voidReason>
            -->
-          <brocom:date>2021-03-01</brocom:date>
+          <brocom:year>2021</brocom:year>
         </startDateMonitoring>
         <!-- 1 or more repetitions: -->
         <measuringPoint>
@@ -43,7 +42,7 @@
             <measuringPointCode>GMW07F000001</measuringPointCode>
             <monitoringTube>
               <GroundwaterMonitoringTube gml:id="id_0003">
-                <broId>GMW123456789001</broId>
+                <broId>GMW000000026289</broId>
                 <tubeNumber>2</tubeNumber>
               </GroundwaterMonitoringTube>
             </monitoringTube>
@@ -54,7 +53,7 @@
             <measuringPointCode>GMW07F000002</measuringPointCode>
             <monitoringTube>
               <GroundwaterMonitoringTube gml:id="id_0005">
-                <broId>GMW123456789002</broId>
+                <broId>GMW000000026288</broId>
                 <tubeNumber>3</tubeNumber>
               </GroundwaterMonitoringTube>
             </monitoringTube>

@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2012-2020 TNO Geologische Dienst Nederland
+
+    Alle rechten voorbehouden.
+    Niets uit deze software mag worden vermenigvuldigd en/of openbaar gemaakt door middel van druk, fotokopie,
+    microfilm of op welke andere wijze dan ook, zonder voorafgaande toestemming van TNO.
+
+    Indien deze software in opdracht werd uitgebracht, wordt voor de rechten en verplichtingen van opdrachtgever
+    en opdrachtnemer verwezen naar de Algemene Voorwaarden voor opdrachten aan TNO, dan wel de betreffende
+    terzake tussen de partijen gesloten overeenkomst.
+
+-->
 <xs:schema xmlns:gmncom="http://www.broservices.nl/xsd/gmncommon/1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:gml="http://www.opengis.net/gml/3.2"
@@ -14,18 +27,18 @@
         </xs:appinfo>
     </xs:annotation>
 
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
     <!--
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
-    -->
-    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
+	-->
 
     <xs:complexType name="DeliveryContextType">
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">
                 <xs:attribute name="codeSpace"
-                              type="xs:anyURI"
-                              use="required"
-                              fixed="urn:bro:gmn:DeliveryContext"/>
+                          type="xs:anyURI"
+                          use="required"
+                          fixed="urn:bro:gmn:DeliveryContext"/>
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
@@ -33,9 +46,9 @@
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">
                 <xs:attribute name="codeSpace"
-                              type="xs:anyURI"
-                              use="required"
-                              fixed="urn:bro:gmn:EventName"/>
+                          type="xs:anyURI"
+                          use="required"
+                          fixed="urn:bro:gmn:EventName"/>
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
@@ -43,9 +56,9 @@
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">
                 <xs:attribute name="codeSpace"
-                              type="xs:anyURI"
-                              use="required"
-                              fixed="urn:bro:gmn:GroundwaterAspect"/>
+                          type="xs:anyURI"
+                          use="required"
+                          fixed="urn:bro:gmn:GroundwaterAspect"/>
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
@@ -53,9 +66,9 @@
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">
                 <xs:attribute name="codeSpace"
-                              type="xs:anyURI"
-                              use="required"
-                              fixed="urn:bro:gmn:MonitoringPurpose"/>
+                          type="xs:anyURI"
+                          use="required"
+                          fixed="urn:bro:gmn:MonitoringPurpose"/>
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>

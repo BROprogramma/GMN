@@ -9,9 +9,10 @@
             xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
             xmlns:gml="http://www.opengis.net/gml/3.2"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://www.broservices.nl/xsd/dsgmn/1.0 https://schema.broservices.nl/xsd/isgmn/1.0/dsgmn-messages.xsd">
+            xsi:schemaLocation="http://www.broservices.nl/xsd/dsgmn/1.0 ../../XSD/dsgmn-messages.xsd">
       <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de uitgifteservice.
            Het is niet gevalideerd door de uitgifteservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+            xsi:schemaLocation="http://www.broservices.nl/xsd/dsgmn/1.0 https://schema.broservices.nl/xsd/dsgmn/1.0/dsgmn-messages.xsd">
       -->
       <brocom:responseType>dispatch</brocom:responseType>
       <brocom:requestReference>uitgifte-38</brocom:requestReference>
@@ -44,7 +45,7 @@
           <brocom:objectIdAccountableParty>meetnet_07</brocom:objectIdAccountableParty>
           <!-- optional. Alleen aanwezig als het uitgiftedocument GMN_PO_DP of GMN_PPO_DP is. -->
           <brocom:deliveryResponsibleParty>52766179</brocom:deliveryResponsibleParty>
-          <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+          <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
           <gmn:name>Provinciaal meetnet grondwater Groningen; Delfzijl</gmn:name>
           <gmn:deliveryContext codeSpace="urn:bro:gmn:DeliveryContext">kaderrichtlijnWater</gmn:deliveryContext>
           <gmn:monitoringPurpose codeSpace="urn:bro:gmn:MonitoringPurpose">strategischBeheerKwaliteitRegionaal</gmn:monitoringPurpose>
@@ -58,18 +59,18 @@
               <brocom:year>2021</brocom:year>
               <brocom:voidReason>onbekend</brocom:voidReason>
                -->
-              <brocom:date>2021-03-01</brocom:date>
+              <brocom:year>2021</brocom:year>
             </gmn:startDateMonitoring>
             <!-- optional. Alleen aanwezig als de registratie is beëindigd (registrationStatus = voltooid). -->
             <gmn:endDateMonitoring>
               <!--You have a CHOICE of the next 4 items at this level-->
               <!--
-              <brocom:date>2021-12-30</brocom:date>
+              <brocom:date>2021-05-31</brocom:date>
               <brocom:yearMonth>2021-12</brocom:yearMonth>
               <brocom:year>2021</brocom:year>
               <brocom:voidReason>onbekend</brocom:voidReason>
                -->
-              <brocom:date>2021-12-30</brocom:date>
+              <brocom:date>2021-05-31</brocom:date>
             </gmn:endDateMonitoring>
             <!-- 0 or more repetitions: alleen aanwezig als het uitgiftedocument GMN_PPO of GMN_PPO_DP is.
             <gmn:intermediateEvent>
@@ -81,8 +82,8 @@
             <brocom:objectRegistrationTime>2021-03-07T13:11:57+01:00</brocom:objectRegistrationTime>
             <brocom:registrationStatus codeSpace="urn:bro:RegistrationStatus">voltooid</brocom:registrationStatus>
             <!-- optional. -->
-            <brocom:latestAdditionTime>2021-12-03T13:11:57+01:00</brocom:latestAdditionTime>
-            <brocom:registrationCompletionTime>2021-12-30T15:42:08+01:00</brocom:registrationCompletionTime>
+            <brocom:latestAdditionTime>2021-05-01T13:11:57+01:00</brocom:latestAdditionTime>
+            <brocom:registrationCompletionTime>2021-05-31T15:42:08+01:00</brocom:registrationCompletionTime>
             <brocom:corrected>nee</brocom:corrected>
             <!-- optional. Alleen aanwezig als corrected = ja.
             <brocom:latestCorrectionTime>...</brocom:latestCorrectionTime>
@@ -100,37 +101,22 @@
           </gmn:registrationHistory>
           <!-- 1 or more repetitions: -->
           <gmn:measuringPoint>
-            <gmn:MeasuringPoint gml:id="SEQ_0002">
-              <gmn:measuringPointCode>GMW07F000001</gmn:measuringPointCode>
+            <gmn:MeasuringPoint gml:id="SEQ_0004">
+              <gmn:measuringPointCode>GMW07F000002</gmn:measuringPointCode>
               <gmn:startDate>
-                <!--You have a CHOICE of the next 4 items at this level-->
-                <!--
-                <brocom:date>2021-03-01</brocom:date>
-                <brocom:yearMonth>2021-03</brocom:yearMonth>
                 <brocom:year>2021</brocom:year>
-                <brocom:voidReason>onbekend</brocom:voidReason>
-                 -->
-                <brocom:date>2021-03-01</brocom:date>
               </gmn:startDate>
               <!-- optional. Alleen aanwezig als het uitgiftedocument GMN_PPO of GMN_PPO_DP is en het meetpunt beëindigd is.
               <gmn:endDate>
                 ...
               </gmn:endDate>
               -->
-              <!-- 1 or more repetitions: -->
               <gmn:monitoringTube>
-                <gmn:GroundwaterMonitoringTube gml:id="SEQ_0003">
-                  <gmn:broId>GMW123456789001</gmn:broId>
-                  <gmn:tubeNumber>2</gmn:tubeNumber>
+                <gmn:GroundwaterMonitoringTube gml:id="SEQ_0006">
+                  <gmn:broId>GMW000000026290</gmn:broId>
+                  <gmn:tubeNumber>1</gmn:tubeNumber>
                   <gmn:startDate>
-                    <!--You have a CHOICE of the next 4 items at this level-->
-                    <!--
-                    <brocom:date>2021-03-01</brocom:date>
-                    <brocom:yearMonth>2021-03</brocom:yearMonth>
-                    <brocom:year>2021</brocom:year>
-                    <brocom:voidReason>onbekend</brocom:voidReason>
-                     -->
-                    <brocom:date>2021-03-01</brocom:date>
+                    <brocom:date>2021-04-21</brocom:date>
                   </gmn:startDate>
                   <!-- optional. Alleen aanwezig als het uitgiftedocument GMN_PPO of GMN_PPO_DP is en de buisverwijzing een opvolger heeft.
                   <gmn:endDate>
@@ -142,51 +128,17 @@
             </gmn:MeasuringPoint>
           </gmn:measuringPoint>
           <gmn:measuringPoint>
-            <gmn:MeasuringPoint gml:id="SEQ_0004">
-              <gmn:measuringPointCode>GMW07F000002</gmn:measuringPointCode>
-              <gmn:startDate>
-                <brocom:date>2021-03-01</brocom:date>
-              </gmn:startDate>
-              <gmn:monitoringTube>
-                <gmn:GroundwaterMonitoringTube gml:id="SEQ_0005">
-                  <gmn:broId>GMW123456789007</gmn:broId>
-                  <gmn:tubeNumber>1</gmn:tubeNumber>
-                  <gmn:startDate>
-                    <brocom:date>2021-11-27</brocom:date>
-                  </gmn:startDate>
-                </gmn:GroundwaterMonitoringTube>
-              </gmn:monitoringTube>
-            </gmn:MeasuringPoint>
-          </gmn:measuringPoint>
-          <gmn:measuringPoint>
             <gmn:MeasuringPoint gml:id="SEQ_0007">
               <gmn:measuringPointCode>GMW07E000001</gmn:measuringPointCode>
               <gmn:startDate>
-                <brocom:date>2021-08-15</brocom:date>
+                <brocom:date>2021-04-15</brocom:date>
               </gmn:startDate>
               <gmn:monitoringTube>
                 <gmn:GroundwaterMonitoringTube gml:id="SEQ_0008">
-                  <gmn:broId>GMW123456789003</gmn:broId>
+                  <gmn:broId>GMW000000026287</gmn:broId>
                   <gmn:tubeNumber>1</gmn:tubeNumber>
                   <gmn:startDate>
-                    <brocom:date>2021-08-15</brocom:date>
-                  </gmn:startDate>
-                </gmn:GroundwaterMonitoringTube>
-              </gmn:monitoringTube>
-            </gmn:MeasuringPoint>
-          </gmn:measuringPoint>
-          <gmn:measuringPoint>
-            <gmn:MeasuringPoint gml:id="SEQ_0009">
-              <gmn:measuringPointCode>GMW08B000001</gmn:measuringPointCode>
-              <gmn:startDate>
-                <brocom:date>2021-08-15</brocom:date>
-              </gmn:startDate>
-              <gmn:monitoringTube>
-                <gmn:GroundwaterMonitoringTube gml:id="SEQ_0010">
-                  <gmn:broId>GMW123456789005</gmn:broId>
-                  <gmn:tubeNumber>1</gmn:tubeNumber>
-                  <gmn:startDate>
-                    <brocom:date>2021-08-15</brocom:date>
+                    <brocom:date>2021-04-15</brocom:date>
                   </gmn:startDate>
                 </gmn:GroundwaterMonitoringTube>
               </gmn:monitoringTube>

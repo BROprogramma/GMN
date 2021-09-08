@@ -9,9 +9,10 @@
             xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
             xmlns:gml="http://www.opengis.net/gml/3.2"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://www.broservices.nl/xsd/dsgmn/1.0 https://schema.broservices.nl/xsd/isgmn/1.0/dsgmn-messages.xsd">
+            xsi:schemaLocation="http://www.broservices.nl/xsd/dsgmn/1.0 ../../XSD/dsgmn-messages.xsd">
       <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de uitgifteservice.
            Het is niet gevalideerd door de uitgifteservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+            xsi:schemaLocation="http://www.broservices.nl/xsd/dsgmn/1.0 https://schema.broservices.nl/xsd/dsgmn/1.0/dsgmn-messages.xsd">
       -->
       <brocom:responseType>dispatch</brocom:responseType>
       <brocom:requestReference>uitgifte-38</brocom:requestReference>
