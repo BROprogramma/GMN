@@ -471,19 +471,19 @@ Explanation: Het BRO-ID van de grondwatermonitoringput wordt opgenomen plus het 
             <xs:element ref="isgmn:GMN_MeasuringPointEndDate"/>
             <xs:element ref="isgmn:GMN_Closure"/>
             <xs:element ref="isgmn:GMN_TubeReference"/>
-            <xs:element ref="isgmn:GMN_GroundwaterMonitoringNetworkWithHistory"/>
+            <xs:element ref="isgmn:GMN_WithHistory"/>
         </xs:choice>
     </xs:complexType>
 
-    <xs:element name="GMN_GroundwaterMonitoringNetworkWithHistory"
-               type="isgmn:GMN_GroundwaterMonitoringNetworkWithHistoryType"
+    <xs:element name="GMN_WithHistory"
+               type="isgmn:GMN_WithHistoryType"
                substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Dit brondocument kan gebruikt te worden om in 1 registrationRequest meerdere brondocumenten in één keer aan te leveren.
 Explanation: De opgenomen brondocumenten worden uitgepakt en separaat verwerkt en als separate gebeurtenisen opgenomen in de ObjectHistory.</xs:documentation>
         </xs:annotation>
     </xs:element>
-    <xs:complexType name="GMN_GroundwaterMonitoringNetworkWithHistoryType">
+    <xs:complexType name="GMN_WithHistoryType">
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
@@ -510,9 +510,9 @@ Explanation: De opgenomen brondocumenten worden uitgepakt en separaat verwerkt e
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:complexType name="GMN_GroundwaterMonitoringNetworkWithHistoryPropertyType">
+    <xs:complexType name="GMN_WithHistoryPropertyType">
         <xs:sequence minOccurs="1">
-            <xs:element ref="isgmn:GMN_GroundwaterMonitoringNetworkWithHistory"/>
+            <xs:element ref="isgmn:GMN_WithHistory"/>
         </xs:sequence>
     </xs:complexType>
 

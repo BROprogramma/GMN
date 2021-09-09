@@ -20,7 +20,7 @@
     <brocom:underPrivilege>ja</brocom:underPrivilege>
     -->
     <sourceDocument>
-        <GMN_GroundwaterMonitoringNetworkWithHistory gml:id="id_0000">
+        <GMN_WithHistory gml:id="id_0000">
             <startRegistration>
                 <GMN_StartRegistration gml:id="id_0001">
                     <objectIdAccountableParty>meetnet_07</objectIdAccountableParty>
@@ -142,6 +142,6 @@
                     </endDateMonitoring>
                 </GMN_Closure>
             </closure>
-        </GMN_GroundwaterMonitoringNetworkWithHistory >
+        </GMN_WithHistory>
     </sourceDocument>
 </registrationRequest>
