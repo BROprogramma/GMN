@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<replaceRequest 
+      xmlns="http://www.broservices.nl/xsd/isgmn/1.0"
+      xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+      xmlns:gml="http://www.opengis.net/gml/3.2"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.broservices.nl/xsd/isgmn/1.0 ../../XSD/isgmn-messages.xsd"
+      >
+    <!--Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
+        Het is niet gevalideert door de innameservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+      xsi:schemaLocation="http://www.broservices.nl/xsd/isgmn/1.0 https://schema.broservices.nl/xsd/isgmn/1.0/isgmn-messages.xsd"
+    -->
+    <brocom:requestReference>Groningen_03</brocom:requestReference>
+    <!--Optional: dataleverancier is niet de bronhouder, dus is het gegeven aanwezig. -->
+    <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+    <!--Optional: verplicht bij alle correctieverezoeken.  -->
+    <brocom:broId>GMN000000000361</brocom:broId>
+    <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+    <!--Optional: niet toegestaan bij GMN.
+    <brocom:underPrivilege>ja</brocom:underPrivilege>
+    -->
+    <correctionReason codeSpace="urn:bro:gmn:CorrectionReason">eigenCorrectie</correctionReason>
+    <sourceDocument>
+        <GMN_TubeReference gml:id="id_0001">
+            <eventDate>
+                <!--You have a CHOICE of the next 4 items at this level-->
+                <!-- 
+                <brocom:date>2021-04-21</brocom:date>
+                <brocom:yearMonth>2021-04</brocom:yearMonth>
+                <brocom:year>2021</brocom:year>
+                <brocom:voidReason>onbekend</brocom:voidReason>
+                -->
+                <brocom:date>2021-04-21</brocom:date>
+            </eventDate>
+            <measuringPoint>
+                <MeasuringPoint gml:id="id_0002">
+                    <measuringPointCode>GMW07F000002</measuringPointCode>
+                    <monitoringTube>
+                        <GroundwaterMonitoringTube gml:id="id_0003">
+                            <broId>GMW000000026287</broId>
+                            <tubeNumber>1</tubeNumber>
+                        </GroundwaterMonitoringTube>
+                    </monitoringTube>
+                </MeasuringPoint>
+            </measuringPoint>
+        </GMN_TubeReference>
+    </sourceDocument>
+</replaceRequest>

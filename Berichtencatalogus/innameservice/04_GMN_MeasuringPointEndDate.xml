@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrationRequest 
+      xmlns="http://www.broservices.nl/xsd/isgmn/1.0"
+      xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+      xmlns:gml="http://www.opengis.net/gml/3.2"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.broservices.nl/xsd/isgmn/1.0 ../../XSD/isgmn-messages.xsd"
+      >
+    <!-- Disclaimer: dit voorbeeldbericht valideert tegen de validatieservice van het demo-bronhouderportaal, maar de gegevens zijn fictief en waarschijnlijk niet correct.
+      xsi:schemaLocation="http://www.broservices.nl/xsd/isgmn/1.0 https://schema.broservices.nl/xsd/isgmn/1.0/isgmn-messages.xsd"
+    -->
+    <brocom:requestReference>Groningen_04</brocom:requestReference>
+    <!--Optional: dataleverancier is niet de bronhouder, dus is het gegeven aanwezig. -->
+    <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+    <!--Optional: brondocument is GMN_AddMeasuringPoint, dus moet het gegeven aanwezig zijn. -->
+    <brocom:broId>GMN000000000361</brocom:broId>
+    <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+    <!--Optional: niet toegestaan bij GMN.
+    <brocom:underPrivilege>ja</brocom:underPrivilege>
+    -->
+    <sourceDocument>
+        <GMN_MeasuringPointEndDate gml:id="id_0001">
+            <eventDate>
+                <!--You have a CHOICE of the next 4 items at this level-->
+                <!-- 
+                <brocom:date>2021-05-01</brocom:date>
+                <brocom:yearMonth>2021-05</brocom:yearMonth>
+                <brocom:year>2021</brocom:year>
+                <brocom:voidReason>onbekend</brocom:voidReason>
+                -->
+                <brocom:date>2021-05-01</brocom:date>
+            </eventDate>
+            <measuringPointCode>GMW07F000001</measuringPointCode>
+        </GMN_MeasuringPointEndDate>
+    </sourceDocument>
+</registrationRequest>
