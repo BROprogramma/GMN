@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NaamGebeurtenis>
+		<Waarde>meetpuntToevoegen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het toevoegen van een aanvullend meetpunt aan het grondwatermonitoringnet.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>meetpuntBeeindigen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het verwijderen van een meetpunt uit het grondwatermonitoringnet waarbij er minimaal één ander meetpunt moet blijven bestaan.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>monitoringbuisVervangen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het vervangen van de verwijzing van een meetpunt, van de ene grondwatermonitoringput (GMW) - monitoringbuis combinatie naar een andere GMW-monitoringbuis combinatie waarbij er altijd één GMW-monitoringbuis combinatie is gekoppeld aan een meetpunt.</Omschrijving>
+	</NaamGebeurtenis>
+</domeintabel>
