@@ -31,7 +31,7 @@ let respecConfig = {
   shortName: "gmn",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "2026-04-24",
+  publishDate: "2026-05-01",
   //custom header lines
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion is hier een willekeurige ingevulde versie. PreviousVersion is daadwerkelijk de vorige versie. Beiden kunnen willekeurig worden ingevuld, dit is nodig om de hyperlinks bovenaan de catalogus te tonen.
