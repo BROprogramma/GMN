@@ -2,8 +2,7 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   //-- title is verplicht! Neem hier de titel van het document op ----------------------
-  title:
-    "Catalogus registratie ondergrond Grondwatermonitoringnet",
+  title: "Catalogus registratie ondergrond Grondwatermonitoringnet",
   //subtitle: "Versie 1.0",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
@@ -34,8 +33,8 @@ let respecConfig = {
   publishDate: "2026-08-12",
   //custom header lines
   //publishVersion en previousVersion in de Werkversie invullen als “ “ (d.w.z. een spatie). De tag moet ingevuld zijn om de hyperlinks bovenaan de catalogus te tonen.
-  publishVersion: "1.1",
-  previousVersion: "1.0",
+  publishVersion: " ",
+  previousVersion: " ",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit!
   previousPublishDate: "2020-07-02", 
   previousMaturity: "def",
