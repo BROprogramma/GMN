@@ -127,6 +127,12 @@
 		<Omschrijving>Kennis over de stand van het grondwater om die te beheersen ten behoeve van natuurbeheer.</Omschrijving>
 	</Monitoringdoel>
 	<Monitoringdoel>
+		<Waarde>bewakenZoetBrakZoutGrensvlak</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Kennis over het bewaken van de ligging of ontwikkeling van het zoet-brak-zoutgrensvlak in het grondwatersysteem.</Omschrijving>
+	</Monitoringdoel>
+	<Monitoringdoel>
 		<Waarde>onbekend</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>

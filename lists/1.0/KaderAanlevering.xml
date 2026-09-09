@@ -73,6 +73,18 @@
 		<Omschrijving>De gegevens zijn aangeleverd in het kader van wet natuurbescherming.</Omschrijving>
 	</KaderAanlevering>
 	<KaderAanlevering>
+		<Waarde>omgevingswet</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA> </IMBROA>
+		<Omschrijving>De gegevens worden aangeleverd in het kader van de Omgevingswet.</Omschrijving>
+	</KaderAanlevering>
+	<KaderAanlevering>
+		<Waarde>eigenInitiatief</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De gegevens worden op eigen initiatief aangeleverd, zonder dat aan de monitoring een specifiek wettelijk kader ten grondslag ligt.</Omschrijving>
+	</KaderAanlevering>
+	<KaderAanlevering>
 		<Waarde>archiefoverdracht</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
