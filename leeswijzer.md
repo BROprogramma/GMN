@@ -12,4 +12,4 @@
 
 [Hoofdstuk 6](#uitbreidbare-waardelijsten) geeft de inhoud weer van de uitbreidbare waardelijsten, dat wil zeggen lijsten met de mogelijke waarden voor de attributen uit hoofdstuk 5 die naar een waardelijst verwijzen.
 
-[Bijlage A](#wettelijk-kader-en-doel) geeft het wettelijk kader en monitoringdoel van het registratieobject weer.
+[Bijlage A](#wettelijk-kader-en-doel) geeft het wettelijk kader en monitoringdoel bij het registratieobject weer.
