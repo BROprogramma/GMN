@@ -112,11 +112,11 @@ Grondwatermonitoringnetten onder IMBRO/A moeten altijd betrekking hebben op een 
 
 # Samenhang en consistentie tussen verschillende registratieobjecten in het grondwaterdomein
 
-De verschillende registratieobjecten in het grondwaterdomein en hun gegevens hebben samenhang. Zie de beschrijving hiervan in [§ 3.2 Domein grondwatermonitoring in de basisregistratie ondergrond](#domein-grondwatermonitoring-in-de-basisregistratie-ondergrond), en de beschrijving over het gegeven *buis in gebruik* in [§ 3.4.1 Aanduiding buis in gebruik in Grondwatermonitoringput](#aanduiding-buis-in-gebruik-in-grondwatermonitoringput).
+De verschillende registratieobjecten in het grondwaterdomein en hun gegevens hebben samenhang. Zie de beschrijving hiervan in § 3.2 [Domein grondwatermonitoring in de basisregistratie ondergrond](#domein-grondwatermonitoring-in-de-basisregistratie-ondergrond), en de beschrijving over het gegeven *buis in gebruik* in § 3.4.1 [Aanduiding buis in gebruik in Grondwatermonitoringput](#aanduiding-buis-in-gebruik-in-grondwatermonitoringput).
 
 Op basis van de samenhang wordt er consistentie verwacht tussen de gegevens in verschillende registratieobjecten in het grondwaterdomein. Het is de verantwoordelijkheid van de bronhouder om deze consistentie te waarborgen. De basisregistratie ondergrond dwingt dit grotendeels niet af, behalve op het gebied van verwijzingen zoals hieronder beschreven.
 
-De basisregistratie ondergrond dwingt alleen af dat gegevens in andere registratieobjecten waarnaar verwezen wordt, ook daadwerkelijk geregistreerd zijn. Dit geldt voor de volgende verwijzingen (zie ook het plaatje in [§ 3.2 Domein grondwatermonitoring in de basisregistratie ondergrond](#domein-grondwatermonitoring-in-de-basisregistratie-ondergrond)):
+De basisregistratie ondergrond dwingt alleen af dat gegevens in andere registratieobjecten waarnaar verwezen wordt, ook daadwerkelijk geregistreerd zijn. Dit geldt voor de volgende verwijzingen (zie ook het plaatje in § 3.2 [Domein grondwatermonitoring in de basisregistratie ondergrond](#domein-grondwatermonitoring-in-de-basisregistratie-ondergrond)):
 
 - Vanuit Grondwatermonitoringnet, Grondwatersamenstellingsonderzoek en Grondwaterstandonderzoek naar een monitoringbuis in een grondwatermonitoringput.
 - Vanuit Grondwatersamenstellingsonderzoek en Grondwaterstandonderzoek naar Grondwatermonitoringnet.
