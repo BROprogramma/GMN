@@ -1,3 +1,4 @@
+# Grondwatermonitoringnet
 # Grondwatermonitoring
 
 Grondwater is een belangrijke bestaansbron. Het grondwater wordt daarom in Nederland in de gaten gehouden en beheerd. Het beheer van het grondwater richt zich op de hoeveelheid bruikbaar grondwater en de kwaliteit ervan. Om dit beheer goed te kunnen uitvoeren, wordt in Nederland de toestand van het grondwater over langere tijd gevolgd. Dat heet grondwatermonitoring. Er wordt daarbij gekeken naar de grondwaterstand (kwantiteit), en naar de samenstelling van het grondwater (kwaliteit). Hiervoor worden grondwaterstandonderzoeken en grondwatersamenstellingsonderzoeken uitgevoerd.
@@ -47,7 +48,7 @@ Een grondwatermonitoringnet is een verzameling locaties waar, voor een bepaald m
 
 Een grondwatermonitoringnet valt onder de verantwoordelijkheid van één bronhouder en heeft een vastgesteld monitoringdoel. In de praktijk kan het voorkomen dat een formatieweerstandonderzoek ten behoeve van meer dan één doel wordt uitgevoerd. Omdat er voor afzonderlijke monitoringdoelen verschillende grondwatermonitoringnetten zijn, betekent dit voor de basisregistratie ondergrond dat grondwaterstandsonderzoeken, grondwatersamenstellingsonderzoeken of formatieweerstandonderzoeken kunnen toebehoren aan één of meerdere grondwatermonitoringnetten.
 
-Op de website basisregistratie ondergrond is meer informatie te vinden over [grondwatersamenstellingsonderzoek](https://basisregistratieondergrond.nl/inhoud-bro/registratieobjecten/grondwatermonitoring/grondwatersamenstellingsonderzoek-gar/), [grondwaterstandonderzoek](https://basisregistratieondergrond.nl/inhoud-bro/registratieobjecten/grondwatermonitoring/grondwaterstandonderzoek-gld/) en [formatieweerstandonderzoek](https://basisregistratieondergrond.nl/inhoud-bro/registratieobjecten/grondwatermonitoring/formatieweerstandonderzoek-frd/).
+Op de website basisregistratie ondergrond is meer informatie te vinden over [grondwatersamenstellingsonderzoek](https://basisregistratieondergrond.nl/inhoud-bro/registratieobjecten/grondwatermonitoring/grondwatersamenstellings-onderzoek-gar/), [grondwaterstandonderzoek](https://basisregistratieondergrond.nl/inhoud-bro/registratieobjecten/grondwatermonitoring/grondwaterstandonderzoek-gld/) en [formatieweerstandonderzoek](https://basisregistratieondergrond.nl/inhoud-bro/registratieobjecten/grondwatermonitoring/formatieweerstandonderzoek-frd/).
 
 # Wettelijk kader en monitoringdoel
 
@@ -111,11 +112,11 @@ Grondwatermonitoringnetten onder IMBRO/A moeten altijd betrekking hebben op een 
 
 # Samenhang en consistentie tussen verschillende registratieobjecten in het grondwaterdomein
 
-De verschillende registratieobjecten in het grondwaterdomein en hun gegevens hebben samenhang. Zie de beschrijving hiervan in <a href="#grondwaterdomein"></a>, en de beschrijving over het gegeven *buis in gebruik* in <a href="#buis-in-gebruik"></a>.
+De verschillende registratieobjecten in het grondwaterdomein en hun gegevens hebben samenhang. Zie de beschrijving hiervan in [Domein grondwatermonitoring in de basisregistratie ondergrond](#domein-grondwatermonitoring-in-de-basisregistratie-ondergrond), en de beschrijving over het gegeven *buis in gebruik* in [Aanduiding buis in gebruik in Grondwatermonitoringput](#aanduiding-buis-in-gebruik-in-grondwatermonitoringput).
 
 Op basis van de samenhang wordt er consistentie verwacht tussen de gegevens in verschillende registratieobjecten in het grondwaterdomein. Het is de verantwoordelijkheid van de bronhouder om deze consistentie te waarborgen. De basisregistratie ondergrond dwingt dit grotendeels niet af, behalve op het gebied van verwijzingen zoals hieronder beschreven.
 
-De basisregistratie ondergrond dwingt alleen af dat gegevens in andere registratieobjecten waarnaar verwezen wordt, ook daadwerkelijk geregistreerd zijn. Dit geldt voor de volgende verwijzingen (zie ook het plaatje in <a href="#grondwaterdomein"></a>):
+De basisregistratie ondergrond dwingt alleen af dat gegevens in andere registratieobjecten waarnaar verwezen wordt, ook daadwerkelijk geregistreerd zijn. Dit geldt voor de volgende verwijzingen (zie ook het plaatje in [Domein grondwatermonitoring in de basisregistratie ondergrond](#domein-grondwatermonitoring-in-de-basisregistratie-ondergrond)):
 
 - Vanuit Grondwatermonitoringnet, Grondwatersamenstellingsonderzoek en Grondwaterstandonderzoek naar een monitoringbuis in een grondwatermonitoringput.
 - Vanuit Grondwatersamenstellingsonderzoek en Grondwaterstandonderzoek naar Grondwatermonitoringnet.
